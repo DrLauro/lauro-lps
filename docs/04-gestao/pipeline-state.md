@@ -11,7 +11,7 @@ Controla ordem de execução dos agentes pra construção do projeto do zero. Ma
 | 4 | project-manager | pendente | |
 | 5 | software-engineer | em-revisão (13 páginas no preview) | |
 | 6 | qa-engineer | pendente (Lighthouse, GTM, teste de pesquisa aprimorada) | |
-| 7 | devops-engineer | em-andamento (preview GitHub Pages; produção a definir) | |
+| 7 | devops-engineer | em-andamento (preview no ar: https://lcoutinho7.github.io/lauro-lps/ — produção no registro.br a definir; repo do GitHub é temporário) | |
 
 Status possíveis: pendente / em-andamento / em-revisão / aprovado / bloqueado.
 
