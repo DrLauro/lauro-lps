@@ -1,0 +1,38 @@
+---
+// Índice das 13 áreas. No preview serve de mapa para revisão; em produção vira /especialidades/.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import { pages } from '../lib/contexts.mjs';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const fases = [1, 2, 3].map((f) => ({ f, items: pages.filter((p) => p.fase === f) }));
+---
+<BaseLayout title="Áreas de atuação | Dr. Lauro de Almeida Neto" description="Áreas de atuação do Dr. Lauro de Almeida Neto, advogado criminalista em Osasco e São Paulo.">
+  <section class="hero hero--index">
+    <div class="container">
+      <p class="label">Advocacia criminal · {pages.length} áreas</p>
+      <h1>Áreas de atuação</h1>
+    </div>
+  </section>
+  {fases.map(({ f, items }) => (
+    <section class="block" aria-labelledby={`fase-${f}`}>
+      <div class="container block__grid">
+        <header class="block__head">
+          <span class="block__mark mono" aria-hidden="true">Fase {f}</span>
+          <h2 id={`fase-${f}`} class="sr-only">Fase {f} de publicação</h2>
+        </header>
+        <ul class="area-index">
+          {items.map((p) => (
+            <li>
+              <a href={`${base}/${p.slug}/`}>
+                <span class="mono area-index__n">{String(p.num).padStart(2, '0')}</span>
+                <span class="area-index__name">{p.name}</span>
+                <Icon name="arrow" size={18} />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  ))}
+</BaseLayout>

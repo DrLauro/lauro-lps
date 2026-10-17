@@ -1,0 +1,103 @@
+---
+import '@fontsource-variable/public-sans';
+import '@fontsource/ibm-plex-mono/400.css';
+import '@fontsource/ibm-plex-mono/500.css';
+import '@fontsource/dm-serif-display/400.css';
+import '../../docs/02-design/tokens/tokens.css';
+import '../styles/global.css';
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.png';
+import Icon from '../components/Icon.astro';
+import { office } from '../lib/office.mjs';
+
+const { title, description, canonical, area = '', jsonLd } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+// Fora do domínio final (preview no GitHub Pages) a página não pode ser indexada.
+const isProd = Astro.site?.hostname === 'lauro.adv.br';
+const ogImage = new URL(`${base}/og-lauro.jpg`, Astro.site).href;
+const gtm = import.meta.env.PUBLIC_GTM_ID;
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    {!isProd && <meta name="robots" content="noindex, nofollow" />}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="pt_BR" />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <meta name="theme-color" content="#02213F" />
+    <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
+    {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    {gtm && (
+      <script is:inline define:vars={{ gtm }}>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',gtm);
+      </script>
+    )}
+  </head>
+  <body>
+    <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+    <div class="topbar">
+      <div class="container topbar__in">
+        <span>OAB/SP 210.212</span>
+        <span class="topbar__sep" aria-hidden="true"></span>
+        <span>Atendimento 24 horas</span>
+        <span class="topbar__sep topbar__wide" aria-hidden="true"></span>
+        <span class="topbar__wide">Osasco · São Paulo · online em todo o Brasil</span>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container site-header__in">
+        <a href={`${base}/`} class="brand" aria-label="Dr. Lauro de Almeida Neto, advogado criminalista">
+          <Image src={logo} alt="" width={64} loading="eager" class="brand__logo" />
+          <span class="brand__text">
+            <span class="brand__name">Dr. Lauro de Almeida Neto</span>
+            <span class="brand__role">Advogado criminalista</span>
+          </span>
+        </a>
+        <a class="btn btn--ghost site-header__call" href={office.tel} data-track="phone_click" data-area={area}>
+          <Icon name="phone" size={18} /><span class="mono">{office.phoneLabel}</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="conteudo"><slot /></main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__grid">
+        <div>
+          <p class="site-footer__name">Lauro Neto Sociedade Individual de Advocacia</p>
+          <p class="mono site-footer__meta">CNPJ {office.cnpj} · OAB/SP 210.212</p>
+        </div>
+        <ul class="site-footer__contact">
+          <li><Icon name="pin" size={18} /><span>{office.address}</span></li>
+          <li><Icon name="phone" size={18} /><a href={office.tel} class="mono" data-track="phone_click" data-area={area}>{office.phoneLabel}</a></li>
+          <li><Icon name="mail" size={18} /><a href={`mailto:${office.email}`}>{office.email}</a></li>
+        </ul>
+        <ul class="site-footer__social" aria-label="Perfis do Dr. Lauro">
+          {office.profiles.map((p) => <li><a href={p.href} target="_blank" rel="noopener">{p.label}</a></li>)}
+        </ul>
+      </div>
+    </footer>
+
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      document.addEventListener('click', function (e) {
+        var el = e.target.closest('[data-track]');
+        if (!el) return;
+        window.dataLayer.push({
+          event: el.dataset.track,
+          area: el.dataset.area || '',
+          situacao: el.dataset.situacao || '',
+          pagina: location.pathname
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+---
+// Uma rota para as 13 áreas. Conteúdo vem de contexts/*.CONTEXT.md via src/lib/contexts.mjs.
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import portrait from '../assets/dr-lauro.jpg';
+import { pages } from '../lib/contexts.mjs';
+import { office } from '../lib/office.mjs';
+
+export const getStaticPaths = () => pages.map((p) => ({ params: { slug: p.slug }, props: { p } }));
+
+const { p } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const bySlug = Object.fromEntries(pages.map((x) => [`/${x.slug}/`, x]));
+const related = p.links.filter((l) => bySlug[l.path]).map((l) => bySlug[l.path]);
+const [primary, ...others] = p.whatsapp;
+const sections = p.content.filter((b) => b.kind !== 'cases' || b.items.length);
+const wa = (w) => ({ href: w.href, target: '_blank', rel: 'noopener', 'data-track': 'whatsapp_click', 'data-area': p.area, 'data-situacao': w.situacao });
+const call = { href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.area };
+---
+<BaseLayout title={p.title} description={p.description} canonical={p.canonical} area={p.area} jsonLd={p.jsonLd}>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <nav class="crumbs mono" aria-label="Você está em">
+          <a href={`${base}/`}>Áreas de atuação</a><span aria-hidden="true">/</span><span aria-current="page">{p.name}</span>
+        </nav>
+        <div class="ident">
+          <Image src={portrait} alt="" width={96} height={96} class="ident__img" fit="cover" position="top" loading="eager" />
+          <span class="ident__text"><strong>Dr. Lauro de Almeida Neto</strong><span class="mono">OAB/SP 210.212</span></span>
+        </div>
+        <h1>{p.hero.h1}</h1>
+        <p class="hero__lead">{p.hero.text}</p>
+
+        <div class="triage" role="group" aria-labelledby="triage-title">
+          <p id="triage-title" class="label">Qual é a sua situação?</p>
+          <a class="triage__primary" {...wa(primary)}>
+            <Icon name="whatsapp" size={22} /><span>{primary.label}</span><Icon name="arrow" size={18} />
+          </a>
+          <ul class="triage__list">
+            {others.map((w) => (
+              <li><a class="triage__row" {...wa(w)}><Icon name="whatsapp" size={18} /><span>{w.label}</span><Icon name="arrow" size={16} /></a></li>
+            ))}
+            <li><a class="triage__row triage__row--call" {...call}><Icon name="phone" size={18} /><span>Ligar <span class="mono">{office.phoneLabel}</span></span><Icon name="arrow" size={16} /></a></li>
+          </ul>
+        </div>
+      </div>
+      <figure class="hero__photo">
+        <Image src={portrait} alt="Dr. Lauro de Almeida Neto, advogado criminalista, de terno azul-marinho" widths={[360, 450]} sizes="400px" loading="eager" fetchpriority="high" />
+        <figcaption><strong>Dr. Lauro de Almeida Neto</strong><span class="mono">Advogado criminalista · OAB/SP 210.212</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="proof" aria-label="Diferenciais">
+    <ul class="container proof__list">
+      {p.proof.map((item) =>
+        /Google/.test(item) ? (
+          <li><a href={office.googleReviews} target="_blank" rel="noopener"><Icon name="check" size={16} /><span>{item.replace(/\s*\(widget\)\s*$/, '').replace(/\s*5,0\s*/, ' ')}</span></a></li>
+        ) : (
+          <li><Icon name="check" size={16} /><span>{item}</span></li>
+        )
+      )}
+    </ul>
+  </section>
+
+  {sections.map((b, i) => (
+    <section class={`block block--${b.kind}`} aria-labelledby={`s${i + 1}`}>
+      <div class="container block__grid">
+        <header class="block__head">
+          <span class="block__mark mono" aria-hidden="true">§ {i + 1}</span>
+          <h2 id={`s${i + 1}`}>{b.h2}</h2>
+        </header>
+        <div class="block__body">
+          {b.kind === 'prose' && b.items.map((t) => <p>{t}</p>)}
+          {b.kind === 'chips' && <ul class="chips">{b.items.map((t) => <li>{t}</li>)}</ul>}
+          {b.kind === 'list' && (
+            <ul class="checks">{b.items.map((t) => <li><Icon name="check" size={18} /><span>{t}</span></li>)}</ul>
+          )}
+          {b.kind === 'cases' && (
+            <div class="cases">
+              {b.items.map((c, n) => (
+                <article class="case">
+                  <p class="label">Caso {String(n + 1).padStart(2, '0')}</p>
+                  <h3>{c.title}</h3>
+                  <p>{c.text}</p>
+                </article>
+              ))}
+            </div>
+          )}
+          {b.kind === 'faq' && (
+            <div class="faq">
+              {b.items.map((f) => (
+                <details>
+                  <summary><h3>{f.q}</h3><Icon name="plus" size={20} /></summary>
+                  <p>{f.a}</p>
+                </details>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="final" aria-label="Fale com o Dr. Lauro">
+    <div class="container final__in">
+      <p class="final__text">{p.finalCta}</p>
+      <div class="final__actions">
+        <a class="btn btn--primary" {...wa(primary)}><Icon name="whatsapp" size={20} />Falar no WhatsApp</a>
+        <a class="btn btn--on-dark" {...call}><Icon name="phone" size={20} />Ligar <span class="mono">{office.phoneLabel}</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container page-foot">
+    {related.length > 0 && (
+      <nav aria-labelledby="rel-title" class="related">
+        <p id="rel-title" class="label">Áreas relacionadas</p>
+        <ul>{related.map((r) => <li><a href={`${base}/${r.slug}/`}><span>{r.name}</span><Icon name="arrow" size={16} /></a></li>)}</ul>
+      </nav>
+    )}
+    <p class="page-foot__legal">{p.pageFooter}</p>
+  </div>
+
+  <div class="sticky-cta">
+    <a class="btn btn--primary" {...wa(primary)}><Icon name="whatsapp" size={20} />WhatsApp</a>
+    <a class="btn btn--ghost" {...call}><Icon name="phone" size={20} />Ligar</a>
+  </div>
+</BaseLayout>
