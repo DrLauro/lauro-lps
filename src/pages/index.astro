@@ -1,38 +1,174 @@
 ---
-// Índice das 13 áreas. No preview serve de mapa para revisão; em produção vira /especialidades/.
+// Página principal (lauro.adv.br/). Reúne as 13 áreas, os casos dos contextos e a triagem geral.
+// Texto próprio desta página: ainda não está em CONTEXT.md, precisa do ok do Dr. Lauro.
+import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
+import portrait from '../assets/dr-lauro.jpg';
 import { pages } from '../lib/contexts.mjs';
+import { office } from '../lib/office.mjs';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const fases = [1, 2, 3].map((f) => ({ f, items: pages.filter((p) => p.fase === f) }));
+const title = 'Advogado Criminalista em Osasco e SP 24h | Dr. Lauro Neto';
+const description = 'Dr. Lauro de Almeida Neto, advogado criminalista com mais de 23 anos de atuação. Prisão, inquérito, processo e recursos. Atendimento 24h em Osasco, SP e todo o Brasil.';
+const canonical = 'https://lauro.adv.br/';
+
+const situacoes = [
+  'Alguém foi preso agora',
+  'Recebi uma intimação ou estou sendo investigado',
+  'Fui vítima de um crime',
+  'Fui condenado e quero recorrer',
+  'Outra situação',
+];
+const wa = (situacao) => ({
+  href: `https://wa.me/5511970802600?text=${encodeURIComponent(`Olá, Dr. Lauro, vim pelo site: ${situacao[0].toLowerCase() + situacao.slice(1)}.`)}`,
+  target: '_blank', rel: 'noopener', 'data-track': 'whatsapp_click', 'data-area': 'home', 'data-situacao': situacao,
+});
+const call = { href: office.tel, 'data-track': 'phone_click', 'data-area': 'home' };
+const [primary, ...others] = situacoes;
+const geral = wa('Quero falar com o Dr. Lauro');
+
+const passos = [
+  ['Primeiro contato', 'Identificamos o assunto, a urgência, a cidade em que o caso corre e a fase do procedimento.'],
+  ['Análise dos documentos', 'Examinamos o que existe: boletim de ocorrência, intimação, mandado, decisão, denúncia ou sentença.'],
+  ['Estratégia e acompanhamento', 'Você recebe as possibilidades de atuação e as providências iniciais, e é informado de cada decisão relevante.'],
+];
+
+// Um caso por área, das áreas com caso aprovado no contexto; 05 e 06 repetem o mesmo caso.
+const vistos = new Set();
+const casos = pages
+  .map((p) => ({ p, c: p.content.find((b) => b.kind === 'cases')?.items[0] }))
+  .filter(({ c }) => c && !vistos.has(c.title) && vistos.add(c.title))
+  .slice(0, 4);
+
+const [escritorio, advogado] = pages[0].jsonLd['@graph'];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [escritorio, advogado, { '@type': 'WebPage', '@id': canonical, url: canonical, name: title, description, provider: { '@id': escritorio['@id'] } }],
+};
 ---
-<BaseLayout title="Áreas de atuação | Dr. Lauro de Almeida Neto" description="Áreas de atuação do Dr. Lauro de Almeida Neto, advogado criminalista em Osasco e São Paulo.">
-  <section class="hero hero--index">
-    <div class="container">
-      <p class="label">Advocacia criminal · {pages.length} áreas</p>
-      <h1>Áreas de atuação</h1>
+<BaseLayout title={title} description={description} canonical={canonical} area="home" jsonLd={jsonLd}>
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <div class="ident">
+          <Image src={portrait} alt="" width={96} height={96} class="ident__img" fit="cover" position="top" loading="eager" />
+          <span class="ident__text"><strong>Dr. Lauro de Almeida Neto</strong><span class="mono">OAB/SP 210.212</span></span>
+        </div>
+        <h1>Advogado criminalista em Osasco e São Paulo, com atuação em todo o Brasil</h1>
+        <p class="hero__lead">Defesa criminal da delegacia aos tribunais superiores: prisão, inquérito, processo, recursos e execução da pena. Atendimento 24 horas, presencial ou online.</p>
+
+        <div class="triage" role="group" aria-labelledby="triage-title">
+          <p id="triage-title" class="label">Qual é a sua situação?</p>
+          <a class="triage__primary" {...wa(primary)}>
+            <Icon name="whatsapp" size={22} /><span>{primary}</span><Icon name="arrow" size={18} />
+          </a>
+          <ul class="triage__list">
+            {others.map((s) => (
+              <li><a class="triage__row" {...wa(s)}><Icon name="whatsapp" size={18} /><span>{s}</span><Icon name="arrow" size={16} /></a></li>
+            ))}
+            <li><a class="triage__row triage__row--call" {...call}><Icon name="phone" size={18} /><span>Ligar <span class="mono">{office.phoneLabel}</span></span><Icon name="arrow" size={16} /></a></li>
+          </ul>
+        </div>
+      </div>
+      <figure class="hero__photo">
+        <Image src={portrait} alt="Dr. Lauro de Almeida Neto, advogado criminalista, de terno azul-marinho" widths={[360, 450]} sizes="400px" loading="eager" fetchpriority="high" />
+        <figcaption><strong>Dr. Lauro de Almeida Neto</strong><span class="mono">Advogado criminalista · OAB/SP 210.212</span></figcaption>
+      </figure>
     </div>
   </section>
-  {fases.map(({ f, items }) => (
-    <section class="block" aria-labelledby={`fase-${f}`}>
-      <div class="container block__grid">
-        <header class="block__head">
-          <span class="block__mark mono" aria-hidden="true">Fase {f}</span>
-          <h2 id={`fase-${f}`} class="sr-only">Fase {f} de publicação</h2>
-        </header>
-        <ul class="area-index">
-          {items.map((p) => (
-            <li>
-              <a href={`${base}/${p.slug}/`}>
-                <span class="mono area-index__n">{String(p.num).padStart(2, '0')}</span>
-                <span class="area-index__name">{p.name}</span>
-                <Icon name="arrow" size={18} />
-              </a>
-            </li>
-          ))}
-        </ul>
+
+  <section class="proof" aria-label="Diferenciais">
+    <ul class="container proof__list">
+      <li><Icon name="check" size={16} /><span>Mais de 23 anos na área criminal</span></li>
+      <li><Icon name="check" size={16} /><span>Casos de grande repercussão em sigilo</span></li>
+      <li><Icon name="check" size={16} /><span>Atendimento 24 horas</span></li>
+      <li><a href={office.googleReviews} target="_blank" rel="noopener"><Icon name="check" size={16} /><span>Avaliações no Google</span></a></li>
+    </ul>
+  </section>
+
+  <section class="block block--prose" aria-labelledby="s1">
+    <div class="container block__grid">
+      <header class="block__head">
+        <span class="block__mark mono" aria-hidden="true">§ 1</span>
+        <h2 id="s1">Dr. Lauro de Almeida Neto</h2>
+      </header>
+      <div class="block__body">
+        <p>Advogado inscrito na OAB/SP sob o nº 210.212, com mais de 23 anos de atuação concentrada em Direito Penal e Processo Penal.</p>
+        <p>Nesse período, foram milhares de atendimentos, investigações, processos e recursos, em todas as fases do caso criminal: da delegacia ao Superior Tribunal de Justiça.</p>
+        <p>Cada caso é analisado individualmente, a partir dos fatos, dos documentos, das provas e da fase em que está. O atendimento é presencial em Osasco e São Paulo, e online em todo o Brasil.</p>
       </div>
-    </section>
-  ))}
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="s2" id="areas">
+    <div class="container block__grid">
+      <header class="block__head">
+        <span class="block__mark mono" aria-hidden="true">§ 2</span>
+        <h2 id="s2">Áreas de atuação</h2>
+      </header>
+      <ul class="area-index area-index--cols">
+        {pages.map((p) => (
+          <li>
+            <a href={`${base}/${p.slug}/`}>
+              <span class="mono area-index__n">{String(p.num).padStart(2, '0')}</span>
+              <span class="area-index__name">{p.name}</span>
+              <Icon name="arrow" size={18} />
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="s3">
+    <div class="container block__grid">
+      <header class="block__head">
+        <span class="block__mark mono" aria-hidden="true">§ 3</span>
+        <h2 id="s3">Como funciona o atendimento</h2>
+      </header>
+      <ol class="steps block__body">
+        {passos.map(([t, d], i) => (
+          <li>
+            <span class="mono steps__n">{String(i + 1).padStart(2, '0')}</span>
+            <div><h3>{t}</h3><p>{d}</p></div>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="s4">
+    <div class="container block__grid">
+      <header class="block__head">
+        <span class="block__mark mono" aria-hidden="true">§ 4</span>
+        <h2 id="s4">Casos em que atuamos</h2>
+      </header>
+      <div class="cases block__body">
+        {casos.map(({ p, c }) => (
+          <article class="case">
+            <a class="label case__area" href={`${base}/${p.slug}/`}>{p.name}</a>
+            <h3>{c.title}</h3>
+            <p>{c.text}</p>
+          </article>
+        ))}
+        <p class="cases__note">Resultados anteriores não garantem resultado em outros casos. Cada situação depende da análise dos fatos e das provas.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" aria-label="Fale com o Dr. Lauro">
+    <div class="container final__in">
+      <p class="final__text">Se é importante pra você, é importante pra nós.</p>
+      <div class="final__actions">
+        <a class="btn btn--primary" {...geral}><Icon name="whatsapp" size={20} />Falar no WhatsApp</a>
+        <a class="btn btn--on-dark" {...call}><Icon name="phone" size={20} />Ligar <span class="mono">{office.phoneLabel}</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="sticky-cta">
+    <a class="btn btn--primary" {...geral}><Icon name="whatsapp" size={20} />WhatsApp</a>
+    <a class="btn btn--ghost" {...call}><Icon name="phone" size={20} />Ligar</a>
+  </div>
 </BaseLayout>

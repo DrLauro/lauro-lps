@@ -72,3 +72,23 @@ Por página:
 - **06 Golpes** — o prazo de 6 meses da representação está no corpo mas não na chamada final. Proposta: "Golpe, fraude ou conta usada por golpistas? O prazo de 6 meses corre. Fale agora com o Dr. Lauro."
 - **11 Execução penal** — chamada final é a mais fraca das 13. Proposta: "Um cálculo de pena errado pode custar meses de prisão. Peça a conferência ao Dr. Lauro."
 - **12 Recursos** — tornar o prazo concreto: "Condenado? A apelação tem prazo de 5 dias. Fale com o Dr. Lauro."
+
+## Página principal (`/`), criada em 2026-10-19 — copy precisa do ok do Dr. Lauro
+
+Estrutura baseada na home em desenvolvimento por outra desenvolvedora (advcriminalista.marianamoraessites.com), no design system das LPs. O índice das áreas foi para `/especialidades/`, destino do breadcrumb do JSON-LD das LPs.
+
+| Bloco | Texto | Origem |
+|---|---|---|
+| Title | Advogado Criminalista em Osasco e SP 24h \| Dr. Lauro Neto | nosso |
+| H1 | Advogado criminalista em Osasco e São Paulo, com atuação em todo o Brasil | site da outra dev |
+| Lead | Defesa criminal da delegacia aos tribunais superiores… Atendimento 24 horas, presencial ou online. | nosso |
+| Triagem | Alguém foi preso agora · Recebi uma intimação ou estou sendo investigado · Fui vítima de um crime · Fui condenado e quero recorrer · Outra situação · Ligar | nosso (`data-area="home"`) |
+| § 1 Sobre | 3 parágrafos condensados da bio do site da outra dev; "20 anos" trocado por "23 anos" | adaptado |
+| § 2 Áreas | 13 links para as LPs | contextos |
+| § 3 Atendimento | 3 passos condensados do "Como funciona" do site da outra dev | adaptado |
+| § 4 Casos | 1º caso de 4 áreas, mais a ressalva "Resultados anteriores não garantem…" | contextos |
+| Chamada final | Se é importante pra você, é importante pra nós. | site da outra dev |
+
+Fora da home por enquanto:
+- **Depoimentos do Google:** dependem do widget Trustindex, porque nota e avaliações não podem ser digitadas à mão.
+- **Blog:** não há artigos próprios. Os do Jusbrasil ficam no link do perfil, no rodapé.
