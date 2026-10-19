@@ -43,7 +43,11 @@ Levantado em 2026-10-19 sobre o artigo 7605115884 (HC no TJSP, prisão preventiv
 | "Informações relacionadas" | rodapé | — | — | descartar (conteúdo de terceiros) |
 | Publisher, breadcrumb, logo | JSON-LD | — | — | descartar; o blog usa o JSON-LD do escritório |
 
-## Decisão pendente (Lucas / Dr. Lauro)
+## Decisão (2026-10-19)
+
+Lucas escolheu a **opção B** com editor Decap (ou compatível). Dr. Lauro aprova manter número de processo, vara e relator nos artigos e manter os posts não criminais. Hospedagem de produção: ver `docs/07-operacoes/deploy-e-ambientes.md`.
+
+### Opções avaliadas
 
 | Opção | Como | Prós | Contras |
 |---|---|---|---|
