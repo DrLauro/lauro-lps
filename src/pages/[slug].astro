@@ -3,7 +3,8 @@
 import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
-import portrait from '../assets/dr-lauro.jpg';
+import portrait from '../assets/dr-lauro.png';
+import avatar from '../assets/dr-lauro-avatar.png';
 import { pages } from '../lib/contexts.mjs';
 import { office } from '../lib/office.mjs';
 
@@ -26,7 +27,7 @@ const call = { href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.a
           <a href={`${base}/especialidades/`}>Áreas de atuação</a><span aria-hidden="true">/</span><span aria-current="page">{p.name}</span>
         </nav>
         <div class="ident">
-          <Image src={portrait} alt="" width={96} height={96} class="ident__img" fit="cover" position="top" loading="eager" />
+          <Image src={avatar} alt="" width={96} height={96} class="ident__img" loading="eager" />
           <span class="ident__text"><strong>Dr. Lauro de Almeida Neto</strong><span class="mono">OAB/SP 210.212</span></span>
         </div>
         <h1>{p.hero.h1}</h1>

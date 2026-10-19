@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Rebuild a cada 6 h para puxar publicações novas do Jusbrasil (src/lib/jusbrasil.mjs).
+  schedule:
+    - cron: "17 */6 * * *"
 
 permissions:
   contents: read

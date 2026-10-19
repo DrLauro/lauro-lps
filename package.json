@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "node scripts/check-contexts.mjs"
+    "check": "node scripts/check-contexts.mjs && node scripts/check-jusbrasil.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

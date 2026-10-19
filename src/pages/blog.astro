@@ -1,0 +1,19 @@
+---
+// Todas as publicações do Dr. Lauro no Jusbrasil, atualizadas a cada build.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Posts from '../components/Posts.astro';
+import { loadPosts } from '../lib/jusbrasil.mjs';
+
+const posts = await loadPosts();
+---
+<BaseLayout title="Artigos e decisões | Dr. Lauro de Almeida Neto" description="Artigos do Dr. Lauro de Almeida Neto, advogado criminalista, sobre prisão, provas, habeas corpus, recursos e decisões dos tribunais." canonical="https://lauro.adv.br/blog/" area="blog">
+  <section class="hero hero--index">
+    <div class="container">
+      <p class="label">Publicado no Jusbrasil · {posts.length} artigos</p>
+      <h1>Artigos e decisões</h1>
+    </div>
+  </section>
+  <section class="block">
+    <div class="container"><Posts posts={posts} /></div>
+  </section>
+</BaseLayout>
