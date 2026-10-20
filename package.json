@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "check": "node scripts/check-contexts.mjs"
+    "check": "node scripts/check-contexts.mjs",
+    "copys": "astro build && node scripts/gerar-copys.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",
