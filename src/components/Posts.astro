@@ -1,5 +1,5 @@
 ---
-// Lista de publicações do Jusbrasil (src/lib/jusbrasil.mjs). Cada item abre o artigo original.
+// Lista de artigos (src/lib/posts.mjs). Os do site abrem aqui; os antigos abrem no Jusbrasil.
 import Icon from './Icon.astro';
 const { posts } = Astro.props;
 const fmt = (iso) => new Date(iso).toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' });
@@ -7,11 +7,11 @@ const fmt = (iso) => new Date(iso).toLocaleDateString('pt-BR', { timeZone: 'Amer
 <ul class="posts">
   {posts.map((p) => (
     <li>
-      <a href={p.url} target="_blank" rel="noopener" data-track="blog_click" data-area="blog">
+      <a href={p.url} {...(p.external && { target: '_blank', rel: 'noopener' })} data-track="blog_click" data-area="blog">
         <time class="mono label" datetime={p.date}>{fmt(p.date)}</time>
         <h3>{p.title}</h3>
         <p>{p.excerpt}</p>
-        <span class="posts__more">Ler no Jusbrasil <Icon name="arrow" size={16} /></span>
+        <span class="posts__more">{p.external ? 'Ler no Jusbrasil' : 'Ler artigo'} <Icon name="arrow" size={16} /></span>
       </a>
     </li>
   ))}

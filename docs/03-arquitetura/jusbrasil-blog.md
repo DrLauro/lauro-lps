@@ -47,6 +47,13 @@ Levantado em 2026-10-19 sobre o artigo 7605115884 (HC no TJSP, prisão preventiv
 
 Lucas escolheu a **opção B** com editor Decap (ou compatível). Dr. Lauro aprova manter número de processo, vara e relator nos artigos e manter os posts não criminais. Hospedagem de produção: ver `docs/07-operacoes/deploy-e-ambientes.md`.
 
+### Como ficou (2026-10-20)
+
+- Editor: **Sveltia CMS** (mesma configuração do Decap) em `/admin` (`public/admin/`). Login pelo GitHub, via Worker `sveltia-cms-auth` em `auth.lauro.adv.br`.
+- Cada artigo é um `.md` em `src/content/blog/` (schema em `src/content.config.mjs`). Imagens vão para `public/blog/img/`, convertidas para WebP de até 1600 px no upload.
+- Salvar no editor faz commit, e o commit dispara build e deploy. Não há mais build agendado.
+- O RSS do Jusbrasil deixou de ser lido. Os 11 artigos antigos ficam fixos em `src/data/jusbrasil.json`, como links. A API `/api/jusbrasil.json` foi removida.
+
 ### Opções avaliadas
 
 | Opção | Como | Prós | Contras |

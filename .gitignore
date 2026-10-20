@@ -4,3 +4,4 @@ dist/
 .playwright-mcp/
 .env
 tmp-critique/
+.env.*

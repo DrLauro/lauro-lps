@@ -76,7 +76,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .hero__copy { padding-bottom: var(--s-16); }
 }
 .crumbs { display: flex; flex-wrap: wrap; gap: var(--s-2); font-size: var(--fs-xs); color: var(--text-subtle); margin-bottom: var(--s-6); }
-.crumbs a { color: var(--text-subtle); }
+.crumbs a { color: var(--text-subtle); padding-block: var(--s-2); }
 .crumbs [aria-current] { color: var(--navy-700); }
 .ident { display: flex; align-items: center; gap: var(--s-3); margin-bottom: var(--s-4); }
 .ident__img { width: var(--s-12); height: var(--s-12); border-radius: 50%; object-fit: cover; object-position: top; border: 1px solid var(--border-strong); background: var(--navy-100); }
@@ -275,3 +275,25 @@ body:has(.sticky-cta) { padding-bottom: calc(var(--s-16) + var(--s-2)); }
 .posts a:hover h3, .posts a:hover .posts__more { color: var(--navy-500); text-decoration: underline; text-underline-offset: .2em; }
 .posts__all { margin-top: var(--s-8); }
 .block .posts p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+
+/* Artigo do blog (src/pages/blog/[slug].astro) */
+.article__head h1 { max-width: 28ch; }
+.article__by { margin-top: var(--s-6); font-size: var(--fs-sm); color: var(--text-muted); }
+.article__by .mono { font-size: var(--fs-xs); color: var(--text-subtle); }
+.article__body { max-width: var(--measure); }
+.article__cover { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--border); border-radius: var(--radius-md); margin-bottom: var(--s-8); }
+.prose { color: var(--text); font-size: var(--fs-base); }
+@media (min-width: 768px) { .prose { font-size: var(--fs-md); } }
+.prose > * + * { margin-top: var(--s-4); }
+.prose h2, .prose h3 { font-family: var(--font-display); font-weight: var(--fw-regular); line-height: var(--lh-tight); color: var(--navy-700); margin-top: var(--s-12); text-wrap: balance; }
+.prose h2 { font-size: var(--fs-lg); }
+.prose h3 { font-size: var(--fs-md); margin-top: var(--s-8); }
+.prose ul, .prose ol { padding-left: var(--s-6); }
+.prose ul { list-style: disc; }
+.prose ol { list-style: decimal; }
+.prose li + li { margin-top: var(--s-2); }
+.prose a { color: var(--navy-500); text-underline-offset: .2em; }
+.prose blockquote { padding-left: var(--s-4); border-left: 2px solid var(--gold-500); color: var(--text-muted); }
+.prose img { border: 1px solid var(--border); border-radius: var(--radius-md); }
+.prose hr { border: 0; border-top: 1px solid var(--border); margin-block: var(--s-8); }
+.prose strong { font-weight: var(--fw-bold); }

@@ -1,0 +1,51 @@
+# Editor do blog (Sveltia CMS, mesmo formato do Decap CMS).
+# Cada artigo salvo vira um commit em src/content/blog/ e dispara o build e o deploy.
+# Os campos precisam bater com o schema de src/content.config.mjs.
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms@0.233.0/schema/sveltia-cms.json
+backend:
+  name: github
+  repo: lcoutinho7/lauro-lps
+  branch: main
+  base_url: https://auth.lauro.adv.br
+  commit_messages:
+    create: "blog: novo artigo {{slug}}"
+    update: "blog: atualiza {{slug}}"
+    delete: "blog: remove {{slug}}"
+    uploadMedia: "blog: envia {{path}}"
+    deleteMedia: "blog: remove {{path}}"
+
+site_url: https://lauro.adv.br
+media_folder: public/blog/img
+public_folder: /blog/img
+
+# Fotos enviadas viram WebP de no máximo 1600 px: a página não fica pesada.
+media_libraries:
+  default:
+    config:
+      transformations:
+        raster_image:
+          format: webp
+          quality: 85
+          width: 1600
+          height: 1600
+
+collections:
+  - name: blog
+    label: Artigos
+    label_singular: Artigo
+    folder: src/content/blog
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} · {{date | date('DD/MM/YYYY')}}"
+    sortable_fields: [date, title]
+    preview_path: "blog/{{slug}}/"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - label: Resumo
+        name: description
+        widget: text
+        hint: Uma ou duas frases. Aparece na lista de artigos e no resultado do Google.
+      - { label: Data de publicação, name: date, widget: datetime }
+      - { label: Imagem de capa, name: cover, widget: image, required: false, hint: "Horizontal, de preferência 1200 × 675." }
+      - { label: Descrição da imagem, name: cover_alt, widget: string, required: false, hint: "Para leitores de tela. Ex.: Fachada do Tribunal de Justiça de São Paulo." }
+      - { label: Texto, name: body, widget: markdown }

@@ -1,0 +1,71 @@
+---
+// Página de um artigo escrito no site (src/content/blog/<slug>.md, editado em /admin).
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Icon from '../../components/Icon.astro';
+import { office } from '../../lib/office.mjs';
+import { pages } from '../../lib/contexts.mjs';
+
+export const getStaticPaths = async () =>
+  (await getCollection('blog')).map((post) => ({ params: { slug: post.id }, props: { post } }));
+
+const { post } = Astro.props;
+const { title, description, date, cover, cover_alt } = post.data;
+const { Content } = await render(post);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const canonical = `https://lauro.adv.br/blog/${post.id}/`;
+const dia = date.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo', day: 'numeric', month: 'long', year: 'numeric' });
+
+const wa = {
+  href: `https://wa.me/5511970802600?text=${encodeURIComponent(`Olá, Dr. Lauro, li o artigo "${title}" e quero falar sobre o meu caso.`)}`,
+  target: '_blank', rel: 'noopener', 'data-track': 'whatsapp_click', 'data-area': 'blog', 'data-situacao': title,
+};
+const call = { href: office.tel, 'data-track': 'phone_click', 'data-area': 'blog' };
+
+const [escritorio, advogado] = pages[0].jsonLd['@graph'];
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [escritorio, advogado, {
+    '@type': 'BlogPosting', '@id': canonical, url: canonical, headline: title, description,
+    datePublished: date.toISOString(), inLanguage: 'pt-BR',
+    ...(cover && { image: new URL(cover, 'https://lauro.adv.br').href }),
+    author: { '@id': advogado['@id'] }, publisher: { '@id': escritorio['@id'] },
+  }],
+};
+---
+<BaseLayout title={`${title} | Dr. Lauro Neto`} description={description} canonical={canonical} area="blog" jsonLd={jsonLd}>
+  <article>
+    <header class="hero hero--index">
+      <div class="container article__head">
+        <nav class="crumbs mono" aria-label="Você está em">
+          <a href={`${base}/blog/`}>Artigos</a><span aria-hidden="true">/</span><time datetime={date.toISOString()}>{dia}</time>
+        </nav>
+        <h1>{title}</h1>
+        <p class="hero__lead">{description}</p>
+        <p class="article__by">Por <strong>Dr. Lauro de Almeida Neto</strong> <span class="mono">· OAB/SP 210.212</span></p>
+      </div>
+    </header>
+    <div class="block">
+      <div class="container"><div class="article__body">
+        {cover && <img class="article__cover" src={`${base}${cover}`} alt={cover_alt ?? ''} width="1200" height="675" decoding="async" />}
+        <div class="prose"><Content /></div>
+        <a class="btn btn--ghost posts__all" href={`${base}/blog/`}>Ver todos os artigos<Icon name="arrow" size={18} /></a></div>
+      </div>
+    </div>
+  </article>
+
+  <section class="final" aria-label="Fale com o Dr. Lauro">
+    <div class="container final__in">
+      <p class="final__text">Tem uma situação parecida? Fale com o Dr. Lauro.</p>
+      <div class="final__actions">
+        <a class="btn btn--primary" {...wa}><Icon name="whatsapp" size={20} />Falar no WhatsApp</a>
+        <a class="btn btn--on-dark" {...call}><Icon name="phone" size={20} />Ligar <span class="mono">{office.phoneLabel}</span></a>
+      </div>
+    </div>
+  </section>
+
+  <div class="sticky-cta">
+    <a class="btn btn--primary" {...wa}><Icon name="whatsapp" size={20} />WhatsApp</a>
+    <a class="btn btn--ghost" {...call}><Icon name="phone" size={20} />Ligar</a>
+  </div>
+</BaseLayout>
