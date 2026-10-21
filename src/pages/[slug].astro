@@ -1,5 +1,5 @@
 ---
-// Uma rota para as 13 áreas. Conteúdo vem de contexts/*.CONTEXT.md via src/lib/contexts.mjs.
+// Uma rota para cada área. Conteúdo vem de contexts/*.CONTEXT.md via src/lib/contexts.mjs.
 import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
@@ -66,6 +66,12 @@ const call = { href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.a
         <div class="block__body">
           {b.kind === 'prose' && b.items.map((t) => <p>{t}</p>)}
           {b.kind === 'chips' && <ul class="chips">{b.items.map((t) => <li>{t}</li>)}</ul>}
+          {b.kind === 'links' && (
+            <div class="related">
+              {b.intro.map((t) => <p>{t}</p>)}
+              <ul>{b.items.filter((l) => bySlug[l.path]).map((l) => <li><a href={`${base}${l.path}`}><span>{l.label}</span><Icon name="arrow" size={16} /></a></li>)}</ul>
+            </div>
+          )}
           {b.kind === 'list' && (
             <ul class="checks">{b.items.map((t) => <li><Icon name="check" size={18} /><span>{t}</span></li>)}</ul>
           )}

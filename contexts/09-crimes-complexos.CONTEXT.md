@@ -37,7 +37,7 @@ Este arquivo é a especificação completa da página. O texto da seção 5 é f
 ## 4. SEO
 
 - `<title>`: Advogado para Crimes Complexos e Operações Policiais | SP (57 caracteres)
-- `<meta name="description">`: Operações policiais, organização criminosa, lavagem de dinheiro, crimes empresariais e casos de grande repercussão. Defesa em sigilo, 24h. (138 caracteres)
+- `<meta name="description">`: Operações policiais, organização criminosa, investigações com múltiplos investigados e casos de grande repercussão. Defesa em sigilo, 24 horas. (139 caracteres)
 - Canonical: `https://lauro.adv.br/crimes-complexos/`
 - H1 (único na página): Crimes complexos e de grande repercussão: defesa conduzida em sigilo
 - Palavra-chave principal: advogado operação policial
@@ -49,7 +49,7 @@ Este arquivo é a especificação completa da página. O texto da seção 5 é f
 
 ### 5.1 Hero
 - H1: Crimes complexos e de grande repercussão: defesa conduzida em sigilo
-- Texto: Operações policiais, acusações com vários réus, organização criminosa, lavagem de dinheiro, extorsão e crimes empresariais exigem leitura minuciosa de interceptações, mensagens e provas apreendidas. O Dr. Lauro de Almeida Neto atua há mais de 23 anos nesses processos, incluindo casos de grande repercussão, sempre com sigilo absoluto.
+- Texto: Operações policiais, organizações criminosas, investigações com vários investigados e processos de grande repercussão exigem leitura minuciosa de interceptações, mensagens e provas apreendidas. O Dr. Lauro de Almeida Neto atua há mais de 23 anos nesses processos, sempre com sigilo absoluto.
 - Logo abaixo: os botões de triagem da seção 6 e o botão Ligar.
 
 ### 5.2 Faixa de prova (ProofBar)
@@ -61,9 +61,23 @@ Atuamos desde a deflagração da operação: acompanhamento da busca e apreensã
 No processo, exigimos a individualização da conduta de cada acusado, contestamos provas obtidas de forma ilegal e avaliamos, quando for do interesse do cliente, o acordo de não persecução penal e a colaboração premiada.
 
 ### 5.4 H2: Serviços nesta área
-Organização criminosa e associação criminosa, lavagem de dinheiro, crimes econômicos, financeiros, tributários e empresariais, corrupção ativa e passiva, peculato, concussão, prevaricação e demais crimes contra a administração pública, crimes contra a fé pública, falsidade ideológica, falsificação e uso de documento falso, extorsão e extorsão mediante sequestro, investigações e processos com vários investigados, investigações financeiras e patrimoniais, busca e apreensão de documentos e dispositivos, acordo de não persecução penal e colaboração premiada.
+- Organização criminosa e associação criminosa
+- Operações policiais e deflagração de investigações
+- Investigações e processos com vários investigados
+- Interceptações telefônicas e telemáticas
+- Busca e apreensão de documentos e dispositivos
+- Extorsão e extorsão mediante sequestro
+- Crimes contra a fé pública, falsidade ideológica, falsificação e uso de documento falso
+- Casos de repercussão pública e exposição na imprensa
+- Acordo de não persecução penal e colaboração premiada
 
-Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
+### 5.4.1 H2: Áreas especializadas relacionadas
+Casos complexos frequentemente envolvem matérias que têm página própria:
+- Crimes Econômicos e Financeiros: `/crimes-economicos-e-financeiros/`
+- Crimes Contra a Administração Pública: `/crimes-contra-a-administracao-publica/`
+- Crimes Tributários: `/crimes-tributarios/`
+
+Exibir somente os links das páginas já publicadas. (Ajuste de 2026-10-21, aplicado junto com a publicação das páginas 15, 16 e 19.)
 
 ### 5.5 H2: O que analisamos em todo caso
 - Legalidade das interceptações, buscas e apreensões.
@@ -196,7 +210,7 @@ Inserir no `<head>` pelo componente `JsonLd`. O texto do FAQ precisa ser idênti
       "@id": "https://lauro.adv.br/crimes-complexos/",
       "url": "https://lauro.adv.br/crimes-complexos/",
       "name": "Advogado para Crimes Complexos e Operações Policiais | SP",
-      "description": "Operações policiais, organização criminosa, lavagem de dinheiro, crimes empresariais e casos de grande repercussão. Defesa em sigilo, 24h.",
+      "description": "Operações policiais, organização criminosa, investigações com múltiplos investigados e casos de grande repercussão. Defesa em sigilo, 24 horas.",
       "about": "Crimes Complexos e de Grande Repercussão",
       "provider": {
         "@id": "https://lauro.adv.br/#escritorio"

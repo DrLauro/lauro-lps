@@ -8,7 +8,7 @@ const DIR = join(process.cwd(), 'contexts');
 const CARDS = JSON.parse(readFileSync(join(process.cwd(), 'src/data/cards-areas.json'), 'utf8'));
 
 // Linhas do contexto que são instrução para o dev, não texto da página.
-const INSTRUCAO = [/^Exibir como/, /^Sem nome de cliente/, /^Botões:/, /^- Logo abaixo:/];
+const INSTRUCAO = [/^Exibir como/, /^Exibir somente/, /^Sem nome de cliente/, /^Botões:/, /^- Logo abaixo:/];
 
 const section = (md, n) => {
   const m = md.match(new RegExp(`^## ${n}\\. [^\\n]*\\n([\\s\\S]*?)(?=^## \\d+\\. |(?![\\s\\S]))`, 'm'));
@@ -57,7 +57,15 @@ function parseBlock(heading, body) {
     return { kind: 'faq', h2, items };
   }
   if (/Serviços nesta área/.test(heading)) {
-    return { kind: 'chips', h2, items: kept.flatMap(chips) };
+    // Frase corrida vira etiquetas; lista com "- " já vem item a item.
+    const items = kept.every((l) => l.startsWith('- ')) ? kept.map((l) => l.slice(2)) : kept.flatMap(chips);
+    return { kind: 'chips', h2, items };
+  }
+  // "- Nome: `/caminho/`": links para outras áreas (a página exibe só os já publicados).
+  const linkRe = /^- (.+?): `(\/[^`]+\/)`$/;
+  if (kept.some((l) => linkRe.test(l))) {
+    const items = kept.filter((l) => linkRe.test(l)).map((l) => l.match(linkRe)).map(([, label, path]) => ({ label, path }));
+    return { kind: 'links', h2, intro: kept.filter((l) => !linkRe.test(l)), items };
   }
   if (kept.every((l) => l.startsWith('- '))) {
     return { kind: 'list', h2, items: kept.map((l) => l.slice(2)) };
@@ -69,18 +77,21 @@ export function parseContext(file) {
   const md = readFileSync(join(DIR, file), 'utf8').replace(/\r\n/g, '\n');
   const [, num, slug] = file.match(/^(\d+)-(.+)\.CONTEXT\.md$/);
   const name = md.match(/^# .*Página "(.+?)"/m)[1];
-  const fase = Number(md.match(/Fase de publicação: (\d+)/)[1]);
 
   const seo = section(md, 4);
   const s5 = section(md, 5);
   const blocks = {};
-  for (const m of s5.matchAll(/^### 5\.(\d) (.+)\n([\s\S]*?)(?=^### 5\.|(?![\s\S]))/gm)) {
+  for (const m of s5.matchAll(/^### 5\.(\d+(?:\.\d+)?) (.+)\n([\s\S]*?)(?=^### 5\.|(?![\s\S]))/gm)) {
     blocks[m[1]] = { heading: m[2].trim(), body: m[3] };
   }
 
   const hero = { h1: field(blocks[1].body, 'H1'), text: field(blocks[1].body, 'Texto') };
-  const proof = blocks[2].body.trim().split(' · ');
-  const content = ['3', '4', '5', '6', '7'].map((k) => parseBlock(blocks[k].heading, blocks[k].body));
+  // Páginas 14–20 trazem instrução antes dos destaques ("Cinco destaques...: ") e "(link atual)" no fim.
+  const proof = blocks[2].body.trim().replace(/^[^·]*?:\s+/, '').split(' · ').map((s) => s.replace(/\s*\(link atual\)$/, ''));
+  // Blocos de conteúdo: 5.3 a 5.7, incluindo subnúmeros como 5.4.1, na ordem.
+  const content = Object.keys(blocks).filter((k) => k >= 3 && k < 8)
+    .sort((a, b) => a.localeCompare(b, 'en', { numeric: true }))
+    .map((k) => parseBlock(blocks[k].heading, blocks[k].body));
   const finalCta = blocks[8].body.split('\n').find((l) => l.trim() && !l.startsWith('Botões:')).trim();
   const pageFooter = blocks[9].body.trim();
 
@@ -99,7 +110,6 @@ export function parseContext(file) {
     num: Number(num),
     slug,
     name,
-    fase,
     card: { title: CARDS[Number(num)]?.titulo ?? name, text: CARDS[Number(num)]?.descricao ?? '' },
     title: stripCount(field(seo, '`<title>`')),
     description: stripCount(field(seo, '`<meta name="description">`')),

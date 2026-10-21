@@ -3,15 +3,15 @@
 import assert from 'node:assert/strict';
 import { pages } from '../src/lib/contexts.mjs';
 
-assert.equal(pages.length, 13, '13 páginas');
+assert.equal(pages.length, 20, '20 páginas');
 for (const p of pages) {
   const at = (msg) => `${p.slug}: ${msg}`;
   assert.equal(p.hero.h1, p.h1, at('H1 do hero ≠ H1 da seção 4'));
   assert.equal(p.canonical, `https://lauro.adv.br/${p.slug}/`, at('canonical'));
   assert.ok(p.whatsapp.length >= 3 && p.phone?.href === 'tel:+5511970802600', at('triagem'));
   assert.ok(p.whatsapp.every((w) => w.href.startsWith('https://wa.me/5511970802600?text=')), at('link wa'));
-  assert.equal(p.proof.length, 5, at('proof bar'));
-  assert.deepEqual(p.content.map((b) => b.kind).filter((k) => k !== 'list' && k !== 'prose'), ['chips', 'cases', 'faq'], at('blocos'));
+  assert.deepEqual(p.proof, pages[0].proof, at('proof bar'));
+  assert.deepEqual(p.content.map((b) => b.kind).filter((k) => !['list', 'prose', 'links'].includes(k)), ['chips', 'cases', 'faq'], at('blocos'));
 
   const graph = p.jsonLd['@graph'];
   const page = graph.find((n) => n['@type'] === 'WebPage');
