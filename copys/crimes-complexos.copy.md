@@ -5,7 +5,7 @@ URL: https://lauro.adv.br/crimes-complexos/
 ## SEO
 
 - **Title:** Advogado para Crimes Complexos e Operações Policiais | SP
-- **Meta description:** Operações policiais, organização criminosa, lavagem de dinheiro, crimes empresariais e casos de grande repercussão. Defesa em sigilo, 24h.
+- **Meta description:** Operações policiais, organização criminosa, investigações com múltiplos investigados e casos de grande repercussão. Defesa em sigilo, 24 horas.
 
 ## Conteúdo da página
 
@@ -14,7 +14,7 @@ Dr. Lauro de Almeida Neto OAB/SP 210.212
 
 # Crimes complexos e de grande repercussão: defesa conduzida em sigilo
 
-Operações policiais, acusações com vários réus, organização criminosa, lavagem de dinheiro, extorsão e crimes empresariais exigem leitura minuciosa de interceptações, mensagens e provas apreendidas. O Dr. Lauro de Almeida Neto atua há mais de 23 anos nesses processos, incluindo casos de grande repercussão, sempre com sigilo absoluto.
+Operações policiais, organizações criminosas, investigações com vários investigados e processos de grande repercussão exigem leitura minuciosa de interceptações, mensagens e provas apreendidas. O Dr. Lauro de Almeida Neto atua há mais de 23 anos nesses processos, sempre com sigilo absoluto.
 
 Qual é a sua situação?
 [Fui alvo de operação ou busca] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes Complexos e de Grande Repercussão): fui alvo de operação ou busca e apreensão.")
@@ -40,22 +40,21 @@ No processo, exigimos a individualização da conduta de cada acusado, contestam
 
 ## Serviços nesta área
 - Organização criminosa e associação criminosa
-- Lavagem de dinheiro
-- Crimes econômicos
-- Financeiros
-- Tributários e empresariais
-- Corrupção ativa e passiva
-- Peculato
-- Concussão
-- Prevaricação e demais crimes contra a administração pública
-- Crimes contra a fé pública
-- Falsidade ideológica
-- Falsificação e uso de documento falso
-- Extorsão e extorsão mediante sequestro
+- Operações policiais e deflagração de investigações
 - Investigações e processos com vários investigados
-- Investigações financeiras e patrimoniais
+- Interceptações telefônicas e telemáticas
 - Busca e apreensão de documentos e dispositivos
+- Extorsão e extorsão mediante sequestro
+- Crimes contra a fé pública, falsidade ideológica, falsificação e uso de documento falso
+- Casos de repercussão pública e exposição na imprensa
 - Acordo de não persecução penal e colaboração premiada
+
+## Áreas especializadas relacionadas
+
+Casos complexos frequentemente envolvem matérias que têm página própria:
+- [Crimes Econômicos e Financeiros](/crimes-economicos-e-financeiros/)
+- [Crimes Contra a Administração Pública](/crimes-contra-a-administracao-publica/)
+- [Crimes Tributários](/crimes-tributarios/)
 
 ## O que analisamos em todo caso
 - Legalidade das interceptações, buscas e apreensões.

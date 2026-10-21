@@ -54,13 +54,13 @@ Cada caso é analisado individualmente, considerando os fatos, os documentos, as
 - [11 Execução Penal](/execucao-penal/)
 - [12 Recursos Criminais e Revisão Criminal](/recursos-e-revisao-criminal/)
 - [13 Crimes Patrimoniais](/crimes-patrimoniais/)
-- [14 Crimes de Trânsito] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes de Trânsito.")
-- [15 Crimes Econômicos e Financeiros] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes Econômicos e Financeiros.")
-- [16 Crimes Contra a Administração Pública] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes Contra a Administração Pública.")
-- [17 Crimes de Armas de Fogo] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes de Armas de Fogo.")
-- [18 Crimes Ambientais] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes Ambientais.")
-- [19 Crimes Tributários] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes Tributários.")
-- [20 Sou Vítima de um Crime] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Sou Vítima de um Crime.")
+- [14 Crimes de Trânsito](/crimes-de-transito/)
+- [15 Crimes Econômicos e Financeiros](/crimes-economicos-e-financeiros/)
+- [16 Crimes Contra a Administração Pública](/crimes-contra-a-administracao-publica/)
+- [17 Crimes de Armas de Fogo](/crimes-de-armas-de-fogo/)
+- [18 Crimes Ambientais](/crimes-ambientais/)
+- [19 Crimes Tributários](/crimes-tributarios/)
+- [20 Sou Vítima de um Crime](/sou-vitima/)
 
 ## Como funciona o atendimento
 - 01
