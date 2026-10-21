@@ -308,5 +308,5 @@ body:has(.sticky-cta) { padding-bottom: calc(var(--s-16) + var(--s-2)); }
 .final__copy { display: grid; gap: var(--s-4); }
 .final__sub { max-width: 56ch; color: var(--navy-100); }
 .final__close { font: var(--fs-md)/var(--lh-tight) var(--font-display); color: var(--gold-300); }
-.area-index--desc a { padding-block: var(--s-4); }
+.area-index--desc a { padding-block: var(--s-4); align-items: start; }
 .area-index__desc { display: block; margin-top: var(--s-1); max-width: var(--measure); font-size: var(--fs-base); color: var(--text-muted); }

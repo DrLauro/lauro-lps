@@ -1,5 +1,5 @@
 ---
-// Página principal (lauro.adv.br/). Reúne as 13 áreas, os casos dos contextos e a triagem geral.
+// Página principal (lauro.adv.br/). Reúne as áreas, os casos dos contextos e a triagem geral.
 // Texto próprio desta página: ainda não está em CONTEXT.md, precisa do ok do Dr. Lauro.
 import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -7,7 +7,7 @@ import Icon from '../components/Icon.astro';
 import Proof from '../components/Proof.astro';
 import portrait from '../assets/dr-lauro.png';
 import avatar from '../assets/dr-lauro-avatar.png';
-import { pages } from '../lib/contexts.mjs';
+import { pages, cards as areas, cardLink } from '../lib/contexts.mjs';
 import { office } from '../lib/office.mjs';
 import jusbrasil from '../data/jusbrasil.json';
 
@@ -121,12 +121,12 @@ const jsonLd = {
         <h2 id="s2">Áreas de atuação</h2>
       </header>
       <ul class="area-index area-index--cols">
-        {pages.map((p) => (
+        {areas.map((c) => (
           <li>
-            <a href={`${base}/${p.slug}/`}>
-              <span class="mono area-index__n">{String(p.num).padStart(2, '0')}</span>
-              <span class="area-index__name">{p.card.title}</span>
-              <Icon name="arrow" size={18} />
+            <a {...cardLink(c, base)}>
+              <span class="mono area-index__n">{String(c.num).padStart(2, '0')}</span>
+              <span class="area-index__name">{c.title}</span>
+              <Icon name={c.slug ? 'arrow' : 'whatsapp'} size={18} />
             </a>
           </li>
         ))}

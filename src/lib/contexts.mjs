@@ -123,3 +123,13 @@ export const pages = readdirSync(DIR)
   .filter((f) => f.endsWith('.CONTEXT.md'))
   .sort()
   .map(parseContext);
+
+// Cards da seção "Áreas de Atuação": todos os números de cards-areas.json; slug só quando a página existe.
+// Sem página (14–20), o card abre o WhatsApp com a área na mensagem, no padrão da triagem da home.
+export const cards = Object.keys(CARDS).filter((k) => !k.startsWith('_')).map(Number).sort((a, b) => a - b)
+  .map((num) => ({ num, slug: pages.find((p) => p.num === num)?.slug, title: CARDS[num].titulo, text: CARDS[num].descricao }));
+
+export const cardLink = (c, base) => c.slug
+  ? { href: `${base}/${c.slug}/` }
+  : { href: `https://wa.me/5511970802600?text=${encodeURIComponent(`Olá, Dr. Lauro, vim pelo site: ${c.title}.`)}`,
+      target: '_blank', rel: 'noopener', 'data-track': 'whatsapp_click', 'data-area': `card-${c.num}` };

@@ -2,29 +2,29 @@
 // Índice das áreas (/especialidades/, destino do breadcrumb das LPs). Card: src/data/cards-areas.json.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
-import { pages } from '../lib/contexts.mjs';
+import { cards, cardLink } from '../lib/contexts.mjs';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 <BaseLayout title="Áreas de atuação | Dr. Lauro de Almeida Neto" description="Áreas de atuação do Dr. Lauro de Almeida Neto, advogado criminalista em Osasco e São Paulo.">
   <section class="hero hero--index">
     <div class="container">
-      <p class="label">Advocacia criminal · {pages.length} áreas</p>
+      <p class="label">Advocacia criminal · {cards.length} áreas</p>
       <h1>Áreas de atuação</h1>
     </div>
   </section>
   <section class="block">
     <div class="container">
       <ul class="area-index area-index--desc">
-        {pages.map((p) => (
+        {cards.map((c) => (
           <li>
-            <a href={`${base}/${p.slug}/`}>
-              <span class="mono area-index__n">{String(p.num).padStart(2, '0')}</span>
+            <a {...cardLink(c, base)}>
+              <span class="mono area-index__n">{String(c.num).padStart(2, '0')}</span>
               <span>
-                <span class="area-index__name">{p.card.title}</span>
-                {p.card.text && <span class="area-index__desc">{p.card.text}</span>}
+                <span class="area-index__name">{c.title}</span>
+                {c.text && <span class="area-index__desc">{c.text}</span>}
               </span>
-              <Icon name="arrow" size={18} />
+              <Icon name={c.slug ? 'arrow' : 'whatsapp'} size={18} />
             </a>
           </li>
         ))}

@@ -47,13 +47,20 @@ Cada caso é analisado individualmente, considerando os fatos, os documentos, as
 - [04 Lei Maria da Penha e Violência Doméstica](/lei-maria-da-penha/)
 - [05 Crimes Digitais](/crimes-digitais/)
 - [06 Golpes e Fraudes Digitais](/golpes-e-fraudes-digitais/)
-- [07 Crimes Contra a Honra e Ofensas Digitais](/ofensas-digitais/)
+- [07 Crimes Contra a Honra](/ofensas-digitais/)
 - [08 Crimes Sexuais](/crimes-sexuais/)
 - [09 Crimes Complexos e de Grande Repercussão](/crimes-complexos/)
 - [10 Tribunal do Júri e Crimes Contra a Vida](/tribunal-do-juri/)
 - [11 Execução Penal](/execucao-penal/)
 - [12 Recursos Criminais e Revisão Criminal](/recursos-e-revisao-criminal/)
 - [13 Crimes Patrimoniais](/crimes-patrimoniais/)
+- [14 Crimes de Trânsito] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes de Trânsito.")
+- [15 Crimes Econômicos e Financeiros] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes Econômicos e Financeiros.")
+- [16 Crimes Contra a Administração Pública] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes Contra a Administração Pública.")
+- [17 Crimes de Armas de Fogo] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes de Armas de Fogo.")
+- [18 Crimes Ambientais] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes Ambientais.")
+- [19 Crimes Tributários] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Crimes Tributários.")
+- [20 Sou Vítima de um Crime] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: Sou Vítima de um Crime.")
 
 ## Como funciona o atendimento
 - 01
