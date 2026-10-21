@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,20 +40,20 @@ Na audiência de custódia, que deve acontecer em até 24 horas após a prisão,
 
 ## Serviços nesta área
 - Acompanhamento em delegacia
-- investigação criminal e inquérito policial
-- depoimentos
-- interrogatórios
-- reconhecimentos
-- diligências policiais
-- busca e apreensão
-- prisão em flagrante
-- prisão preventiva
-- prisão temporária
-- audiência de custódia
-- relaxamento e revogação de prisão
-- liberdade provisória
-- fiança e dispensa de fiança
-- prisão domiciliar e medidas cautelares diversas da prisão
+- Investigação criminal e inquérito policial
+- Depoimentos
+- Interrogatórios
+- Reconhecimentos
+- Diligências policiais
+- Busca e apreensão
+- Prisão em flagrante
+- Prisão preventiva
+- Prisão temporária
+- Audiência de custódia
+- Relaxamento e revogação de prisão
+- Liberdade provisória
+- Fiança e dispensa de fiança
+- Prisão domiciliar e medidas cautelares diversas da prisão
 
 ## O que analisamos em todo caso
 - Se a prisão foi legal: situação de flagrante, comunicação ao juiz e à família, direito ao silêncio e ao advogado.

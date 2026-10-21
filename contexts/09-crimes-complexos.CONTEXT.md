@@ -53,7 +53,7 @@ Este arquivo é a especificação completa da página. O texto da seção 5 é f
 - Logo abaixo: os botões de triagem da seção 6 e o botão Ligar.
 
 ### 5.2 Faixa de prova (ProofBar)
-Mais de 23 anos na área criminal · Casos de grande repercussão em sigilo · Atendimento 24 horas · Avaliações 5,0 no Google (widget)
+Mais de 23 anos na área criminal · Sigilo absoluto · Casos de grande repercussão · Atendimento 24 horas · Avaliações no Google
 
 ### 5.3 H2: Como atuamos
 Atuamos desde a deflagração da operação: acompanhamento da busca e apreensão, acesso aos autos, análise de interceptações e do material apreendido, e pedidos de liberdade quando há prisão.

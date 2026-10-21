@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,22 +40,22 @@ No processo, exigimos a individualização da conduta de cada acusado, contestam
 
 ## Serviços nesta área
 - Organização criminosa e associação criminosa
-- lavagem de dinheiro
-- crimes econômicos
-- financeiros
-- tributários e empresariais
-- corrupção ativa e passiva
-- peculato
-- concussão
-- prevaricação e demais crimes contra a administração pública
-- crimes contra a fé pública
-- falsidade ideológica
-- falsificação e uso de documento falso
-- extorsão e extorsão mediante sequestro
-- investigações e processos com vários investigados
-- investigações financeiras e patrimoniais
-- busca e apreensão de documentos e dispositivos
-- acordo de não persecução penal e colaboração premiada
+- Lavagem de dinheiro
+- Crimes econômicos
+- Financeiros
+- Tributários e empresariais
+- Corrupção ativa e passiva
+- Peculato
+- Concussão
+- Prevaricação e demais crimes contra a administração pública
+- Crimes contra a fé pública
+- Falsidade ideológica
+- Falsificação e uso de documento falso
+- Extorsão e extorsão mediante sequestro
+- Investigações e processos com vários investigados
+- Investigações financeiras e patrimoniais
+- Busca e apreensão de documentos e dispositivos
+- Acordo de não persecução penal e colaboração premiada
 
 ## O que analisamos em todo caso
 - Legalidade das interceptações, buscas e apreensões.

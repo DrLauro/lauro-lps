@@ -8,9 +8,9 @@ const fmt = (iso) => new Date(iso).toLocaleDateString('pt-BR', { timeZone: 'Amer
   {posts.map((p) => (
     <li>
       <a href={p.url} {...(p.external && { target: '_blank', rel: 'noopener' })} data-track="blog_click" data-area="blog">
-        <time class="mono label" datetime={p.date}>{fmt(p.date)}</time>
+        <span class="mono label"><time datetime={p.date}>{fmt(p.date)}</time>{p.areaName && <> · {p.areaName}</>}</span>
         <h3>{p.title}</h3>
-        <p>{p.excerpt}</p>
+        {p.excerpt && <p>{p.excerpt}</p>}
         <span class="posts__more">{p.external ? 'Ler no Jusbrasil' : 'Ler artigo'} <Icon name="arrow" size={16} /></span>
       </a>
     </li>

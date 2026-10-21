@@ -4,12 +4,12 @@
 import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
-import Posts from '../components/Posts.astro';
+import Proof from '../components/Proof.astro';
 import portrait from '../assets/dr-lauro.png';
 import avatar from '../assets/dr-lauro-avatar.png';
 import { pages } from '../lib/contexts.mjs';
 import { office } from '../lib/office.mjs';
-import { loadPosts } from '../lib/posts.mjs';
+import jusbrasil from '../data/jusbrasil.json';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const title = 'Advogado Criminalista em Osasco e SP 24h | Dr. Lauro Neto';
@@ -21,7 +21,7 @@ const situacoes = [
   'Recebi uma intimação ou estou sendo investigado',
   'Fui vítima de um crime',
   'Fui condenado e quero recorrer',
-  'Outra situação',
+  'Outra situação criminal',
 ];
 const wa = (situacao) => ({
   href: `https://wa.me/5511970802600?text=${encodeURIComponent(`Olá, Dr. Lauro, vim pelo site: ${situacao[0].toLowerCase() + situacao.slice(1)}.`)}`,
@@ -32,19 +32,34 @@ const [primary, ...others] = situacoes;
 const geral = wa('Quero falar com o Dr. Lauro');
 
 const passos = [
-  ['Primeiro contato', 'Identificamos o assunto, a urgência, a cidade em que o caso corre e a fase do procedimento.'],
+  ['Primeiro contato', 'Identificamos o assunto, a urgência, a cidade em que o caso tramita e a fase do procedimento.'],
   ['Análise dos documentos', 'Examinamos o que existe: boletim de ocorrência, intimação, mandado, decisão, denúncia ou sentença.'],
-  ['Estratégia e acompanhamento', 'Você recebe as possibilidades de atuação e as providências iniciais, e é informado de cada decisão relevante.'],
+  ['Estratégia e acompanhamento', 'Você recebe as possibilidades de atuação e as providências iniciais e é informado de cada decisão relevante.'],
 ];
 
-// Um caso por área, das áreas com caso aprovado no contexto; 05 e 06 repetem o mesmo caso.
-const vistos = new Set();
-const casos = pages
-  .map((p) => ({ p, c: p.content.find((b) => b.kind === 'cases')?.items[0] }))
-  .filter(({ c }) => c && !vistos.has(c.title) && vistos.add(c.title))
-  .slice(0, 4);
-
-const posts = (await loadPosts()).slice(0, 4);
+// "Artigos e Decisões": decisões favoráveis primeiro, depois artigos de análise (máx. 6).
+// Cada card = caso aprovado no CONTEXT.md da área (texto sem dado identificável)
+// + artigo correspondente no Jusbrasil (id em src/data/jusbrasil.json), quando existe.
+const destaques = [
+  ['prisao-em-flagrante', 0, '6996806843'],
+  ['habeas-corpus', 0, '7605115884'],
+  ['trafico-de-drogas', 0, null],
+  ['lei-maria-da-penha', 0, '7171114570'],
+  ['crimes-patrimoniais', 0, '7604915091'],
+  ['crimes-patrimoniais', 1, '7512770959'],
+];
+const titulo = (t) => t.replace(/habeas corpus/gi, 'Habeas Corpus').replace(/tribunais superiores/gi, 'Tribunais Superiores');
+const cards = destaques.map(([slug, i, artigo]) => {
+  const p = pages.find((x) => x.slug === slug);
+  const c = p.content.find((b) => b.kind === 'cases').items[i];
+  return {
+    area: p.card.title,
+    areaHref: `${base}/${slug}/`,
+    title: titulo(c.title),
+    text: c.text.replace(/\s*\(Caso publicado no Jusbrasil do Dr\. Lauro\.\)\s*$/, ''),
+    href: jusbrasil.find((a) => a.id === artigo)?.url,
+  };
+});
 
 const [escritorio, advogado] = pages[0].jsonLd['@graph'];
 const jsonLd = {
@@ -58,7 +73,7 @@ const jsonLd = {
       <div class="hero__copy">
         <div class="ident">
           <Image src={avatar} alt="" width={96} height={96} class="ident__img" loading="eager" />
-          <span class="ident__text"><strong>Dr. Lauro de Almeida Neto</strong><span class="mono">OAB/SP 210.212</span></span>
+          <span class="ident__text"><strong>Dr. Lauro de Almeida Neto</strong><span>Advogado Criminalista</span></span>
         </div>
         <h1>Advogado criminalista em Osasco e São Paulo, com atuação em todo o Brasil</h1>
         <p class="hero__lead">Defesa criminal da delegacia aos tribunais superiores: prisão, inquérito, processo, recursos e execução da pena. Atendimento 24 horas, presencial ou online.</p>
@@ -78,19 +93,12 @@ const jsonLd = {
       </div>
       <figure class="hero__photo">
         <Image src={portrait} alt="Dr. Lauro de Almeida Neto, advogado criminalista, de terno azul-marinho" widths={[360, 450]} sizes="400px" loading="eager" fetchpriority="high" />
-        <figcaption><strong>Dr. Lauro de Almeida Neto</strong><span class="mono">Advogado criminalista · OAB/SP 210.212</span></figcaption>
+        <figcaption><strong>Dr. Lauro de Almeida Neto</strong><span>Advogado Criminalista</span></figcaption>
       </figure>
     </div>
   </section>
 
-  <section class="proof" aria-label="Diferenciais">
-    <ul class="container proof__list">
-      <li><Icon name="check" size={16} /><span>Mais de 23 anos na área criminal</span></li>
-      <li><Icon name="check" size={16} /><span>Casos de grande repercussão em sigilo</span></li>
-      <li><Icon name="check" size={16} /><span>Atendimento 24 horas</span></li>
-      <li><a href={office.googleReviews} target="_blank" rel="noopener"><Icon name="check" size={16} /><span>Avaliações no Google</span></a></li>
-    </ul>
-  </section>
+  <Proof items={pages[0].proof} />
 
   <section class="block block--prose" aria-labelledby="s1">
     <div class="container block__grid">
@@ -100,8 +108,8 @@ const jsonLd = {
       </header>
       <div class="block__body">
         <p>Advogado inscrito na OAB/SP sob o nº 210.212, com mais de 23 anos de atuação concentrada em Direito Penal e Processo Penal.</p>
-        <p>Nesse período, foram milhares de atendimentos, investigações, processos e recursos, em todas as fases do caso criminal: da delegacia ao Superior Tribunal de Justiça.</p>
-        <p>Cada caso é analisado individualmente, a partir dos fatos, dos documentos, das provas e da fase em que está. O atendimento é presencial em Osasco e São Paulo, e online em todo o Brasil.</p>
+        <p>Nesse período, foram milhares de atendimentos, investigações, processos e recursos, em todas as fases do caso criminal: da delegacia aos tribunais superiores.</p>
+        <p>Cada caso é analisado individualmente, considerando os fatos, os documentos, as provas e a fase do procedimento, com absoluto sigilo das informações. O atendimento é realizado presencialmente em Osasco e São Paulo ou online em todo o Brasil.</p>
       </div>
     </div>
   </section>
@@ -117,7 +125,7 @@ const jsonLd = {
           <li>
             <a href={`${base}/${p.slug}/`}>
               <span class="mono area-index__n">{String(p.num).padStart(2, '0')}</span>
-              <span class="area-index__name">{p.name}</span>
+              <span class="area-index__name">{p.card.title}</span>
               <Icon name="arrow" size={18} />
             </a>
           </li>
@@ -143,33 +151,26 @@ const jsonLd = {
     </div>
   </section>
 
-  <section class="block" aria-labelledby="s4">
+  <section class="block" aria-labelledby="s4" id="artigos">
     <div class="container block__grid">
       <header class="block__head">
         <span class="block__mark mono" aria-hidden="true">§ 4</span>
-        <h2 id="s4">Casos em que atuamos</h2>
-      </header>
-      <div class="cases block__body">
-        {casos.map(({ p, c }) => (
-          <article class="case">
-            <a class="label case__area" href={`${base}/${p.slug}/`}>{p.name}</a>
-            <h3>{c.title}</h3>
-            <p>{c.text}</p>
-          </article>
-        ))}
-        <p class="cases__note">Resultados anteriores não garantem resultado em outros casos. Cada situação depende da análise dos fatos e das provas.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="block" aria-labelledby="s5" id="artigos">
-    <div class="container block__grid">
-      <header class="block__head">
-        <span class="block__mark mono" aria-hidden="true">§ 5</span>
-        <h2 id="s5">Artigos e decisões</h2>
+        <h2 id="s4">Artigos e Decisões</h2>
       </header>
       <div class="block__body">
-        <Posts posts={posts} />
+        <div class="cases">
+          {cards.map((c) => (
+            <article class="case case--card">
+              <a class="label case__area" href={c.areaHref}>{c.area}</a>
+              <h3>{c.title}</h3>
+              <p>{c.text}</p>
+              {c.href
+                ? <a class="posts__more" href={c.href} target="_blank" rel="noopener" data-track="blog_click" data-area="home">Ler artigo <Icon name="arrow" size={16} /></a>
+                : <a class="posts__more" href={c.areaHref}>Ver a área <Icon name="arrow" size={16} /></a>}
+            </article>
+          ))}
+        </div>
+        <p class="cases__note">Resultados anteriores não garantem resultado em outros casos. Cada situação depende da análise dos fatos e das provas.</p>
         <a class="btn btn--ghost posts__all" href={`${base}/blog/`}>Ver todos os artigos<Icon name="arrow" size={18} /></a>
       </div>
     </div>
@@ -177,7 +178,11 @@ const jsonLd = {
 
   <section class="final" aria-label="Fale com o Dr. Lauro">
     <div class="container final__in">
-      <p class="final__text">Se é importante pra você, é importante pra nós.</p>
+      <div class="final__copy">
+        <p class="final__text">A liberdade não tem preço.</p>
+        <p class="final__sub">Quando sua liberdade está em jogo, procure um advogado com experiência na área criminal. Uma defesa qualificada desde o primeiro momento pode fazer a diferença em todas as etapas do processo.</p>
+        <p class="final__close">Se é importante para você, é importante para nós.</p>
+      </div>
       <div class="final__actions">
         <a class="btn btn--primary" {...geral}><Icon name="whatsapp" size={20} />Falar no WhatsApp</a>
         <a class="btn btn--on-dark" {...call}><Icon name="phone" size={20} />Ligar <span class="mono">{office.phoneLabel}</span></a>

@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,22 +40,22 @@ Atuamos em progressão de regime, livramento condicional, indulto, prisão domic
 
 ## Serviços nesta área
 - Execução penal
-- progressão de regime
-- livramento condicional
-- remição de pena
-- detração penal
-- indulto
-- comutação de pena
-- cálculo e retificação de cálculo de pena
-- soma e unificação de penas
-- faltas graves
-- sindicâncias disciplinares
-- regressão de regime
-- prisão domiciliar
-- aproximação familiar
-- transferência prisional
-- agravo em execução
-- prescrição e extinção da punibilidade
+- Progressão de regime
+- Livramento condicional
+- Remição de pena
+- Detração penal
+- Indulto
+- Comutação de pena
+- Cálculo e retificação de cálculo de pena
+- Soma e unificação de penas
+- Faltas graves
+- Sindicâncias disciplinares
+- Regressão de regime
+- Prisão domiciliar
+- Aproximação familiar
+- Transferência prisional
+- Agravo em execução
+- Prescrição e extinção da punibilidade
 
 ## O que analisamos em todo caso
 - Data-base e frações de cumprimento aplicáveis ao crime.

@@ -48,10 +48,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- topo ---------- */
 .topbar { background: var(--navy-900); color: var(--navy-100); font: var(--fs-xs)/var(--lh-label) var(--font-mono); letter-spacing: .02em; }
-.topbar__in { display: flex; align-items: center; gap: var(--s-3); min-height: var(--s-8); }
-.topbar__sep { width: 1px; height: var(--s-3); background: var(--border-on-dark-strong); }
-.topbar__wide { display: none; }
-@media (min-width: 768px) { .topbar__wide { display: inline; } .topbar__sep.topbar__wide { display: block; } }
+.topbar__in { display: flex; flex-wrap: wrap; align-items: center; column-gap: var(--s-2); min-height: var(--s-8); padding-block: var(--s-2); }
+.topbar__sep { color: var(--navy-200); }
 
 .site-header { background: var(--paper); border-bottom: 1px solid var(--border); }
 .site-header__in { display: flex; align-items: center; justify-content: space-between; gap: var(--s-4); min-height: var(--s-16); }
@@ -144,12 +142,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .proof__list li { border-left: 1px solid var(--border-on-dark); }
 .proof__list li:nth-child(odd) { border-left: 0; }
 .proof__list li:nth-child(n + 3) { border-top: 1px solid var(--border-on-dark); }
+.proof__list li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .proof__list li, .proof__list li a { display: flex; gap: var(--s-2); align-items: flex-start; padding: var(--s-4); font-size: var(--fs-sm); line-height: var(--lh-label); }
 .proof__list li a { padding: 0; color: var(--paper); text-decoration-color: var(--gold-500); }
 .proof__list svg { flex: none; color: var(--gold-500); margin-top: 1px; }
-@media (min-width: 768px) {
-  .proof__list { grid-template-columns: repeat(4, 1fr); }
-  .proof__list li, .proof__list li:nth-child(odd) { border-left: 1px solid var(--border-on-dark); border-top: 0; padding: var(--s-6); }
+@media (min-width: 1024px) {
+  .proof__list { grid-template-columns: repeat(5, 1fr); }
+  .proof__list li, .proof__list li:nth-child(odd), .proof__list li:last-child:nth-child(odd) { grid-column: auto; border-left: 1px solid var(--border-on-dark); border-top: 0; padding: var(--s-6) var(--s-4); }
   .proof__list li:first-child { border-left: 0; padding-left: 0; }
 }
 
@@ -268,7 +267,7 @@ body:has(.sticky-cta) { padding-bottom: calc(var(--s-16) + var(--s-2)); }
 /* ---------- artigos (Jusbrasil) ---------- */
 .posts { border-top: 1px solid var(--border); }
 .posts a { display: grid; gap: var(--s-2); padding-block: var(--s-6); border-bottom: 1px solid var(--border); color: var(--text); text-decoration: none; }
-.posts time { color: var(--text-subtle); }
+.posts .label { color: var(--text-subtle); }
 .posts h3 { font: var(--fs-md)/var(--lh-tight) var(--font-display); color: var(--navy-700); text-wrap: balance; }
 .posts p { color: var(--text-muted); max-width: var(--measure); }
 .posts__more { display: inline-flex; align-items: center; gap: var(--s-2); color: var(--navy-500); font-weight: var(--fw-medium); font-size: var(--fs-sm); }
@@ -297,3 +296,17 @@ body:has(.sticky-cta) { padding-bottom: calc(var(--s-16) + var(--s-2)); }
 .prose img { border: 1px solid var(--border); border-radius: var(--radius-md); }
 .prose hr { border: 0; border-top: 1px solid var(--border); margin-block: var(--s-8); }
 .prose strong { font-weight: var(--fw-bold); }
+
+/* Home: cards de "Artigos e Decisões" e chamada final */
+.case--card { display: flex; flex-direction: column; gap: var(--s-2); }
+.case--card h3 { margin: 0; }
+.case--card p { color: var(--text-muted); display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.case--card .posts__more { margin-top: auto; padding-top: var(--s-2); text-decoration: none; }
+.case--card .posts__more:hover { text-decoration: underline; text-underline-offset: .2em; }
+@media (min-width: 768px) { .block__body .cases { grid-template-columns: 1fr 1fr; } }
+.cases + .cases__note { margin-top: var(--s-6); }
+.final__copy { display: grid; gap: var(--s-4); }
+.final__sub { max-width: 56ch; color: var(--navy-100); }
+.final__close { font: var(--fs-md)/var(--lh-tight) var(--font-display); color: var(--gold-300); }
+.area-index--desc a { padding-block: var(--s-4); }
+.area-index__desc { display: block; margin-top: var(--s-1); max-width: var(--measure); font-size: var(--fs-base); color: var(--text-muted); }

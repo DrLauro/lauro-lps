@@ -3,6 +3,7 @@
 import { Image } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Icon from '../components/Icon.astro';
+import Proof from '../components/Proof.astro';
 import portrait from '../assets/dr-lauro.png';
 import avatar from '../assets/dr-lauro-avatar.png';
 import { pages } from '../lib/contexts.mjs';
@@ -53,17 +54,7 @@ const call = { href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.a
     </div>
   </section>
 
-  <section class="proof" aria-label="Diferenciais">
-    <ul class="container proof__list">
-      {p.proof.map((item) =>
-        /Google/.test(item) ? (
-          <li><a href={office.googleReviews} target="_blank" rel="noopener"><Icon name="check" size={16} /><span>{item.replace(/\s*\(widget\)\s*$/, '').replace(/\s*5,0\s*/, ' ')}</span></a></li>
-        ) : (
-          <li><Icon name="check" size={16} /><span>{item}</span></li>
-        )
-      )}
-    </ul>
-  </section>
+  <Proof items={p.proof} />
 
   {sections.map((b, i) => (
     <section class={`block block--${b.kind}`} aria-labelledby={`s${i + 1}`}>

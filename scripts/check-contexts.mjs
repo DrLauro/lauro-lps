@@ -10,7 +10,7 @@ for (const p of pages) {
   assert.equal(p.canonical, `https://lauro.adv.br/${p.slug}/`, at('canonical'));
   assert.ok(p.whatsapp.length >= 3 && p.phone?.href === 'tel:+5511970802600', at('triagem'));
   assert.ok(p.whatsapp.every((w) => w.href.startsWith('https://wa.me/5511970802600?text=')), at('link wa'));
-  assert.equal(p.proof.length, 4, at('proof bar'));
+  assert.equal(p.proof.length, 5, at('proof bar'));
   assert.deepEqual(p.content.map((b) => b.kind).filter((k) => k !== 'list' && k !== 'prose'), ['chips', 'cases', 'faq'], at('blocos'));
 
   const graph = p.jsonLd['@graph'];

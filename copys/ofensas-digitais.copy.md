@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,11 +40,11 @@ Para quem foi acusado: analisamos se o texto realmente configura calúnia, difam
 
 ## Serviços nesta área
 - Calúnia
-- difamação e injúria
-- praticadas presencialmente ou na internet e nas redes sociais (Facebook, Instagram, TikTok, WhatsApp e outras plataformas)
-- queixa-crime
-- defesa de quem é acusado
-- representação de vítimas
+- Difamação e injúria
+- Praticadas presencialmente ou na internet e nas redes sociais (Facebook, Instagram, TikTok, WhatsApp e outras plataformas)
+- Queixa-crime
+- Defesa de quem é acusado
+- Representação de vítimas
 
 ## Diferença entre calúnia, difamação e injúria
 - Calúnia: atribuir falsamente a alguém um crime.

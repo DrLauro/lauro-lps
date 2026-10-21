@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,15 +40,15 @@ Buscamos o arquivamento, a absolvição ou, quando a condenação é provável, 
 
 ## Serviços nesta área
 - Furto simples e qualificado
-- roubo simples
-- com arma de fogo ou arma branca
-- em concurso de pessoas
-- com restrição da liberdade da vítima ou com resultado lesão grave
-- latrocínio
-- extorsão e extorsão mediante sequestro
-- estelionato
-- apropriação indébita
-- receptação simples e qualificada e dano
+- Roubo simples
+- Com arma de fogo ou arma branca
+- Em concurso de pessoas
+- Com restrição da liberdade da vítima ou com resultado lesão grave
+- Latrocínio
+- Extorsão e extorsão mediante sequestro
+- Estelionato
+- Apropriação indébita
+- Receptação simples e qualificada e dano
 
 ## O que analisamos em todo caso
 - Reconhecimento pessoal ou por foto e se seguiu a lei.

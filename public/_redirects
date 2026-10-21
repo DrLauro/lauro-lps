@@ -1,0 +1,4 @@
+# Redirecionamentos 301 do site antigo (WordPress), lidos pelo Cloudflare no deploy.
+# URLs antigas tiradas do wp-sitemap.xml em 2026-10-21.
+/hello-world /  301
+/hello-world/ /  301

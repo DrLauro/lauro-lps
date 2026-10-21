@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,25 +40,25 @@ No processo, a defesa questiona a prova: quem era o dono da droga, se havia dest
 
 ## Serviços nesta área
 - Tráfico de drogas
-- associação para o tráfico
-- compra
-- venda
-- oferta
-- fornecimento
-- transporte
-- armazenamento
-- depósito e guarda de drogas
-- tráfico interestadual e internacional
-- tráfico privilegiado
-- financiamento e custeio do tráfico
-- apreensão de drogas para consumo pessoal
-- prisão em flagrante e preventiva por tráfico
-- busca e apreensão
-- provas digitais
-- perícias toxicológicas
-- dosimetria da pena
-- causas de diminuição
-- recursos criminais e execução penal em condenações por tráfico
+- Associação para o tráfico
+- Compra
+- Venda
+- Oferta
+- Fornecimento
+- Transporte
+- Armazenamento
+- Depósito e guarda de drogas
+- Tráfico interestadual e internacional
+- Tráfico privilegiado
+- Financiamento e custeio do tráfico
+- Apreensão de drogas para consumo pessoal
+- Prisão em flagrante e preventiva por tráfico
+- Busca e apreensão
+- Provas digitais
+- Perícias toxicológicas
+- Dosimetria da pena
+- Causas de diminuição
+- Recursos criminais e execução penal em condenações por tráfico
 
 ## O que analisamos em todo caso
 - Legalidade da abordagem e da entrada na casa.

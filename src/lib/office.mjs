@@ -4,7 +4,7 @@ export const office = {
   phoneLabel: '(11) 97080-2600',
   email: 'lauroalmeidaneto@adv.oabsp.org.br',
   cnpj: '66.317.792/0001-30',
-  address: 'Avenida das Flores, 660, 1º andar, sala 03, Jardim das Flores, Osasco/SP, CEP 06110-100',
+  address: 'Avenida das Flores, nº 660, 1º andar, sala 03, Jardim das Flores, Osasco/SP, CEP 06110-100.',
   googleReviews: 'https://share.google/tYexilMh96mYhSUmT',
   profiles: [
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/dr-lauro-almeida-neto-ba3209327' },

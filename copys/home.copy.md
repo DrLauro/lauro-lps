@@ -9,7 +9,7 @@ URL: https://lauro.adv.br/
 
 ## Conteúdo da página
 
-Dr. Lauro de Almeida Neto OAB/SP 210.212
+Dr. Lauro de Almeida Neto Advogado Criminalista
 
 # Advogado criminalista em Osasco e São Paulo, com atuação em todo o Brasil
 
@@ -20,14 +20,15 @@ Qual é a sua situação?
 - [Recebi uma intimação ou estou sendo investigado] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: recebi uma intimação ou estou sendo investigado.")
 - [Fui vítima de um crime] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: fui vítima de um crime.")
 - [Fui condenado e quero recorrer] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: fui condenado e quero recorrer.")
-- [Outra situação] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: outra situação.")
+- [Outra situação criminal] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: outra situação criminal.")
 - [Ligar (11) 97080-2600] (ligação)
 
 [Imagem: Dr. Lauro de Almeida Neto, advogado criminalista, de terno azul-marinho]
 
-Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
+Dr. Lauro de Almeida Neto Advogado Criminalista
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -35,9 +36,9 @@ Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 
 Advogado inscrito na OAB/SP sob o nº 210.212, com mais de 23 anos de atuação concentrada em Direito Penal e Processo Penal.
 
-Nesse período, foram milhares de atendimentos, investigações, processos e recursos, em todas as fases do caso criminal: da delegacia ao Superior Tribunal de Justiça.
+Nesse período, foram milhares de atendimentos, investigações, processos e recursos, em todas as fases do caso criminal: da delegacia aos tribunais superiores.
 
-Cada caso é analisado individualmente, a partir dos fatos, dos documentos, das provas e da fase em que está. O atendimento é presencial em Osasco e São Paulo, e online em todo o Brasil.
+Cada caso é analisado individualmente, considerando os fatos, os documentos, as provas e a fase do procedimento, com absoluto sigilo das informações. O atendimento é realizado presencialmente em Osasco e São Paulo ou online em todo o Brasil.
 
 ## Áreas de atuação
 - [01 Prisão em Flagrante e Audiência de Custódia](/prisao-em-flagrante/)
@@ -46,7 +47,7 @@ Cada caso é analisado individualmente, a partir dos fatos, dos documentos, das 
 - [04 Lei Maria da Penha e Violência Doméstica](/lei-maria-da-penha/)
 - [05 Crimes Digitais](/crimes-digitais/)
 - [06 Golpes e Fraudes Digitais](/golpes-e-fraudes-digitais/)
-- [07 Ofensas Digitais e Crimes Contra a Honra](/ofensas-digitais/)
+- [07 Crimes Contra a Honra e Ofensas Digitais](/ofensas-digitais/)
 - [08 Crimes Sexuais](/crimes-sexuais/)
 - [09 Crimes Complexos e de Grande Repercussão](/crimes-complexos/)
 - [10 Tribunal do Júri e Crimes Contra a Vida](/tribunal-do-juri/)
@@ -59,7 +60,7 @@ Cada caso é analisado individualmente, a partir dos fatos, dos documentos, das 
 
 ### Primeiro contato
 
-Identificamos o assunto, a urgência, a cidade em que o caso corre e a fase do procedimento.
+Identificamos o assunto, a urgência, a cidade em que o caso tramita e a fase do procedimento.
 - 02
 
 ### Análise dos documentos
@@ -69,43 +70,59 @@ Examinamos o que existe: boletim de ocorrência, intimação, mandado, decisão,
 
 ### Estratégia e acompanhamento
 
-Você recebe as possibilidades de atuação e as providências iniciais, e é informado de cada decisão relevante.
+Você recebe as possibilidades de atuação e as providências iniciais e é informado de cada decisão relevante.
 
-## Casos em que atuamos
+## Artigos e Decisões
 
 [Prisão em Flagrante e Audiência de Custódia](/prisao-em-flagrante/)
 
 ### Preso em flagrante por tráfico: liberdade concedida pelo TJSP
 
-Cliente primário, preso em flagrante por suposto tráfico de drogas, teve a prisão convertida em preventiva. Em habeas corpus, a defesa demonstrou a falta de fundamentos concretos para manter a prisão e o Tribunal de Justiça de São Paulo concedeu a liberdade por unanimidade, com medidas cautelares. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Cliente primário, preso em flagrante por suposto tráfico de drogas, teve a prisão convertida em preventiva. Em habeas corpus, a defesa demonstrou a falta de fundamentos concretos para manter a prisão e o Tribunal de Justiça de São Paulo concedeu a liberdade por unanimidade, com medidas cautelares.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/6996806843/habeas-corpus-tjsp-concede-liberdade-a-fbb-e-reafirma-que-prisao-preventiva-exige-fundamentacao-concreta)
 
 [Habeas Corpus](/habeas-corpus/)
 
-### Habeas corpus contra prisão preventiva no TJSP
+### Habeas Corpus contra prisão preventiva no TJSP
 
-Em caso em que a prisão preventiva foi decretada contra a manifestação do próprio Ministério Público, a defesa demonstrou a ilegalidade da decisão e obteve liminar em habeas corpus no Tribunal de Justiça de São Paulo. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Em caso em que a prisão preventiva foi decretada contra a manifestação do próprio Ministério Público, a defesa demonstrou a ilegalidade da decisão e obteve liminar em habeas corpus no Tribunal de Justiça de São Paulo.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7605115884/prisao-preventiva-decretada-contra-manifestacao-do-ministerio-publico-tjsp-reconhece-ilegalidade-e-concede-liminar-em-habeas-corpus)
 
 [Tráfico de Drogas](/trafico-de-drogas/)
 
 ### Absolvição da associação para o tráfico
 
 A acusação se apoiava em conversas atribuídas a terceiros e não havia droga apreendida vinculada ao cliente. A defesa demonstrou a insuficiência dessas provas e o cliente foi absolvido da imputação de associação para o tráfico.
+[Ver a área](/trafico-de-drogas/)
 
 [Lei Maria da Penha e Violência Doméstica](/lei-maria-da-penha/)
 
 ### Representação da vítima com medidas protetivas mantidas
 
-Atuando para a vítima, a defesa dos interesses dela levou a um pedido incomum: a revogação da prisão do investigado, para que ele voltasse a cuidar da própria mãe e a vítima pudesse reorganizar a vida. O juízo deferiu o pedido e manteve todas as medidas protetivas, inclusive afastamento, proibição de contato e sigilo do novo endereço da vítima. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Atuando para a vítima, a defesa dos interesses dela levou a um pedido incomum: a revogação da prisão do investigado, para que ele voltasse a cuidar da própria mãe e a vítima pudesse reorganizar a vida. O juízo deferiu o pedido e manteve todas as medidas protetivas, inclusive afastamento, proibição de contato e sigilo do novo endereço da vítima.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7171114570/liberdade-a-pedido-da-vitima)
+
+[Crimes Patrimoniais](/crimes-patrimoniais/)
+
+### Furto no ambiente de trabalho: investigação arquivada
+
+Em acusação de furto no ambiente de trabalho, a defesa demonstrou a falta de provas e a investigação foi arquivada.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7604915091/acusacao-de-furto-no-ambiente-de-trabalho-os-limites-da-suspeita-a-ausencia-de-provas-e-o-arquivamento-da-investigacao)
+
+[Crimes Patrimoniais](/crimes-patrimoniais/)
+
+### Roubo: absolvição por falta de prova judicial
+
+Acusados de roubo depois de abordados em veículo com alerta de furto, os clientes foram reconhecidos apenas na delegacia. A defesa sustentou a insuficiência das provas do inquérito e as falhas do reconhecimento (art. 226 do Código de Processo Penal), e a ação penal foi julgada improcedente.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7512770959/entre-o-flagrante-e-a-condenacao-existe-a-prova-uma-reflexao-sobre-os-arts-155-e-226-do-cpp)
 
 Resultados anteriores não garantem resultado em outros casos. Cada situação depende da análise dos fatos e das provas.
-
-## Artigos e decisões
-- [12/10/2026 Prisão preventiva decretada contra manifestação do Ministério Público: TJSP reconhece ilegalidade e concede liminar em Habeas Corpus A prisão preventiva constitui medida excepcional, cuja decretação exige não apenas a presença dos requisitos legais, mas também a observância dos limites impostos ao exercício da jurisdição pelo sistema acusatório. A gravidade da imputação, por si só, não autoriza a antecipação da privação da liberdade, especialmente quando o próprio órgão… Ler no Jusbrasil](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7605115884/prisao-preventiva-decretada-contra-manifestacao-do-ministerio-publico-tjsp-reconhece-ilegalidade-e-concede-liminar-em-habeas-corpus)
-- [12/10/2026 Acusação de furto no ambiente de trabalho: os limites da suspeita, a ausência de provas e o arquivamento da investigação Uma acusação de furto no ambiente de trabalho pode produzir consequências que ultrapassam a esfera criminal, atingindo a reputação, a dignidade profissional e a continuidade do vínculo empregatício. Por isso, a imputação de uma conduta criminosa exige cautela, especialmente quando fundada em suspeitas não suficientemente demonstradas. Em inquérito… Ler no Jusbrasil](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7604915091/acusacao-de-furto-no-ambiente-de-trabalho-os-limites-da-suspeita-a-ausencia-de-provas-e-o-arquivamento-da-investigacao)
-- [07/10/2026 Entre o flagrante e a condenação existe a prova: uma reflexão sobre os arts. 155 e 226 do CPP A 4ª Vara Criminal de Osasco proferiu sentença na Ação Penal nº 0003197-63.2010.8.26.0405, em caso envolvendo imputações de roubo majorado e que permite importante reflexão sobre os limites da prova produzida na fase inquisitorial. Segundo a própria sentença, após os fatos investigados, os acusados foram abordados por policiais quando ocupavam o… Ler no Jusbrasil](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7512770959/entre-o-flagrante-e-a-condenacao-existe-a-prova-uma-reflexao-sobre-os-arts-155-e-226-do-cpp)
-- [02/09/2026 Liberdade a Pedido da Vítima Uma situação pouco comum no processo penal merece reflexão. No Inquérito Policial nº 1514837-71.2026.8.26.0455, em trâmite perante a 1ª Vara Criminal do Foro de Osasco/SP, fomos constituídos para representar os interesses da vítima F.A.B.F., com pretensão de futura habilitação como assistente da acusação no momento processual adequado. As… Ler no Jusbrasil](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7171114570/liberdade-a-pedido-da-vitima)
-
 [Ver todos os artigos](/blog/)
 
-Se é importante pra você, é importante pra nós.
+A liberdade não tem preço.
+
+Quando sua liberdade está em jogo, procure um advogado com experiência na área criminal. Uma defesa qualificada desde o primeiro momento pode fazer a diferença em todas as etapas do processo.
+
+Se é importante para você, é importante para nós.
+
 [Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: quero falar com o Dr. Lauro.") [Ligar (11) 97080-2600] (ligação)

@@ -5,6 +5,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const DIR = join(process.cwd(), 'contexts');
+const CARDS = JSON.parse(readFileSync(join(process.cwd(), 'src/data/cards-areas.json'), 'utf8'));
 
 // Linhas do contexto que são instrução para o dev, não texto da página.
 const INSTRUCAO = [/^Exibir como/, /^Sem nome de cliente/, /^Botões:/, /^- Logo abaixo:/];
@@ -28,6 +29,7 @@ const chips = (txt) =>
   txt
     .split(/[,;.]\s+(?![^(]*\))/)
     .map((s) => s.replace(/\.$/, '').trim())
+    .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
     .filter(Boolean);
 
 function parseBlock(heading, body) {
@@ -98,6 +100,7 @@ export function parseContext(file) {
     slug,
     name,
     fase,
+    card: { title: CARDS[Number(num)]?.titulo ?? name, text: CARDS[Number(num)]?.descricao ?? '' },
     title: stripCount(field(seo, '`<title>`')),
     description: stripCount(field(seo, '`<meta name="description">`')),
     canonical: stripTicks(field(seo, 'Canonical')),

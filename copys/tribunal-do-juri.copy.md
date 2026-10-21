@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,16 +40,16 @@ No plenário, a sustentação oral fala para jurados leigos; a experiência em j
 
 ## Serviços nesta área
 - Homicídio simples
-- qualificado
-- privilegiado e culposo
-- tentativa de homicídio
-- feminicídio e tentativa de feminicídio
-- vicaricídio
-- lesão corporal leve
-- grave
-- gravíssima e seguida de morte
+- Qualificado
+- Privilegiado e culposo
+- Tentativa de homicídio
+- Feminicídio e tentativa de feminicídio
+- Vicaricídio
+- Lesão corporal leve
+- Grave
+- Gravíssima e seguida de morte
 - Tribunal do Júri
-- defesa criminal em crimes contra a vida e assistência de acusação em crimes contra a vida
+- Defesa criminal em crimes contra a vida e assistência de acusação em crimes contra a vida
 
 ## O que analisamos em todo caso
 - Laudos de local, necroscópico e balística.

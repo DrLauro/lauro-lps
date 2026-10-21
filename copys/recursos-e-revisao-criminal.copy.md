@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,15 +40,15 @@ Depois do trânsito em julgado, a revisão criminal pode rever a condenação qu
 
 ## Serviços nesta área
 - Apelação criminal
-- recurso em sentido estrito
-- embargos de declaração
-- embargos infringentes e de nulidade
-- agravo regimental
-- agravo interno
-- recurso especial
-- recurso extraordinário
-- agravo em recurso especial e extraordinário
-- revisão criminal e reabilitação criminal
+- Recurso em sentido estrito
+- Embargos de declaração
+- Embargos infringentes e de nulidade
+- Agravo regimental
+- Agravo interno
+- Recurso especial
+- Recurso extraordinário
+- Agravo em recurso especial e extraordinário
+- Revisão criminal e reabilitação criminal
 
 ## O que analisamos em todo caso
 - Nulidades do processo.

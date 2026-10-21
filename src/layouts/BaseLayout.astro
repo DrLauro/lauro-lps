@@ -45,11 +45,9 @@ const gtm = import.meta.env.PUBLIC_GTM_ID;
     <a class="skip" href="#conteudo">Pular para o conteúdo</a>
     <div class="topbar">
       <div class="container topbar__in">
-        <span>OAB/SP 210.212</span>
-        <span class="topbar__sep" aria-hidden="true"></span>
-        <span>Atendimento 24 horas</span>
-        <span class="topbar__sep topbar__wide" aria-hidden="true"></span>
-        <span class="topbar__wide">Osasco · São Paulo · online em todo o Brasil</span>
+        {['OAB/SP 210.212', 'Atendimento 24 horas', 'Osasco', 'São Paulo', 'Online em todo o Brasil'].map((t, i) => (
+          <>{i > 0 && <span class="topbar__sep" aria-hidden="true">·</span>}<span>{t}</span></>
+        ))}
       </div>
     </div>
     <header class="site-header">

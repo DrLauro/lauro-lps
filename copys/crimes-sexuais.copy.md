@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,16 +40,16 @@ Em acusações que envolvem arquivos digitais, a defesa examina a identificaçã
 
 ## Serviços nesta área
 - Estupro e tentativa de estupro
-- estupro de vulnerável
-- importunação sexual
-- assédio sexual
-- violação sexual mediante fraude
-- exploração sexual
-- crimes previstos no Estatuto da Criança e do Adolescente
-- divulgação não consentida de conteúdo íntimo
-- crimes sexuais na internet e nas redes sociais e crimes envolvendo conteúdo digital e inteligência artificial
+- Estupro de vulnerável
+- Importunação sexual
+- Assédio sexual
+- Violação sexual mediante fraude
+- Exploração sexual
+- Crimes previstos no Estatuto da Criança e do Adolescente
+- Divulgação não consentida de conteúdo íntimo
+- Crimes sexuais na internet e nas redes sociais e crimes envolvendo conteúdo digital e inteligência artificial
 - Defesa criminal
-- representação de vítimas e assistência de acusação
+- Representação de vítimas e assistência de acusação
 
 ## O que analisamos em todo caso
 - Como foi colhido o depoimento da vítima e se houve escuta especializada nos termos da lei.

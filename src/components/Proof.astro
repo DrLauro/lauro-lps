@@ -1,0 +1,17 @@
+---
+// Faixa de credenciais (seção 5.2 dos CONTEXT.md). O item do Google leva às avaliações.
+import Icon from './Icon.astro';
+import { office } from '../lib/office.mjs';
+const { items } = Astro.props;
+---
+<section class="proof" aria-label="Diferenciais">
+  <ul class="container proof__list">
+    {items.map((item) =>
+      /Google/.test(item) ? (
+        <li><a href={office.googleReviews} target="_blank" rel="noopener"><Icon name="check" size={16} /><span>{item}</span></a></li>
+      ) : (
+        <li><Icon name="check" size={16} /><span>{item}</span></li>
+      )
+    )}
+  </ul>
+</section>

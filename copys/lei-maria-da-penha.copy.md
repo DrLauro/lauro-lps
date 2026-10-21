@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,22 +40,22 @@ Para acusados: análise da medida protetiva e do inquérito, pedido de revisão 
 
 ## Serviços nesta área
 - Lei Maria da Penha
-- violência doméstica e familiar
-- violência física
-- psicológica
-- sexual
-- patrimonial
-- moral e vicária
-- lesão corporal no contexto doméstico
-- ameaça
-- perseguição
-- violência psicológica contra a mulher
-- calúnia
-- difamação e injúria
-- medidas protetivas de urgência (concessão, revisão, revogação e descumprimento)
-- prisão preventiva em contexto de violência doméstica
-- defesa de investigados e acusados
-- representação de vítimas e assistência de acusação
+- Violência doméstica e familiar
+- Violência física
+- Psicológica
+- Sexual
+- Patrimonial
+- Moral e vicária
+- Lesão corporal no contexto doméstico
+- Ameaça
+- Perseguição
+- Violência psicológica contra a mulher
+- Calúnia
+- Difamação e injúria
+- Medidas protetivas de urgência (concessão, revisão, revogação e descumprimento)
+- Prisão preventiva em contexto de violência doméstica
+- Defesa de investigados e acusados
+- Representação de vítimas e assistência de acusação
 
 ## O que analisamos em todo caso
 - O que a medida protetiva proíbe e por quanto tempo.

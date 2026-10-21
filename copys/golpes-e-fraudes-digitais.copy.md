@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,15 +40,15 @@ Para quem teve a conta usada: demonstramos a ausência de participação e de in
 
 ## Serviços nesta área
 - Golpes por Pix
-- golpe da falsa central de atendimento
-- golpe do falso funcionário de banco
-- golpe do falso advogado
-- estelionato e estelionato eletrônico
-- fraudes bancárias
-- fraudes em empréstimos e financiamentos
-- fraudes em compras e vendas pela internet
-- invasão de contas bancárias e digitais
-- golpes por aplicativos de mensagens e redes sociais
+- Golpe da falsa central de atendimento
+- Golpe do falso funcionário de banco
+- Golpe do falso advogado
+- Estelionato e estelionato eletrônico
+- Fraudes bancárias
+- Fraudes em empréstimos e financiamentos
+- Fraudes em compras e vendas pela internet
+- Invasão de contas bancárias e digitais
+- Golpes por aplicativos de mensagens e redes sociais
 - Representação de vítimas e defesa de investigados
 
 ## O que analisamos em todo caso

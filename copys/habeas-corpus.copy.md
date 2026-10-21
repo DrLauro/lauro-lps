@@ -27,7 +27,8 @@ Qual é a sua situação?
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
 - Mais de 23 anos na área criminal
-- Casos de grande repercussão em sigilo
+- Sigilo absoluto
+- Casos de grande repercussão
 - Atendimento 24 horas
 - [Avaliações no Google](https://share.google/tYexilMh96mYhSUmT)
 
@@ -39,14 +40,14 @@ Impetramos o habeas corpus com pedido liminar no tribunal competente e acompanha
 
 ## Serviços nesta área
 - Habeas corpus preventivo e liberatório
-- habeas corpus com pedido liminar
-- contra prisão preventiva e temporária
-- por excesso de prazo
-- contra constrangimento ilegal
-- para trancamento de inquérito policial ou ação penal nas hipóteses cabíveis
-- no Tribunal de Justiça
-- nos Tribunais Regionais Federais
-- no Superior Tribunal de Justiça e no Supremo Tribunal Federal
+- Habeas corpus com pedido liminar
+- Contra prisão preventiva e temporária
+- Por excesso de prazo
+- Contra constrangimento ilegal
+- Para trancamento de inquérito policial ou ação penal nas hipóteses cabíveis
+- No Tribunal de Justiça
+- Nos Tribunais Regionais Federais
+- No Superior Tribunal de Justiça e no Supremo Tribunal Federal
 
 ## O que analisamos em todo caso
 - Fundamentação da decisão de prisão e se ela aponta fatos concretos.
