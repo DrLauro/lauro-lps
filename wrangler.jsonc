@@ -1,0 +1,7 @@
+// Produção (lauro.adv.br): Worker só com arquivos estáticos do build do Astro.
+// Deploy: npm run build && npx wrangler deploy (CI em .github/workflows/deploy.yml).
+{
+  "name": "lauro-adv-br",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "./dist", "html_handling": "auto-trailing-slash" }
+}
