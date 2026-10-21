@@ -38,5 +38,6 @@ No Cloudflare, os CNAME de e-mail ficam **sem proxy** (nuvem cinza). O e-mail co
 - Conta `00728a10caf986579afe02eafff98ab8`, zona `29d97fdf2e119059170d105d6d83d017` (status pending até trocar os nameservers no registro.br).
 - Nameservers a configurar no registro.br: `marty.ns.cloudflare.com` e `ziggy.ns.cloudflare.com`.
 - Feito pela API: SSL Full (strict), Always Use HTTPS, subdomínio workers.dev `lauro-adv`, primeiro deploy do Worker.
-- Token da API em `.env.cloudflare` (fora do git) e no secret `CLOUDFLARE_API_TOKEN` do GitHub. O token atual expira em 2026-10-29 e não tem permissão de DNS: precisa de um novo, sem expiração, com Zone → DNS → Edit.
-- Falta (depende da permissão de DNS): registros de e-mail e autodiscover em "DNS only", ligar lauro.adv.br e www ao Worker, Worker de login do editor em auth.lauro.adv.br.
+- Token da API em `.env.cloudflare` (fora do git) e no secret `CLOUDFLARE_API_TOKEN` do GitHub. Validade até 2027-10-22; permissões: Workers Scripts, Zone Read, DNS, Zone Settings, Workers Routes, Single Redirect.
+- DNS preparado (2026-10-21): registros de e-mail (MX, SPF, DMARC, DKIM hostingermail-a/b/c, autodiscover, autoconfig) em "DNS only"; A/AAAA antigos da Hostinger e o CNAME do www apagados; lauro.adv.br e www.lauro.adv.br ligados ao Worker como Custom Domains; regra de redirecionamento 301 de www para lauro.adv.br mantendo caminho e query string.
+- Falta: trocar os nameservers no registro.br; Worker de login do editor em auth.lauro.adv.br (depende do OAuth App no GitHub e da decisão sobre a conta dona do repositório).
