@@ -284,6 +284,11 @@ body:has(.sticky-cta) { padding-bottom: calc(var(--s-16) + var(--s-2)); }
 .prose { color: var(--text); font-size: var(--fs-base); overflow-wrap: break-word; }
 /* título longo em caixa alta (política de privacidade) */
 @media (max-width: 767px) { .hero h1.h1--long { font-size: var(--fs-lg); } }
+/* política de privacidade justificada (pedido do cliente); no celular a coluna é estreita demais e abre buracos */
+@media (min-width: 768px) {
+  .prose--justify p { text-align: justify; hyphens: auto; }
+  .prose--justify p:has(br) { text-align: start; } /* bloco de contato, linha a linha */
+}
 @media (min-width: 768px) { .prose { font-size: var(--fs-md); } }
 .prose > * + * { margin-top: var(--s-4); }
 .prose h2, .prose h3 { font-family: var(--font-display); font-weight: var(--fw-regular); line-height: var(--lh-tight); color: var(--navy-700); margin-top: var(--s-12); text-wrap: balance; }
