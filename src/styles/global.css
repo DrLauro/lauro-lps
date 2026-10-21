@@ -281,7 +281,9 @@ body:has(.sticky-cta) { padding-bottom: calc(var(--s-16) + var(--s-2)); }
 .article__by .mono { font-size: var(--fs-xs); color: var(--text-subtle); }
 .article__body { max-width: var(--measure); }
 .article__cover { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 1px solid var(--border); border-radius: var(--radius-md); margin-bottom: var(--s-8); }
-.prose { color: var(--text); font-size: var(--fs-base); }
+.prose { color: var(--text); font-size: var(--fs-base); overflow-wrap: break-word; }
+/* título longo em caixa alta (política de privacidade) */
+@media (max-width: 767px) { .hero h1.h1--long { font-size: var(--fs-lg); } }
 @media (min-width: 768px) { .prose { font-size: var(--fs-md); } }
 .prose > * + * { margin-top: var(--s-4); }
 .prose h2, .prose h3 { font-family: var(--font-display); font-weight: var(--fw-regular); line-height: var(--lh-tight); color: var(--navy-700); margin-top: var(--s-12); text-wrap: balance; }

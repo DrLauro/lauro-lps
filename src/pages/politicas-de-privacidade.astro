@@ -1,0 +1,24 @@
+---
+// Política de privacidade (texto do Dr. Lauro em src/data/politica-de-privacidade.md, não editar sem ele).
+// Mesmo endereço do site antigo, para não quebrar links já indexados.
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Content } from '../data/politica-de-privacidade.md';
+---
+<BaseLayout
+  title="Política de Privacidade | Dr. Lauro de Almeida Neto"
+  description="Política de Privacidade, Proteção de Dados e Sigilo Profissional do Dr. Lauro de Almeida Neto, OAB/SP 210.212."
+  canonical="https://lauro.adv.br/politicas-de-privacidade/"
+>
+  <article>
+    <header class="hero hero--index">
+      <div class="container article__head">
+        <h1 class="h1--long">POLÍTICA DE PRIVACIDADE, PROTEÇÃO DE DADOS E SIGILO PROFISSIONAL</h1>
+        <p class="article__by"><strong>DR. LAURO DE ALMEIDA NETO</strong> <span class="mono">· OAB/SP 210.212</span></p>
+        <p class="article__by mono">Última atualização: 21 de outubro de 2026.</p>
+      </div>
+    </header>
+    <div class="block">
+      <div class="container"><div class="article__body prose"><Content /></div></div>
+    </div>
+  </article>
+</BaseLayout>
