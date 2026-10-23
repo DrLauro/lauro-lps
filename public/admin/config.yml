@@ -4,7 +4,7 @@
 # yaml-language-server: $schema=https://unpkg.com/@sveltia/cms@0.233.0/schema/sveltia-cms.json
 backend:
   name: github
-  repo: lcoutinho7/lauro-lps
+  repo: DrLauro/lauro-lps
   branch: main
   base_url: https://auth.lauro.adv.br
   commit_messages:

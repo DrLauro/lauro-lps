@@ -4,7 +4,7 @@ _Dono: `devops-engineer`._
 
 | Ambiente | URL | Como |
 |---|---|---|
-| Preview | GitHub Pages (`https://lcoutinho7.github.io/lauro-lps/`) | Push em `main` → `.github/workflows/pages.yml` (check + build com `SITE`/`BASE`) |
+| Preview | GitHub Pages (`https://drlauro.github.io/lauro-lps/`) | Push em `main` → `.github/workflows/pages.yml` (check + build com `SITE`/`BASE`) |
 | Produção | `https://lauro.adv.br/` | Mesmo build sem `SITE`/`BASE` (padrão = lauro.adv.br). Cloudflare Worker `lauro-adv-br` (só estáticos, `wrangler.jsonc`), deploy a cada push em main por `.github/workflows/deploy.yml`. Endereço provisório: https://lauro-adv-br.lauro-adv.workers.dev |
 
 Fora de `lauro.adv.br` toda página sai com `noindex, nofollow` e o canonical aponta para o domínio final — o preview não concorre com o site no Google.
@@ -47,7 +47,7 @@ No Cloudflare, os CNAME de e-mail ficam **sem proxy** (nuvem cinza). O e-mail co
 - OAuth App "Lauro Neto — Painel do site" criado na conta GitHub **DrLauro** (app 3959127). Client ID `Ov23ctNRr69erUmJdfmZ` (público). Homepage `https://lauro.adv.br`, callback `https://auth.lauro.adv.br/callback`.
 - Worker de login `lauro-cms-auth` publicado em `auth.lauro.adv.br` (custom domain, sem workers.dev). Código: https://github.com/sveltia/sveltia-cms-auth sem alteração; `wrangler.toml` com `account_id` da conta, `routes = [{ pattern = "auth.lauro.adv.br", custom_domain = true }]`, `workers_dev = false` e as variáveis `GITHUB_CLIENT_ID` e `ALLOWED_DOMAINS = "lauro.adv.br"`.
 - Client secret: secret `GITHUB_CLIENT_SECRET` do Worker, gravado com `wrangler secret put` a partir da área de transferência (nunca em arquivo nem no chat).
-- Falta: transferir o repositório `LCoutinho7/lauro-lps` para DrLauro, atualizar `repo:` em `public/admin/config.yml` e a URL do preview (Pages), e conferir que os secrets e a variável do Actions continuam no repositório.
+- Repositório transferido para `DrLauro/lauro-lps` em 23/10/2026 (LCoutinho7 segue como colaborador com push). Secret `CLOUDFLARE_API_TOKEN` preservado; `repo:` do painel atualizado.
 
 ## Variáveis de build (22/10/2026)
 

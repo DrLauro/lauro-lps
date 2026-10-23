@@ -5,7 +5,7 @@ _Atualizado em 22/10/2026, ao fim da rodada de ajustes do estrategista de market
 ## No ar
 
 - Produção: https://lauro.adv.br (Cloudflare Worker, deploy automático a cada push na `main`). Domínio na Cloudflare desde 23/10/2026.
-- Preview com noindex: https://lcoutinho7.github.io/lauro-lps/
+- Preview com noindex: https://drlauro.github.io/lauro-lps/
 - 20 páginas de área, home, /especialidades/, /blog/, política de privacidade e página 404.
 
 ## Rodada de 22/10/2026
@@ -30,7 +30,7 @@ Lighthouse mobile (build de produção, 22/10): home e /lei-maria-da-penha/ com 
 ## Impeditivos para o lançamento final
 
 1. **ID do GTM** (`GTM-XXXXXXX`). Sem ele não há medição de conversão nem banner de cookies. Configuração em `docs/07-operacoes/observabilidade.md`.
-2. **Painel administrativo do blog**: OAuth App criado na conta DrLauro e Worker de login no ar em `auth.lauro.adv.br`. Faltam: gravar o Client secret no Worker, aceitar a transferência do repositório na conta DrLauro e trocar `repo:` em `public/admin/config.yml`.
+2. **Painel administrativo do blog**: OAuth App criado na conta DrLauro e Worker de login no ar em `auth.lauro.adv.br`. Repositório já na conta DrLauro. Falta gravar o Client secret no Worker.
 
 ## Pendências com material necessário
 
