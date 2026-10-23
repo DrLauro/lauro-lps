@@ -95,7 +95,7 @@ Não deveria. Mensagens de terceiros precisam ser confirmadas por outras provas.
 Não se manifeste sem orientação. A estratégia de defesa inclui como e quando falar publicamente.
 
 Operação, mandado ou processo complexo? Fale agora com o Dr. Lauro, em sigilo.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes Complexos e de Grande Repercussão): fui alvo de operação ou busca e apreensão.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Crimes Complexos e de Grande Repercussão, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Tráfico de Drogas](/trafico-de-drogas/)

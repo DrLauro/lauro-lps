@@ -46,12 +46,12 @@ A defesa trabalha em conjunto com a situação do débito: o parcelamento pode s
 - Fraudes fiscais
 - Notas fiscais falsas ou inidôneas
 - Uso de empresas interpostas e laranjas
-- Responsabilidade penal de sócios
-- Administradores e contadores
+- Responsabilidade penal de sócios, administradores e contadores
 - Representação fiscal para fins penais
 - Análise de procedimentos fiscais e documentos contábeis
 - Parcelamento e extinção da punibilidade pelo pagamento
-- Busca e apreensão em empresas e acordo de não persecução penal
+- Busca e apreensão em empresas
+- Acordo de não persecução penal
 
 ## O que analisamos em todo caso
 - Se o crédito tributário já foi definitivamente constituído.
@@ -78,7 +78,7 @@ O parcelamento suspende a pretensão punitiva enquanto estiver sendo cumprido, e
 Pode, se participou da fraude. Executar ordens sem conhecimento da ilicitude é diferente de planejar ou praticar a fraude.
 
 Autuação fiscal virou caso criminal? Fale com o Dr. Lauro, em sigilo.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes Tributários): recebi representação fiscal para fins penais.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Crimes Tributários, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Crimes Econômicos e Financeiros](/crimes-economicos-e-financeiros/)

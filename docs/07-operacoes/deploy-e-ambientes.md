@@ -41,3 +41,17 @@ No Cloudflare, os CNAME de e-mail ficam **sem proxy** (nuvem cinza). O e-mail co
 - Token da API em `.env.cloudflare` (fora do git) e no secret `CLOUDFLARE_API_TOKEN` do GitHub. Validade até 2027-10-22; permissões: Workers Scripts, Zone Read, DNS, Zone Settings, Workers Routes, Single Redirect.
 - DNS preparado (2026-10-21): registros de e-mail (MX, SPF, DMARC, DKIM hostingermail-a/b/c, autodiscover, autoconfig) em "DNS only"; A/AAAA antigos da Hostinger e o CNAME do www apagados; lauro.adv.br e www.lauro.adv.br ligados ao Worker como Custom Domains; regra de redirecionamento 301 de www para lauro.adv.br mantendo caminho e query string.
 - Falta: trocar os nameservers no registro.br; Worker de login do editor em auth.lauro.adv.br (depende do OAuth App no GitHub e da decisão sobre a conta dona do repositório).
+
+## Variáveis de build (22/10/2026)
+
+- `PUBLIC_ENV`: `production` no deploy da Cloudflare, `preview` no GitHub Pages. Só `preview` gera noindex; sem a variável o build é tratado como produção.
+- `PUBLIC_GTM_ID`: variável do repositório (`vars.PUBLIC_GTM_ID`). Vazia = sem GTM e sem banner de cookies.
+- O CI roda `npm run check:dist` antes do `wrangler deploy`: build que falha na verificação não vai ao ar.
+
+## T10: publicação no domínio definitivo (passo a passo, depois da troca de nameservers)
+
+1. Conferir que a zona saiu de "pending" (nameservers `marty`/`ziggy` ativos) e que `https://lauro.adv.br/` responde pelo Worker (os custom domains do apex e do www já existem).
+2. Conferir o 301 de www para o domínio sem www (regra da Cloudflare), HTTPS obrigatório e ausência de loop.
+3. Só então acrescentar `"workers_dev": false` no `wrangler.jsonc` e publicar. **Antes disso não**: o deploy desligaria o endereço de teste com o domínio ainda fora do ar.
+4. Conferir pelo domínio: as 24 páginas, `/sitemap-index.xml`, `/sitemap-0.xml`, `/og-lauro.jpg`, `/robots.txt`, `/llms.txt` e uma URL inexistente com 404 personalizada.
+5. Conferir a entrega de e-mail (MX da Hostinger preservados).

@@ -23,6 +23,8 @@ Qual é a sua situação?
 - [Sou vítima] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes Sexuais): sou vítima e preciso de orientação.")
 - [Ligar (11) 97080-2600] (ligação)
 
+[Saiba como atuamos para vítimas](/sou-vitima/)
+
 [Imagem: Dr. Lauro de Almeida Neto, advogado criminalista, de terno azul-marinho]
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
@@ -47,7 +49,8 @@ Em acusações que envolvem arquivos digitais, a defesa examina a identificaçã
 - Exploração sexual
 - Crimes previstos no Estatuto da Criança e do Adolescente
 - Divulgação não consentida de conteúdo íntimo
-- Crimes sexuais na internet e nas redes sociais e crimes envolvendo conteúdo digital e inteligência artificial
+- Crimes sexuais na internet e nas redes sociais
+- Crimes envolvendo conteúdo digital e inteligência artificial
 - Defesa criminal
 - Representação de vítimas e assistência de acusação
 
@@ -72,7 +75,7 @@ Não. Crimes sexuais tramitam em segredo de justiça; apenas as partes e seus ad
 Pode haver pedido de prisão preventiva; a defesa atua para demonstrar que ela não é necessária e pedir medidas alternativas.
 
 Acusação desse tipo exige defesa desde o primeiro dia. Fale com o Dr. Lauro em sigilo, 24 horas.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes Sexuais): fui intimado a depor.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Crimes Sexuais, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Lei Maria da Penha e Violência Doméstica](/lei-maria-da-penha/)

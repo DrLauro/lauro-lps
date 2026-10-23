@@ -47,7 +47,7 @@ Cada caso é analisado individualmente, considerando os fatos, os documentos, as
 - [04 Lei Maria da Penha e Violência Doméstica](/lei-maria-da-penha/)
 - [05 Crimes Digitais](/crimes-digitais/)
 - [06 Golpes e Fraudes Digitais](/golpes-e-fraudes-digitais/)
-- [07 Crimes Contra a Honra](/ofensas-digitais/)
+- [07 Crimes Contra a Honra e Ofensas Digitais](/ofensas-digitais/)
 - [08 Crimes Sexuais](/crimes-sexuais/)
 - [09 Crimes Complexos e de Grande Repercussão](/crimes-complexos/)
 - [10 Tribunal do Júri e Crimes Contra a Vida](/tribunal-do-juri/)
@@ -126,10 +126,17 @@ Acusados de roubo depois de abordados em veículo com alerta de furto, os client
 Resultados anteriores não garantem resultado em outros casos. Cada situação depende da análise dos fatos e das provas.
 [Ver todos os artigos](/blog/)
 
+## Endereço
+
+Avenida das Flores, nº 660, 1º andar, sala 03, Jardim das Flores, Osasco/SP, CEP 06110-100.
+[Como chegar](https://share.google/4rXgq8QJ5Aov5yxQ2) Mostrar mapa
+
+O mapa é do Google Maps e só carrega quando você clicar.
+
 A liberdade não tem preço.
 
 Quando sua liberdade está em jogo, procure um advogado com experiência na área criminal. Uma defesa qualificada desde o primeiro momento pode fazer a diferença em todas as etapas do processo.
 
 Se é importante para você, é importante para nós.
 
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site: quero falar com o Dr. Lauro.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)

@@ -39,20 +39,17 @@ Analisamos o auto de infração, os laudos técnicos e periciais e o nexo entre 
 Avaliamos as saídas previstas em lei, como transação penal, suspensão condicional do processo e acordo de não persecução penal, e a reparação do dano quando ela favorece o cliente. Quando o caso vai a julgamento, discutimos a autoria, a prova do dano e a responsabilidade da pessoa jurídica.
 
 ## Serviços nesta área
-- Maus-tratos a animais
-- Inclusive cães e gatos
-- Crimes contra a fauna
-- Caça e pesca ilegais
-- Crimes contra a flora
-- Desmatamento e queimadas
+- Maus-tratos a animais, inclusive cães e gatos
+- Crimes contra a fauna, caça e pesca ilegais
+- Crimes contra a flora, desmatamento e queimadas
 - Poluição
 - Crimes contra o ordenamento urbano e o patrimônio cultural
 - Crimes contra a administração ambiental
 - Responsabilidade penal da pessoa jurídica
 - Análise de autos de infração e laudos periciais
-- Transação penal
-- Suspensão condicional do processo
-- Acordo de não persecução penal e medidas cautelares
+- Transação penal e suspensão condicional do processo
+- Acordo de não persecução penal
+- Medidas cautelares
 
 ## O que analisamos em todo caso
 - Auto de infração, laudos e vistorias.
@@ -75,7 +72,7 @@ A pena para maus-tratos a cães e gatos é de reclusão e é mais alta do que a 
 Não. São independentes. Uma multa administrativa não impede o processo criminal, e o contrário também é verdadeiro.
 
 Autuação ou denúncia por crime ambiental? Fale com o Dr. Lauro.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes Ambientais): fui denunciado por maus-tratos a animais.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Crimes Ambientais, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Crimes Econômicos e Financeiros](/crimes-economicos-e-financeiros/)

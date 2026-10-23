@@ -9,12 +9,12 @@ URL: https://lauro.adv.br/ofensas-digitais/
 
 ## Conteúdo da página
 
-[Áreas de atuação](/especialidades/) Ofensas Digitais e Crimes Contra a Honra
+[Áreas de atuação](/especialidades/) Crimes Contra a Honra e Ofensas Digitais
 Dr. Lauro de Almeida Neto OAB/SP 210.212
 
 # Ofendido ou acusado de ofensa nas redes sociais? Advogado para crimes contra a honra
 
-O Dr. Lauro de Almeida Neto atua dos dois lados dos crimes contra a honra praticados na internet: para quem foi caluniado, difamado ou injuriado e quer responsabilizar o autor por queixa-crime, e para quem é acusado de uma publicação ofensiva. Mais de 23 anos de atuação criminal, atendimento 24 horas e sigilo absoluto.
+O Dr. Lauro de Almeida Neto atua na representação de vítimas e na defesa de pessoas acusadas, conforme o caso, em crimes contra a honra praticados na internet: para quem foi caluniado, difamado ou injuriado e quer responsabilizar o autor por queixa-crime, e para quem é acusado de uma publicação ofensiva. Mais de 23 anos de atuação criminal, atendimento 24 horas e sigilo absoluto.
 
 Qual é a sua situação?
 [Fui ofendido na internet] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Ofensas Digitais e Crimes Contra a Honra): fui ofendido na internet.")
@@ -22,6 +22,8 @@ Qual é a sua situação?
 - [Recebi uma intimação] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Ofensas Digitais e Crimes Contra a Honra): recebi uma intimação por ofensa.")
 - [Outra situação] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Ofensas Digitais e Crimes Contra a Honra): preciso de orientação sobre ofensa na internet.")
 - [Ligar (11) 97080-2600] (ligação)
+
+[Saiba como atuamos para vítimas](/sou-vitima/)
 
 [Imagem: Dr. Lauro de Almeida Neto, advogado criminalista, de terno azul-marinho]
 
@@ -39,9 +41,7 @@ Para quem foi ofendido: identificamos a autoria da publicação, preservamos as 
 Para quem foi acusado: analisamos se o texto realmente configura calúnia, difamação ou injúria, se a autoria está provada e se as provas eletrônicas são válidas. Muitas acusações não se sustentam quando se separa crítica, opinião e ofensa.
 
 ## Serviços nesta área
-- Calúnia
-- Difamação e injúria
-- Praticadas presencialmente ou na internet e nas redes sociais (Facebook, Instagram, TikTok, WhatsApp e outras plataformas)
+- Calúnia, difamação e injúria, praticadas presencialmente ou na internet e nas redes sociais (Facebook, Instagram, TikTok, WhatsApp e outras plataformas)
 - Queixa-crime
 - Defesa de quem é acusado
 - Representação de vítimas
@@ -67,7 +67,7 @@ Em muitos casos sim, com pedido judicial às plataformas para fornecer os dados 
 Sim. A ação criminal e a ação de indenização podem caminhar juntas.
 
 Foi ofendido ou acusado nas redes? O prazo corre. Fale agora com o Dr. Lauro.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Ofensas Digitais e Crimes Contra a Honra): fui ofendido na internet.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Crimes Contra a Honra e Ofensas Digitais, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Crimes Digitais](/crimes-digitais/)

@@ -44,16 +44,13 @@ Atuamos em progressão de regime, livramento condicional, indulto, prisão domic
 - Livramento condicional
 - Remição de pena
 - Detração penal
-- Indulto
-- Comutação de pena
+- Indulto e comutação de pena
 - Cálculo e retificação de cálculo de pena
 - Soma e unificação de penas
-- Faltas graves
-- Sindicâncias disciplinares
+- Faltas graves e sindicâncias disciplinares
 - Regressão de regime
 - Prisão domiciliar
-- Aproximação familiar
-- Transferência prisional
+- Aproximação familiar e transferência prisional
 - Agravo em execução
 - Prescrição e extinção da punibilidade
 
@@ -69,7 +66,8 @@ Caso 01
 
 ### Pena reduzida no STJ depois da condenação definitiva
 
-Em caso de condenação já definitiva por tráfico, o Superior Tribunal de Justiça reconheceu ilegalidade na dosimetria da pena, aplicou o tráfico privilegiado, reduziu a pena e readequou o regime. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Em caso de condenação já definitiva por tráfico, o Superior Tribunal de Justiça reconheceu ilegalidade na dosimetria da pena, aplicou o tráfico privilegiado, reduziu a pena e readequou o regime.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/6996129713/habeas-corpus-substitutivo-de-revisao-criminal-e-quando-ha-ilegalidade-manifesta)
 
 ## Perguntas frequentes
 
@@ -86,7 +84,7 @@ Sim. A remição desconta dias de pena pelo trabalho e pelo estudo.
 Sim, pode interromper prazos. Por isso a defesa na sindicância é importante.
 
 Familiar preso? Confira se todos os direitos estão sendo respeitados. Fale com o Dr. Lauro.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Execução Penal): familiar está preso e quero saber os direitos dele.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Execução Penal, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Recursos Criminais e Revisão Criminal](/recursos-e-revisao-criminal/)

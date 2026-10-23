@@ -47,12 +47,10 @@ No processo, examinamos a dinâmica do acidente, a perícia, o local, as imagens
 - Direção sem habilitação gerando perigo
 - Racha ou competição não autorizada
 - Entrega da direção a pessoa não habilitada
-- Prisão em flagrante por crime de trânsito
-- Fiança
-- Audiência de custódia
-- Acordo de não persecução penal
-- Transação penal e suspensão condicional do processo nas hipóteses cabíveis
-- Recursos criminais e representação de vítimas e familiares
+- Prisão em flagrante por crime de trânsito, fiança e audiência de custódia
+- Acordo de não persecução penal, transação penal e suspensão condicional do processo, nas hipóteses cabíveis
+- Recursos criminais
+- Representação de vítimas e familiares
 
 ## O que analisamos em todo caso
 - Como foi constatada a embriaguez e se o procedimento seguiu a lei.
@@ -79,7 +77,7 @@ Não. Em regra, é homicídio culposo, sem intenção. A acusação de dolo even
 Fugir do local para evitar responsabilidade é crime autônomo. Prestar socorro e permanecer no local, quando possível, pesa a favor de quem se envolveu no acidente.
 
 Prisão por embriaguez ou acidente com vítima? Fale agora com o Dr. Lauro, 24 horas.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes de Trânsito): fui preso por embriaguez ao volante.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Crimes de Trânsito, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Prisão em Flagrante e Audiência de Custódia](/prisao-em-flagrante/)

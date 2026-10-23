@@ -41,13 +41,7 @@ No processo, a defesa questiona a prova: quem era o dono da droga, se havia dest
 ## Serviços nesta área
 - Tráfico de drogas
 - Associação para o tráfico
-- Compra
-- Venda
-- Oferta
-- Fornecimento
-- Transporte
-- Armazenamento
-- Depósito e guarda de drogas
+- Compra, venda, oferta, fornecimento, transporte, armazenamento, depósito e guarda de drogas
 - Tráfico interestadual e internacional
 - Tráfico privilegiado
 - Financiamento e custeio do tráfico
@@ -56,8 +50,7 @@ No processo, a defesa questiona a prova: quem era o dono da droga, se havia dest
 - Busca e apreensão
 - Provas digitais
 - Perícias toxicológicas
-- Dosimetria da pena
-- Causas de diminuição
+- Dosimetria da pena e causas de diminuição
 - Recursos criminais e execução penal em condenações por tráfico
 
 ## O que analisamos em todo caso
@@ -93,7 +86,7 @@ Não deveriam. Precisam ser confirmadas por outras provas, como mostrou o caso d
 Sim, depende do caso. A prisão preventiva precisa de fundamentação concreta, e a defesa pode pedir liberdade ou habeas corpus.
 
 Acusação de tráfico? A defesa começa na delegacia. Fale agora com o Dr. Lauro, 24 horas.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Tráfico de Drogas): foi preso por tráfico agora.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Tráfico de Drogas, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Prisão em Flagrante e Audiência de Custódia](/prisao-em-flagrante/)

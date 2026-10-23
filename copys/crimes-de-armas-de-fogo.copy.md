@@ -44,15 +44,12 @@ No processo, a defesa discute a classificação da arma, o laudo pericial, se a 
 - Posse e porte de arma de uso restrito ou proibido
 - Disparo de arma de fogo
 - Omissão de cautela
-- Comércio ilegal e tráfico de armas
-- Munições e acessórios
+- Comércio ilegal e tráfico de armas, munições e acessórios
 - Numeração raspada ou suprimida
-- Arma em situação irregular de atiradores
-- Caçadores e colecionadores (CAC)
-- Prisão em flagrante
-- Fiança
-- Audiência de custódia
-- Perícia de armas e recursos criminais
+- Arma em situação irregular de atiradores, caçadores e colecionadores (CAC)
+- Prisão em flagrante, fiança e audiência de custódia
+- Perícia de armas
+- Recursos criminais
 
 ## O que analisamos em todo caso
 - Legalidade da abordagem e da busca.
@@ -79,7 +76,7 @@ O registro autoriza a posse em casa, não o porte na rua. Sair com a arma sem au
 Sim. Armas de uso restrito ou proibido e numeração raspada têm penas bem maiores do que as de uso permitido.
 
 Prisão ou apreensão de arma? A defesa começa na delegacia. Fale com o Dr. Lauro, 24 horas.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes de Armas de Fogo): fui preso com arma de fogo.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Crimes de Armas de Fogo, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Prisão em Flagrante e Audiência de Custódia](/prisao-em-flagrante/)

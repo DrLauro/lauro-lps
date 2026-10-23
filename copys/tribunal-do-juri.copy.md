@@ -23,6 +23,8 @@ Qual é a sua situação?
 - [Outra situação] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Tribunal do Júri e Crimes Contra a Vida): preciso de orientação sobre júri.")
 - [Ligar (11) 97080-2600] (ligação)
 
+[Saiba como atuamos para vítimas](/sou-vitima/)
+
 [Imagem: Dr. Lauro de Almeida Neto, advogado criminalista, de terno azul-marinho]
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
@@ -39,17 +41,14 @@ A defesa começa muito antes do plenário: no inquérito, na fase de pronúncia,
 No plenário, a sustentação oral fala para jurados leigos; a experiência em júri faz diferença. Para famílias de vítimas, a assistência de acusação acompanha o processo e reforça a busca por responsabilização.
 
 ## Serviços nesta área
-- Homicídio simples
-- Qualificado
-- Privilegiado e culposo
+- Homicídio simples, qualificado, privilegiado e culposo
 - Tentativa de homicídio
 - Feminicídio e tentativa de feminicídio
 - Vicaricídio
-- Lesão corporal leve
-- Grave
-- Gravíssima e seguida de morte
+- Lesão corporal leve, grave, gravíssima e seguida de morte
 - Tribunal do Júri
-- Defesa criminal em crimes contra a vida e assistência de acusação em crimes contra a vida
+- Defesa criminal em crimes contra a vida
+- Assistência de acusação em crimes contra a vida
 
 ## O que analisamos em todo caso
 - Laudos de local, necroscópico e balística.
@@ -72,7 +71,7 @@ Nem sempre. Depende dos fundamentos da prisão; a defesa pode pedir liberdade a 
 Sim, como assistente de acusação, por meio de advogado.
 
 Júri marcado, prisão por homicídio ou família de vítima? Fale com o Dr. Lauro.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Tribunal do Júri e Crimes Contra a Vida): familiar foi preso por homicídio.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Tribunal do Júri e Crimes Contra a Vida, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Lei Maria da Penha e Violência Doméstica](/lei-maria-da-penha/)

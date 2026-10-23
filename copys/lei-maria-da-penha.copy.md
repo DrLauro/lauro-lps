@@ -23,6 +23,9 @@ Qual é a sua situação?
 - [Outra situação] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Lei Maria da Penha e Violência Doméstica): preciso de orientação sobre violência doméstica.")
 - [Ligar (11) 97080-2600] (ligação)
 
+Em perigo agora? Ligue [190] (ligação). Violência contra a mulher: [180] (ligação).
+[Saiba como atuamos para vítimas](/sou-vitima/)
+
 [Imagem: Dr. Lauro de Almeida Neto, advogado criminalista, de terno azul-marinho]
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
@@ -41,17 +44,12 @@ Para acusados: análise da medida protetiva e do inquérito, pedido de revisão 
 ## Serviços nesta área
 - Lei Maria da Penha
 - Violência doméstica e familiar
-- Violência física
-- Psicológica
-- Sexual
-- Patrimonial
-- Moral e vicária
+- Violência física, psicológica, sexual, patrimonial, moral e vicária
 - Lesão corporal no contexto doméstico
 - Ameaça
 - Perseguição
 - Violência psicológica contra a mulher
-- Calúnia
-- Difamação e injúria
+- Calúnia, difamação e injúria no contexto doméstico
 - Medidas protetivas de urgência (concessão, revisão, revogação e descumprimento)
 - Prisão preventiva em contexto de violência doméstica
 - Defesa de investigados e acusados
@@ -69,13 +67,15 @@ Caso 01
 
 ### Representação da vítima com medidas protetivas mantidas
 
-Atuando para a vítima, a defesa dos interesses dela levou a um pedido incomum: a revogação da prisão do investigado, para que ele voltasse a cuidar da própria mãe e a vítima pudesse reorganizar a vida. O juízo deferiu o pedido e manteve todas as medidas protetivas, inclusive afastamento, proibição de contato e sigilo do novo endereço da vítima. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Atuando para a vítima, a defesa dos interesses dela levou a um pedido incomum: a revogação da prisão do investigado, para que ele voltasse a cuidar da própria mãe e a vítima pudesse reorganizar a vida. O juízo deferiu o pedido e manteve todas as medidas protetivas, inclusive afastamento, proibição de contato e sigilo do novo endereço da vítima.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7171114570/liberdade-a-pedido-da-vitima)
 
 Caso 02
 
 ### Acusação de ameaça baseada em prints: absolvição
 
-Na defesa de acusado de ameaça contra ex-companheira, a defesa demonstrou que o print apresentado tinha data diferente da descrita na denúncia, sem cadeia de custódia, e que a suposta confissão na delegacia era genérica e feita sem advogado. O acusado foi absolvido por falta de provas. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Na defesa de acusado de ameaça contra ex-companheira, a defesa demonstrou que o print apresentado tinha data diferente da descrita na denúncia, sem cadeia de custódia, e que a suposta confissão na delegacia era genérica e feita sem advogado. O acusado foi absolvido por falta de provas.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/6664400264/prints-confissao-policial-e-prova-judicial-por-que-a-ameaca-descrita-na-denuncia-nao-foi-confirmada)
 
 ## Perguntas frequentes
 
@@ -96,11 +96,11 @@ Depende do crime. Na lesão corporal em violência doméstica, por exemplo, o pr
 Sim, quando não houver mais risco. O pedido é feito ao juiz, com fundamentos e provas.
 
 Vítima ou acusado em caso de violência doméstica? Fale com o Dr. Lauro, em sigilo, 24 horas.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Lei Maria da Penha e Violência Doméstica): sou vítima e preciso de medida protetiva.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Lei Maria da Penha e Violência Doméstica, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Prisão em Flagrante e Audiência de Custódia](/prisao-em-flagrante/)
 - [Tribunal do Júri e Crimes Contra a Vida](/tribunal-do-juri/)
-- [Ofensas Digitais e Crimes Contra a Honra](/ofensas-digitais/)
+- [Crimes Contra a Honra e Ofensas Digitais](/ofensas-digitais/)
 
 Lauro de Almeida Neto é advogado criminalista em Osasco/SP, OAB/SP 210.212, com mais de 23 anos de atuação. Atendimento presencial em Osasco e São Paulo e online em todo o Brasil. Lauro Neto Sociedade Individual de Advocacia, CNPJ 66.317.792/0001-30. Os casos citados não representam garantia de resultado.

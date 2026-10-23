@@ -50,8 +50,7 @@ Quando há bloqueio de bens, contas ou valores, a defesa pede a liberação do q
 - Crimes contra o mercado de capitais
 - Investigações financeiras e patrimoniais
 - Quebra de sigilo bancário e fiscal
-- Bloqueio
-- Sequestro e arresto de bens
+- Bloqueio, sequestro e arresto de bens
 - Busca e apreensão de documentos e dispositivos
 - Acordo de não persecução penal e colaboração premiada
 
@@ -80,7 +79,7 @@ Em regra, a Justiça Federal.
 A responsabilidade penal é pessoal. Ser sócio, por si só, não basta: a acusação precisa demonstrar a participação de cada um.
 
 Investigação financeira, bloqueio de bens ou operação? Fale com o Dr. Lauro, em sigilo.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes Econômicos e Financeiros): tive bens ou contas bloqueados.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Crimes Econômicos e Financeiros, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Crimes Complexos e de Grande Repercussão](/crimes-complexos/)

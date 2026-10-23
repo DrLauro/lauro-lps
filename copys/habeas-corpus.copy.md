@@ -41,13 +41,12 @@ Impetramos o habeas corpus com pedido liminar no tribunal competente e acompanha
 ## Serviços nesta área
 - Habeas corpus preventivo e liberatório
 - Habeas corpus com pedido liminar
-- Contra prisão preventiva e temporária
-- Por excesso de prazo
-- Contra constrangimento ilegal
-- Para trancamento de inquérito policial ou ação penal nas hipóteses cabíveis
-- No Tribunal de Justiça
-- Nos Tribunais Regionais Federais
-- No Superior Tribunal de Justiça e no Supremo Tribunal Federal
+- Habeas corpus contra prisão preventiva e temporária
+- Habeas corpus por excesso de prazo
+- Habeas corpus contra constrangimento ilegal
+- Habeas corpus para trancamento de inquérito policial ou ação penal, nas hipóteses cabíveis
+- Habeas corpus no Tribunal de Justiça e nos Tribunais Regionais Federais
+- Habeas corpus no Superior Tribunal de Justiça e no Supremo Tribunal Federal
 
 ## O que analisamos em todo caso
 - Fundamentação da decisão de prisão e se ela aponta fatos concretos.
@@ -61,7 +60,8 @@ Caso 01
 
 ### Habeas corpus contra prisão preventiva no TJSP
 
-Em caso em que a prisão preventiva foi decretada contra a manifestação do próprio Ministério Público, a defesa demonstrou a ilegalidade da decisão e obteve liminar em habeas corpus no Tribunal de Justiça de São Paulo. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Em caso em que a prisão preventiva foi decretada contra a manifestação do próprio Ministério Público, a defesa demonstrou a ilegalidade da decisão e obteve liminar em habeas corpus no Tribunal de Justiça de São Paulo.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7605115884/prisao-preventiva-decretada-contra-manifestacao-do-ministerio-publico-tjsp-reconhece-ilegalidade-e-concede-liminar-em-habeas-corpus)
 
 ## Perguntas frequentes
 
@@ -82,7 +82,7 @@ Não. Pode-se recorrer ao Superior Tribunal de Justiça e, em alguns casos, ao S
 Em situações excepcionais, sim: o trancamento do inquérito ou da ação penal quando não há justa causa.
 
 Prisão ilegal ou ameaça de prisão? Fale agora com o Dr. Lauro. Atendemos clientes de todo o Brasil.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Habeas Corpus): familiar está preso e preciso de habeas corpus.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Habeas Corpus, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Prisão em Flagrante e Audiência de Custódia](/prisao-em-flagrante/)

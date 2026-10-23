@@ -5,7 +5,7 @@ URL: https://lauro.adv.br/crimes-digitais/
 ## SEO
 
 - **Title:** Advogado de Crimes Digitais em Osasco e São Paulo
-- **Meta description:** Defesa em crimes digitais: golpes, fraudes bancárias, Pix, invasão de dispositivo e provas eletrônicas. Advogado criminalista 24h, Dr. Lauro.
+- **Meta description:** Advogado de crimes digitais: invasão de dispositivos e contas, uso indevido de dados, autoria e provas digitais. Criminalista 24h em Osasco e SP.
 
 ## Conteúdo da página
 
@@ -14,7 +14,7 @@ Dr. Lauro de Almeida Neto OAB/SP 210.212
 
 # Advogado de crimes digitais em Osasco e São Paulo, com atendimento 24 horas
 
-O Dr. Lauro de Almeida Neto, advogado criminalista com mais de 23 anos de atuação (OAB/SP 210.212), defende pessoas acusadas de crimes cometidos por meio digital: golpes e fraudes bancárias, transferências por Pix, falsificação de documentos eletrônicos e invasão de dispositivos. A defesa começa pela prova digital, que é onde esses processos costumam ter falhas.
+O Dr. Lauro de Almeida Neto, advogado criminalista com mais de 23 anos de atuação (OAB/SP 210.212), atua em investigações e processos envolvendo invasão de dispositivos, acesso indevido a contas, uso ilícito de dados e outras infrações praticadas por meios digitais, em Osasco, São Paulo e em todo o Brasil. A defesa começa pela análise de autoria, registros eletrônicos, provas digitais e perícias, tanto para pessoas investigadas ou acusadas quanto para vítimas.
 
 Qual é a sua situação?
 [Fui acusado de golpe ou fraude] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes Digitais): fui acusado de golpe ou fraude.")
@@ -39,21 +39,17 @@ Analisamos de onde vieram prints, fotos, áudios e registros, e se a cadeia de c
 Para vítimas, preservamos as provas, identificamos o caminho do dinheiro e levamos o caso à polícia e ao Judiciário.
 
 ## Serviços nesta área
-- Estelionato eletrônico
-- Fraudes bancárias
-- Golpes por Pix
-- Golpe da falsa central de atendimento
-- Golpe do falso funcionário de banco
-- Golpe do falso advogado
-- Fraudes em empréstimos e financiamentos
-- Fraudes em compras e vendas pela internet
 - Invasão de dispositivo informático
 - Invasão de contas bancárias e digitais
+- Uso ilícito de dados
 - Extorsão digital
-- Golpes por aplicativos de mensagens
+- Estelionato eletrônico
 - Fraudes no WhatsApp e nas redes sociais (Facebook, Instagram, TikTok e outras)
 - Falsificação de documentos e crimes patrimoniais no ambiente digital
-- Defesa de investigados e acusados e representação de vítimas
+- Análise de autoria e de registros eletrônicos
+- Provas digitais, perícia e reconhecimento por fotografia
+- Defesa de investigados e acusados
+- Representação de vítimas
 
 ## O que analisamos em todo caso
 - Origem e integridade de prints, fotos, áudios e registros.
@@ -90,11 +86,11 @@ Não necessariamente. Ser titular da conta não prova, por si só, que a pessoa 
 Em regra, o acesso ao conteúdo depende de autorização judicial. Acesso sem ordem pode tornar a prova ilícita.
 
 Investigado ou acusado de crime digital? Fale agora com o Dr. Lauro. Atendimento 24 horas, em sigilo.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes Digitais): fui acusado de golpe ou fraude.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Crimes Digitais, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Golpes e Fraudes Digitais](/golpes-e-fraudes-digitais/)
-- [Ofensas Digitais e Crimes Contra a Honra](/ofensas-digitais/)
+- [Crimes Contra a Honra e Ofensas Digitais](/ofensas-digitais/)
 - [Crimes Patrimoniais](/crimes-patrimoniais/)
 
 Lauro de Almeida Neto é advogado criminalista em Osasco/SP, OAB/SP 210.212, com mais de 23 anos de atuação. Atendimento presencial em Osasco e São Paulo e online em todo o Brasil. Lauro Neto Sociedade Individual de Advocacia, CNPJ 66.317.792/0001-30. Os casos citados não representam garantia de resultado.

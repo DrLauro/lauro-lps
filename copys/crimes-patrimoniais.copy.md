@@ -40,15 +40,13 @@ Buscamos o arquivamento, a absolvição ou, quando a condenação é provável, 
 
 ## Serviços nesta área
 - Furto simples e qualificado
-- Roubo simples
-- Com arma de fogo ou arma branca
-- Em concurso de pessoas
-- Com restrição da liberdade da vítima ou com resultado lesão grave
+- Roubo simples, com arma de fogo ou arma branca, em concurso de pessoas, com restrição da liberdade da vítima ou com resultado lesão grave
 - Latrocínio
 - Extorsão e extorsão mediante sequestro
 - Estelionato
 - Apropriação indébita
-- Receptação simples e qualificada e dano
+- Receptação simples e qualificada
+- Dano
 
 ## O que analisamos em todo caso
 - Reconhecimento pessoal ou por foto e se seguiu a lei.
@@ -62,13 +60,15 @@ Caso 01
 
 ### Furto no ambiente de trabalho: investigação arquivada
 
-Em acusação de furto no ambiente de trabalho, a defesa demonstrou a falta de provas e a investigação foi arquivada. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Em acusação de furto no ambiente de trabalho, a defesa demonstrou a falta de provas e a investigação foi arquivada.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7604915091/acusacao-de-furto-no-ambiente-de-trabalho-os-limites-da-suspeita-a-ausencia-de-provas-e-o-arquivamento-da-investigacao)
 
 Caso 02
 
 ### Roubo: absolvição por falta de prova judicial
 
-Acusados de roubo depois de abordados em veículo com alerta de furto, os clientes foram reconhecidos apenas na delegacia. A defesa sustentou a insuficiência das provas do inquérito e as falhas do reconhecimento (art. 226 do Código de Processo Penal), e a ação penal foi julgada improcedente. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Acusados de roubo depois de abordados em veículo com alerta de furto, os clientes foram reconhecidos apenas na delegacia. A defesa sustentou a insuficiência das provas do inquérito e as falhas do reconhecimento (art. 226 do Código de Processo Penal), e a ação penal foi julgada improcedente.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7512770959/entre-o-flagrante-e-a-condenacao-existe-a-prova-uma-reflexao-sobre-os-arts-155-e-226-do-cpp)
 
 ## Perguntas frequentes
 
@@ -85,7 +85,7 @@ Não assine confissões nem dê declarações sem advogado; procure a defesa ant
 Em regra, sim, desde 2019, com algumas exceções.
 
 Acusado de furto, roubo ou estelionato? Fale agora com o Dr. Lauro, 24 horas.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes Patrimoniais): foi preso por furto ou roubo agora.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Crimes Patrimoniais, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Prisão em Flagrante e Audiência de Custódia](/prisao-em-flagrante/)

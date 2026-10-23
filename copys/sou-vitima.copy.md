@@ -23,6 +23,8 @@ Qual é a sua situação?
 - [Perdi um familiar] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Sou Vítima de um Crime): perdi um familiar em um crime ou acidente.")
 - [Ligar (11) 97080-2600] (ligação)
 
+Em perigo agora? Ligue [190] (ligação). Violência contra a mulher: [180] (ligação).
+
 [Imagem: Dr. Lauro de Almeida Neto, advogado criminalista, de terno azul-marinho]
 
 Dr. Lauro de Almeida Neto Advogado criminalista · OAB/SP 210.212
@@ -48,11 +50,7 @@ No processo, o advogado pode atuar como assistente de acusação: propõe provas
 - Atuação no Tribunal do Júri ao lado da acusação
 - Pedido de reparação de danos na sentença
 - Medidas para bloqueio e recuperação de valores em golpes e fraudes
-- Representação de vítimas de violência doméstica
-- Crimes sexuais
-- Crimes contra a honra
-- Golpes digitais
-- Crimes de trânsito e crimes contra a vida e de seus familiares
+- Representação de vítimas de violência doméstica, crimes sexuais, crimes contra a honra, golpes digitais, crimes de trânsito e crimes contra a vida, e de seus familiares
 
 ## Prazos e cuidados que a vítima precisa conhecer
 - Em crimes como calúnia, difamação, injúria, ameaça e, em regra, estelionato, a vítima tem 6 meses, contados de quando sabe quem é o autor, para apresentar a queixa ou a representação.
@@ -66,7 +64,8 @@ Caso 01
 
 ### Representação da vítima com medidas protetivas mantidas
 
-Atuando para a vítima em caso de violência doméstica, a defesa dos interesses dela levou a um pedido incomum: a revogação da prisão do investigado, para que ele voltasse a cuidar da própria mãe e a vítima pudesse reorganizar a vida. O juízo deferiu o pedido e manteve todas as medidas protetivas, inclusive afastamento, proibição de contato e sigilo do novo endereço da vítima. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Atuando para a vítima em caso de violência doméstica, a defesa dos interesses dela levou a um pedido incomum: a revogação da prisão do investigado, para que ele voltasse a cuidar da própria mãe e a vítima pudesse reorganizar a vida. O juízo deferiu o pedido e manteve todas as medidas protetivas, inclusive afastamento, proibição de contato e sigilo do novo endereço da vítima.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/7171114570/liberdade-a-pedido-da-vitima)
 
 ## Perguntas frequentes
 
@@ -87,11 +86,11 @@ Depende do crime. Em vários casos, como crimes contra a honra e, em regra, este
 Sim. O juiz pode fixar na sentença um valor mínimo de reparação dos danos, sem prejuízo da ação de indenização.
 
 Foi vítima de um crime? Não perca prazos nem provas. Fale com o Dr. Lauro, em sigilo, 24 horas.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Sou Vítima de um Crime): fui vítima de golpe.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Sou Vítima de um Crime, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Golpes e Fraudes Digitais](/golpes-e-fraudes-digitais/)
 - [Lei Maria da Penha e Violência Doméstica](/lei-maria-da-penha/)
-- [Ofensas Digitais e Crimes Contra a Honra](/ofensas-digitais/)
+- [Crimes Contra a Honra e Ofensas Digitais](/ofensas-digitais/)
 
 Lauro de Almeida Neto é advogado criminalista em Osasco/SP, OAB/SP 210.212, com mais de 23 anos de atuação. Atendimento presencial em Osasco e São Paulo e online em todo o Brasil. Lauro Neto Sociedade Individual de Advocacia, CNPJ 66.317.792/0001-30. Os casos citados não representam garantia de resultado.

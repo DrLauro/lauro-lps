@@ -5,7 +5,7 @@ URL: https://lauro.adv.br/golpes-e-fraudes-digitais/
 ## SEO
 
 - **Title:** Advogado para Golpe do Pix e Fraude Bancária | Dr. Lauro
-- **Meta description:** Caiu em golpe do Pix, da falsa central ou do falso advogado? Ou foi acusado de participar? Advogado criminalista para vítimas e acusados.
+- **Meta description:** Caiu em golpe do Pix, da falsa central ou do falso advogado, ou teve a conta usada por golpistas? Advogado criminalista para vítimas e investigados.
 
 ## Conteúdo da página
 
@@ -14,7 +14,7 @@ Dr. Lauro de Almeida Neto OAB/SP 210.212
 
 # Golpe do Pix, falsa central e falso advogado: advogado para vítimas e acusados
 
-Golpes digitais têm dois lados: quem perdeu dinheiro e quem teve a conta usada, muitas vezes sem saber, e passou a ser investigado. O Dr. Lauro de Almeida Neto, advogado criminalista com mais de 23 anos de atuação, atende os dois, com rapidez, porque nesses casos prazo e preservação de provas fazem diferença.
+Golpes digitais envolvem quem perdeu dinheiro e quem teve a conta usada, muitas vezes sem saber. O Dr. Lauro de Almeida Neto, advogado criminalista com mais de 23 anos de atuação, atua na representação de vítimas e na defesa de pessoas investigadas ou acusadas, conforme o caso, com análise das transações, dos documentos e das provas digitais.
 
 Qual é a sua situação?
 [Caí em um golpe] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Golpes e Fraudes Digitais): caí em um golpe.")
@@ -22,6 +22,8 @@ Qual é a sua situação?
 - [Recebi intimação] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Golpes e Fraudes Digitais): recebi intimação sobre golpe.")
 - [Outra situação] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Golpes e Fraudes Digitais): preciso de orientação sobre golpe digital.")
 - [Ligar (11) 97080-2600] (ligação)
+
+[Saiba como atuamos para vítimas](/sou-vitima/)
 
 [Imagem: Dr. Lauro de Almeida Neto, advogado criminalista, de terno azul-marinho]
 
@@ -43,13 +45,15 @@ Para quem teve a conta usada: demonstramos a ausência de participação e de in
 - Golpe da falsa central de atendimento
 - Golpe do falso funcionário de banco
 - Golpe do falso advogado
-- Estelionato e estelionato eletrônico
+- Falsos investimentos
 - Fraudes bancárias
 - Fraudes em empréstimos e financiamentos
 - Fraudes em compras e vendas pela internet
-- Invasão de contas bancárias e digitais
+- Estelionato e estelionato eletrônico
 - Golpes por aplicativos de mensagens e redes sociais
-- Representação de vítimas e defesa de investigados
+- Conta usada por golpistas
+- Representação de vítimas
+- Defesa de investigados
 
 ## O que analisamos em todo caso
 - Data em que a vítima soube do golpe e de quem é o autor, que define o prazo.
@@ -63,7 +67,7 @@ Caso 01
 
 ### Fraude bancária com documento falsificado
 
-Contratação feita em nome do cliente foi derrubada com perícia na assinatura e nos registros eletrônicos; a cobrança foi julgada improcedente.
+Contratação feita em nome do cliente foi derrubada com perícia na assinatura e análise dos registros eletrônicos da operação; a cobrança foi julgada improcedente.
 
 ## Perguntas frequentes
 
@@ -84,11 +88,11 @@ Não necessariamente. É preciso provar que você participou e sabia do golpe. A
 No estelionato, em regra, 6 meses a partir de quando a vítima sabe quem é o autor para fazer a representação.
 
 Golpe, fraude ou conta usada por golpistas? Fale agora com o Dr. Lauro.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Golpes e Fraudes Digitais): caí em um golpe.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Golpes e Fraudes Digitais, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Crimes Digitais](/crimes-digitais/)
 - [Crimes Patrimoniais](/crimes-patrimoniais/)
-- [Ofensas Digitais e Crimes Contra a Honra](/ofensas-digitais/)
+- [Crimes Contra a Honra e Ofensas Digitais](/ofensas-digitais/)
 
 Lauro de Almeida Neto é advogado criminalista em Osasco/SP, OAB/SP 210.212, com mais de 23 anos de atuação. Atendimento presencial em Osasco e São Paulo e online em todo o Brasil. Lauro Neto Sociedade Individual de Advocacia, CNPJ 66.317.792/0001-30. Os casos citados não representam garantia de resultado.

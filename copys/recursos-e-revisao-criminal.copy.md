@@ -43,12 +43,11 @@ Depois do trânsito em julgado, a revisão criminal pode rever a condenação qu
 - Recurso em sentido estrito
 - Embargos de declaração
 - Embargos infringentes e de nulidade
-- Agravo regimental
-- Agravo interno
-- Recurso especial
-- Recurso extraordinário
+- Agravo regimental e agravo interno
+- Recurso especial e recurso extraordinário
 - Agravo em recurso especial e extraordinário
-- Revisão criminal e reabilitação criminal
+- Revisão criminal
+- Reabilitação criminal
 
 ## O que analisamos em todo caso
 - Nulidades do processo.
@@ -62,7 +61,8 @@ Caso 01
 
 ### Condenação definitiva corrigida no STJ
 
-Em condenação já transitada em julgado por furto qualificado, a defesa levou ao Superior Tribunal de Justiça a tese de que a quebra do vidro do próprio veículo subtraído não qualifica o furto. A Sexta Turma concedeu a ordem de ofício: o crime foi desclassificado para furto simples, com regime aberto e substituição da prisão por penas restritivas de direitos. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Em condenação já transitada em julgado por furto qualificado, a defesa levou ao Superior Tribunal de Justiça a tese de que a quebra do vidro do próprio veículo subtraído não qualifica o furto. A Sexta Turma concedeu a ordem de ofício: o crime foi desclassificado para furto simples, com regime aberto e substituição da prisão por penas restritivas de direitos.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/6607932795/hc-substitutivo-de-revisao-criminal-stj-concede-ordem-de-oficio)
 
 ## Perguntas frequentes
 
@@ -79,7 +79,7 @@ Em regra, 5 dias para a apelação, contados da intimação. Perder o prazo pode
 Depende do caso. A defesa pode pedir para que o condenado recorra solto.
 
 Condenado ou com processo nos tribunais? O prazo é curto. Fale com o Dr. Lauro.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Recursos Criminais e Revisão Criminal): fui condenado e quero recorrer.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Recursos Criminais e Revisão Criminal, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Habeas Corpus](/habeas-corpus/)

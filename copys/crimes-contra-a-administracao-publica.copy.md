@@ -81,7 +81,7 @@ Não. Falhas administrativas não se confundem com crime; é preciso fraude ou c
 Não necessariamente. As esferas são independentes, mas o que se decide em uma pode influenciar a outra.
 
 Servidor, agente público ou empresário investigado? Fale com o Dr. Lauro, em sigilo.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Crimes Contra a Administração Pública): sou servidor público e estou sendo investigado.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Crimes Contra a Administração Pública, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Crimes Complexos e de Grande Repercussão](/crimes-complexos/)

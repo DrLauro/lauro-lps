@@ -41,19 +41,16 @@ Na audiência de custódia, que deve acontecer em até 24 horas após a prisão,
 ## Serviços nesta área
 - Acompanhamento em delegacia
 - Investigação criminal e inquérito policial
-- Depoimentos
-- Interrogatórios
-- Reconhecimentos
+- Depoimentos, interrogatórios e reconhecimentos
 - Diligências policiais
 - Busca e apreensão
-- Prisão em flagrante
-- Prisão preventiva
-- Prisão temporária
+- Prisão em flagrante, prisão preventiva e prisão temporária
 - Audiência de custódia
 - Relaxamento e revogação de prisão
 - Liberdade provisória
 - Fiança e dispensa de fiança
-- Prisão domiciliar e medidas cautelares diversas da prisão
+- Prisão domiciliar
+- Medidas cautelares diversas da prisão
 
 ## O que analisamos em todo caso
 - Se a prisão foi legal: situação de flagrante, comunicação ao juiz e à família, direito ao silêncio e ao advogado.
@@ -67,7 +64,8 @@ Caso 01
 
 ### Preso em flagrante por tráfico: liberdade concedida pelo TJSP
 
-Cliente primário, preso em flagrante por suposto tráfico de drogas, teve a prisão convertida em preventiva. Em habeas corpus, a defesa demonstrou a falta de fundamentos concretos para manter a prisão e o Tribunal de Justiça de São Paulo concedeu a liberdade por unanimidade, com medidas cautelares. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Cliente primário, preso em flagrante por suposto tráfico de drogas, teve a prisão convertida em preventiva. Em habeas corpus, a defesa demonstrou a falta de fundamentos concretos para manter a prisão e o Tribunal de Justiça de São Paulo concedeu a liberdade por unanimidade, com medidas cautelares.
+[Ler artigo](https://dr-lauroneto3523.jusbrasil.com.br/artigos/6996806843/habeas-corpus-tjsp-concede-liberdade-a-fbb-e-reafirma-que-prisao-preventiva-exige-fundamentacao-concreta)
 
 ## Perguntas frequentes
 
@@ -88,7 +86,7 @@ Não. Todo preso tem direito ao silêncio e a ser assistido por advogado. Falar 
 Não. Depende do crime e da situação. Quando cabível, o advogado pode pedir a fiança ou até a dispensa dela para quem não pode pagar.
 
 Alguém foi preso agora? Cada hora conta. Fale com o Dr. Lauro, 24 horas.
-[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro, vim pelo site (Prisão em Flagrante e Audiência de Custódia): alguém foi preso agora.") [Ligar (11) 97080-2600] (ligação)
+[Falar no WhatsApp] (WhatsApp, mensagem: "Olá, Dr. Lauro. Vim pelo site, na página Prisão em Flagrante e Audiência de Custódia, e gostaria de atendimento sobre meu caso.") [Ligar (11) 97080-2600] (ligação)
 
 Áreas relacionadas
 - [Habeas Corpus](/habeas-corpus/)
