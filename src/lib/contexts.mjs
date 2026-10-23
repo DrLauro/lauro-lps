@@ -24,15 +24,6 @@ const field = (txt, label) => {
 const stripCount = (s) => s.replace(/\s*\(\d+ caracteres\)\s*$/, '');
 const stripTicks = (s) => s.replace(/^`|`$/g, '');
 
-// Serviços vêm como uma frase corrida; vira etiqueta em cada vírgula/ponto-e-vírgula/ponto
-// que não esteja dentro de parênteses. Nenhuma palavra do texto se perde.
-const chips = (txt) =>
-  txt
-    .split(/[,;.]\s+(?![^(]*\))/)
-    .map((s) => s.replace(/\.$/, '').trim())
-    .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
-    .filter(Boolean);
-
 function parseBlock(heading, body) {
   const lines = body.split('\n').map((l) => l.trimEnd());
   const kept = lines.filter((l) => l.trim() && !INSTRUCAO.some((r) => r.test(l.trim())));
@@ -58,9 +49,9 @@ function parseBlock(heading, body) {
     return { kind: 'faq', h2, items };
   }
   if (/Serviços nesta área/.test(heading)) {
-    // Frase corrida vira etiquetas; lista com "- " já vem item a item.
-    const items = kept.every((l) => l.startsWith('- ')) ? kept.map((l) => l.slice(2)) : kept.flatMap(chips);
-    return { kind: 'chips', h2, items };
+    // Um serviço por linha "- ". Frase corrida é erro: cortar em vírgula gerava etiquetas sem sentido.
+    if (!kept.every((l) => l.startsWith('- '))) throw new Error('5.4 Serviços precisa ser lista com "- ", um serviço por linha');
+    return { kind: 'chips', h2, items: kept.map((l) => l.slice(2)) };
   }
   // "- Nome: `/caminho/`": links para outras áreas (a página exibe só os já publicados).
   const linkRe = /^- (.+?): `(\/[^`]+\/)`$/;

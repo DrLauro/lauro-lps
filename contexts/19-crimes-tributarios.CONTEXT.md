@@ -66,7 +66,19 @@ Analisamos o procedimento fiscal, a constituição definitiva do crédito tribut
 A defesa trabalha em conjunto com a situação do débito: o parcelamento pode suspender o processo e o pagamento integral pode extinguir a punibilidade. No processo, discutimos o dolo, a individualização da conduta de cada sócio e a validade das provas.
 
 ### 5.4 H2: Serviços nesta área
-Sonegação fiscal, crimes contra a ordem tributária, apropriação indébita tributária e previdenciária, sonegação de contribuição previdenciária, fraudes fiscais, notas fiscais falsas ou inidôneas, uso de empresas interpostas e laranjas, responsabilidade penal de sócios, administradores e contadores, representação fiscal para fins penais, análise de procedimentos fiscais e documentos contábeis, parcelamento e extinção da punibilidade pelo pagamento, busca e apreensão em empresas e acordo de não persecução penal.
+- Sonegação fiscal
+- Crimes contra a ordem tributária
+- Apropriação indébita tributária e previdenciária
+- Sonegação de contribuição previdenciária
+- Fraudes fiscais
+- Notas fiscais falsas ou inidôneas
+- Uso de empresas interpostas e laranjas
+- Responsabilidade penal de sócios, administradores e contadores
+- Representação fiscal para fins penais
+- Análise de procedimentos fiscais e documentos contábeis
+- Parcelamento e extinção da punibilidade pelo pagamento
+- Busca e apreensão em empresas
+- Acordo de não persecução penal
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

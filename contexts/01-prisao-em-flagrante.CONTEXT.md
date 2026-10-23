@@ -61,7 +61,18 @@ Na delegacia: o advogado acompanha a lavratura do flagrante e o depoimento, veri
 Na audiência de custódia, que deve acontecer em até 24 horas após a prisão, a defesa pede o relaxamento da prisão ilegal, a liberdade provisória com ou sem fiança, ou medidas cautelares no lugar da prisão. Se a prisão for mantida, entramos com habeas corpus.
 
 ### 5.4 H2: Serviços nesta área
-Acompanhamento em delegacia, investigação criminal e inquérito policial, depoimentos, interrogatórios, reconhecimentos, diligências policiais, busca e apreensão, prisão em flagrante, prisão preventiva, prisão temporária, audiência de custódia, relaxamento e revogação de prisão, liberdade provisória, fiança e dispensa de fiança, prisão domiciliar e medidas cautelares diversas da prisão.
+- Acompanhamento em delegacia
+- Investigação criminal e inquérito policial
+- Depoimentos, interrogatórios e reconhecimentos
+- Diligências policiais
+- Busca e apreensão
+- Prisão em flagrante, prisão preventiva e prisão temporária
+- Audiência de custódia
+- Relaxamento e revogação de prisão
+- Liberdade provisória
+- Fiança e dispensa de fiança
+- Prisão domiciliar
+- Medidas cautelares diversas da prisão
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

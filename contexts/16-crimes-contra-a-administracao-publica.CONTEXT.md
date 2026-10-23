@@ -66,7 +66,22 @@ Atuamos desde o inquérito ou a sindicância: acesso aos autos, acompanhamento d
 No processo, a defesa examina se houve de fato vantagem indevida, desvio ou ato de ofício, se a conduta de cada acusado está individualizada e se as provas foram obtidas de forma legal. Avaliamos também, quando for do interesse do cliente, o acordo de não persecução penal e a colaboração premiada.
 
 ### 5.4 H2: Serviços nesta área
-Corrupção ativa e passiva, peculato, concussão, prevaricação, advocacia administrativa, tráfico de influência, emprego irregular de verbas públicas, condescendência criminosa, crimes em licitações e contratos administrativos, fraude em licitação, inserção de dados falsos em sistema de informações, crimes praticados por servidores públicos e por particulares contra a Administração, investigações com múltiplos investigados, busca e apreensão, afastamento cautelar do cargo, acordo de não persecução penal e colaboração premiada.
+- Corrupção ativa e passiva
+- Peculato
+- Concussão
+- Prevaricação
+- Advocacia administrativa
+- Tráfico de influência
+- Emprego irregular de verbas públicas
+- Condescendência criminosa
+- Crimes em licitações e contratos administrativos
+- Fraude em licitação
+- Inserção de dados falsos em sistema de informações
+- Crimes praticados por servidores públicos e por particulares contra a Administração
+- Investigações com múltiplos investigados
+- Busca e apreensão
+- Afastamento cautelar do cargo
+- Acordo de não persecução penal e colaboração premiada
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

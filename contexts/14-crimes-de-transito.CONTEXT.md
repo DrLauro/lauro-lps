@@ -66,7 +66,18 @@ No flagrante, o advogado acompanha a ocorrência e o depoimento, confere como fo
 No processo, examinamos a dinâmica do acidente, a perícia, o local, as imagens e as testemunhas, para discutir culpa, causa do acidente e a pena aplicável. Também orientamos sobre os reflexos na carteira de habilitação.
 
 ### 5.4 H2: Serviços nesta área
-Embriaguez ao volante, homicídio culposo na direção de veículo, lesão corporal culposa no trânsito, fuga do local do acidente, omissão de socorro no trânsito, direção sem habilitação gerando perigo, racha ou competição não autorizada, entrega da direção a pessoa não habilitada, prisão em flagrante por crime de trânsito, fiança, audiência de custódia, acordo de não persecução penal, transação penal e suspensão condicional do processo nas hipóteses cabíveis, recursos criminais e representação de vítimas e familiares.
+- Embriaguez ao volante
+- Homicídio culposo na direção de veículo
+- Lesão corporal culposa no trânsito
+- Fuga do local do acidente
+- Omissão de socorro no trânsito
+- Direção sem habilitação gerando perigo
+- Racha ou competição não autorizada
+- Entrega da direção a pessoa não habilitada
+- Prisão em flagrante por crime de trânsito, fiança e audiência de custódia
+- Acordo de não persecução penal, transação penal e suspensão condicional do processo, nas hipóteses cabíveis
+- Recursos criminais
+- Representação de vítimas e familiares
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

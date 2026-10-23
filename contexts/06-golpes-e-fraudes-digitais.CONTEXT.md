@@ -61,7 +61,18 @@ Para vítimas: registro da ocorrência com as provas certas, representação cri
 Para quem teve a conta usada: demonstramos a ausência de participação e de intenção, analisando movimentação, contexto e a forma como a conta foi obtida pelos golpistas.
 
 ### 5.4 H2: Serviços nesta área
-Golpes por Pix, golpe da falsa central de atendimento, golpe do falso funcionário de banco, golpe do falso advogado, estelionato e estelionato eletrônico, fraudes bancárias, fraudes em empréstimos e financiamentos, fraudes em compras e vendas pela internet, invasão de contas bancárias e digitais, golpes por aplicativos de mensagens e redes sociais. Representação de vítimas e defesa de investigados.
+- Golpes por Pix
+- Golpe da falsa central de atendimento
+- Golpe do falso funcionário de banco
+- Golpe do falso advogado
+- Estelionato e estelionato eletrônico
+- Fraudes bancárias
+- Fraudes em empréstimos e financiamentos
+- Fraudes em compras e vendas pela internet
+- Invasão de contas bancárias e digitais
+- Golpes por aplicativos de mensagens e redes sociais
+- Representação de vítimas
+- Defesa de investigados
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

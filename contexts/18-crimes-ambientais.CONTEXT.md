@@ -66,7 +66,17 @@ Analisamos o auto de infração, os laudos técnicos e periciais e o nexo entre 
 Avaliamos as saídas previstas em lei, como transação penal, suspensão condicional do processo e acordo de não persecução penal, e a reparação do dano quando ela favorece o cliente. Quando o caso vai a julgamento, discutimos a autoria, a prova do dano e a responsabilidade da pessoa jurídica.
 
 ### 5.4 H2: Serviços nesta área
-Maus-tratos a animais, inclusive cães e gatos, crimes contra a fauna, caça e pesca ilegais, crimes contra a flora, desmatamento e queimadas, poluição, crimes contra o ordenamento urbano e o patrimônio cultural, crimes contra a administração ambiental, responsabilidade penal da pessoa jurídica, análise de autos de infração e laudos periciais, transação penal, suspensão condicional do processo, acordo de não persecução penal e medidas cautelares.
+- Maus-tratos a animais, inclusive cães e gatos
+- Crimes contra a fauna, caça e pesca ilegais
+- Crimes contra a flora, desmatamento e queimadas
+- Poluição
+- Crimes contra o ordenamento urbano e o patrimônio cultural
+- Crimes contra a administração ambiental
+- Responsabilidade penal da pessoa jurídica
+- Análise de autos de infração e laudos periciais
+- Transação penal e suspensão condicional do processo
+- Acordo de não persecução penal
+- Medidas cautelares
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

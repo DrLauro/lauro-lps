@@ -61,7 +61,15 @@ Os prazos são curtos: a apelação, por exemplo, deve ser interposta em 5 dias.
 Depois do trânsito em julgado, a revisão criminal pode rever a condenação quando há prova nova, decisão contrária à prova dos autos ou documentos falsos. Também atuamos na reabilitação criminal.
 
 ### 5.4 H2: Serviços nesta área
-Apelação criminal, recurso em sentido estrito, embargos de declaração, embargos infringentes e de nulidade, agravo regimental, agravo interno, recurso especial, recurso extraordinário, agravo em recurso especial e extraordinário, revisão criminal e reabilitação criminal.
+- Apelação criminal
+- Recurso em sentido estrito
+- Embargos de declaração
+- Embargos infringentes e de nulidade
+- Agravo regimental e agravo interno
+- Recurso especial e recurso extraordinário
+- Agravo em recurso especial e extraordinário
+- Revisão criminal
+- Reabilitação criminal
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

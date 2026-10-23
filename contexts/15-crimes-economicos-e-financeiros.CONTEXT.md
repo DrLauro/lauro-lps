@@ -66,7 +66,20 @@ Na investigação, acompanhamos buscas, depoimentos e o acesso aos autos, e anal
 Quando há bloqueio de bens, contas ou valores, a defesa pede a liberação do que não tem relação com o fato investigado ou do que é necessário à atividade da empresa e à subsistência da família. No processo, discutimos a tipicidade, a individualização da conduta de cada sócio ou gestor e a competência da Justiça Federal ou Estadual.
 
 ### 5.4 H2: Serviços nesta área
-Lavagem de dinheiro e ocultação de bens, crimes contra o sistema financeiro nacional, evasão de divisas, gestão fraudulenta e gestão temerária, operação de instituição financeira sem autorização, pirâmides financeiras e crimes contra a economia popular, falsos investimentos, crimes envolvendo criptoativos, crimes contra o mercado de capitais, investigações financeiras e patrimoniais, quebra de sigilo bancário e fiscal, bloqueio, sequestro e arresto de bens, busca e apreensão de documentos e dispositivos, acordo de não persecução penal e colaboração premiada.
+- Lavagem de dinheiro e ocultação de bens
+- Crimes contra o sistema financeiro nacional
+- Evasão de divisas
+- Gestão fraudulenta e gestão temerária
+- Operação de instituição financeira sem autorização
+- Pirâmides financeiras e crimes contra a economia popular
+- Falsos investimentos
+- Crimes envolvendo criptoativos
+- Crimes contra o mercado de capitais
+- Investigações financeiras e patrimoniais
+- Quebra de sigilo bancário e fiscal
+- Bloqueio, sequestro e arresto de bens
+- Busca e apreensão de documentos e dispositivos
+- Acordo de não persecução penal e colaboração premiada
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

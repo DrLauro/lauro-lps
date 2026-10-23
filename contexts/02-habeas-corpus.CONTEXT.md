@@ -61,7 +61,14 @@ Analisamos a decisão que mandou prender, ou que ameaça prender, e identificamo
 Impetramos o habeas corpus com pedido liminar no tribunal competente e acompanhamos o julgamento, inclusive com sustentação oral quando cabível. Se o pedido for negado, levamos aos tribunais superiores.
 
 ### 5.4 H2: Serviços nesta área
-Habeas corpus preventivo e liberatório, habeas corpus com pedido liminar, contra prisão preventiva e temporária, por excesso de prazo, contra constrangimento ilegal, para trancamento de inquérito policial ou ação penal nas hipóteses cabíveis, no Tribunal de Justiça, nos Tribunais Regionais Federais, no Superior Tribunal de Justiça e no Supremo Tribunal Federal.
+- Habeas corpus preventivo e liberatório
+- Habeas corpus com pedido liminar
+- Habeas corpus contra prisão preventiva e temporária
+- Habeas corpus por excesso de prazo
+- Habeas corpus contra constrangimento ilegal
+- Habeas corpus para trancamento de inquérito policial ou ação penal, nas hipóteses cabíveis
+- Habeas corpus no Tribunal de Justiça e nos Tribunais Regionais Federais
+- Habeas corpus no Superior Tribunal de Justiça e no Supremo Tribunal Federal
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

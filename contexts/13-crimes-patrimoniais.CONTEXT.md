@@ -61,7 +61,14 @@ Analisamos o reconhecimento do acusado, que é a principal prova nesses crimes e
 Buscamos o arquivamento, a absolvição ou, quando a condenação é provável, a desclassificação e a melhor pena e regime possíveis.
 
 ### 5.4 H2: Serviços nesta área
-Furto simples e qualificado, roubo simples, com arma de fogo ou arma branca, em concurso de pessoas, com restrição da liberdade da vítima ou com resultado lesão grave, latrocínio, extorsão e extorsão mediante sequestro, estelionato, apropriação indébita, receptação simples e qualificada e dano.
+- Furto simples e qualificado
+- Roubo simples, com arma de fogo ou arma branca, em concurso de pessoas, com restrição da liberdade da vítima ou com resultado lesão grave
+- Latrocínio
+- Extorsão e extorsão mediante sequestro
+- Estelionato
+- Apropriação indébita
+- Receptação simples e qualificada
+- Dano
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

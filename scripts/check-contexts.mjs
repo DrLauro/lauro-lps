@@ -13,6 +13,12 @@ for (const p of pages) {
   assert.deepEqual(p.proof, pages[0].proof, at('proof bar'));
   assert.deepEqual(p.content.map((b) => b.kind).filter((k) => !['list', 'prose', 'links'].includes(k)), ['chips', 'cases', 'faq'], at('blocos'));
 
+  const servicos = p.content.find((b) => b.kind === 'chips').items;
+  for (const s of servicos) {
+    assert.ok(/^[A-ZÀ-Ú]/.test(s), at(`serviço começa com minúscula: ${s}`));
+    assert.ok(!/^(Inclusive|Contra|Por|No|Nos|Psicológica|Sexual|Patrimonial|Administradores)(?![\wÀ-ú])/.test(s), at(`serviço é pedaço de frase: ${s}`));
+  }
+
   const graph = p.jsonLd['@graph'];
   const page = graph.find((n) => n['@type'] === 'WebPage');
   assert.equal(page.name, p.title, at('title ≠ JSON-LD'));

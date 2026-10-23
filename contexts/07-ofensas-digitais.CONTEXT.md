@@ -61,7 +61,10 @@ Para quem foi ofendido: identificamos a autoria da publicação, preservamos as 
 Para quem foi acusado: analisamos se o texto realmente configura calúnia, difamação ou injúria, se a autoria está provada e se as provas eletrônicas são válidas. Muitas acusações não se sustentam quando se separa crítica, opinião e ofensa.
 
 ### 5.4 H2: Serviços nesta área
-Calúnia, difamação e injúria, praticadas presencialmente ou na internet e nas redes sociais (Facebook, Instagram, TikTok, WhatsApp e outras plataformas); queixa-crime; defesa de quem é acusado; representação de vítimas.
+- Calúnia, difamação e injúria, praticadas presencialmente ou na internet e nas redes sociais (Facebook, Instagram, TikTok, WhatsApp e outras plataformas)
+- Queixa-crime
+- Defesa de quem é acusado
+- Representação de vítimas
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

@@ -61,7 +61,14 @@ A defesa começa muito antes do plenário: no inquérito, na fase de pronúncia,
 No plenário, a sustentação oral fala para jurados leigos; a experiência em júri faz diferença. Para famílias de vítimas, a assistência de acusação acompanha o processo e reforça a busca por responsabilização.
 
 ### 5.4 H2: Serviços nesta área
-Homicídio simples, qualificado, privilegiado e culposo, tentativa de homicídio, feminicídio e tentativa de feminicídio, vicaricídio, lesão corporal leve, grave, gravíssima e seguida de morte, Tribunal do Júri, defesa criminal em crimes contra a vida e assistência de acusação em crimes contra a vida.
+- Homicídio simples, qualificado, privilegiado e culposo
+- Tentativa de homicídio
+- Feminicídio e tentativa de feminicídio
+- Vicaricídio
+- Lesão corporal leve, grave, gravíssima e seguida de morte
+- Tribunal do Júri
+- Defesa criminal em crimes contra a vida
+- Assistência de acusação em crimes contra a vida
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

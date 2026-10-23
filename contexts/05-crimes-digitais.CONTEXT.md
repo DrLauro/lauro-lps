@@ -61,7 +61,22 @@ Analisamos de onde vieram prints, fotos, áudios e registros, e se a cadeia de c
 Para vítimas, preservamos as provas, identificamos o caminho do dinheiro e levamos o caso à polícia e ao Judiciário.
 
 ### 5.4 H2: Serviços nesta área
-Estelionato eletrônico, fraudes bancárias, golpes por Pix, golpe da falsa central de atendimento, golpe do falso funcionário de banco, golpe do falso advogado, fraudes em empréstimos e financiamentos, fraudes em compras e vendas pela internet, invasão de dispositivo informático, invasão de contas bancárias e digitais, extorsão digital, golpes por aplicativos de mensagens, fraudes no WhatsApp e nas redes sociais (Facebook, Instagram, TikTok e outras), falsificação de documentos e crimes patrimoniais no ambiente digital. Defesa de investigados e acusados e representação de vítimas.
+- Estelionato eletrônico
+- Fraudes bancárias
+- Golpes por Pix
+- Golpe da falsa central de atendimento
+- Golpe do falso funcionário de banco
+- Golpe do falso advogado
+- Fraudes em empréstimos e financiamentos
+- Fraudes em compras e vendas pela internet
+- Invasão de dispositivo informático
+- Invasão de contas bancárias e digitais
+- Extorsão digital
+- Golpes por aplicativos de mensagens
+- Fraudes no WhatsApp e nas redes sociais (Facebook, Instagram, TikTok e outras)
+- Falsificação de documentos e crimes patrimoniais no ambiente digital
+- Defesa de investigados e acusados
+- Representação de vítimas
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

@@ -66,7 +66,17 @@ No flagrante, examinamos a abordagem, a busca pessoal, veicular ou domiciliar e 
 No processo, a defesa discute a classificação da arma, o laudo pericial, se a arma funcionava, a situação do registro e da autorização e a diferença entre posse dentro de casa e porte fora dela, que define o crime e a pena.
 
 ### 5.4 H2: Serviços nesta área
-Posse irregular de arma de fogo de uso permitido, porte ilegal de arma de fogo de uso permitido, posse e porte de arma de uso restrito ou proibido, disparo de arma de fogo, omissão de cautela, comércio ilegal e tráfico de armas, munições e acessórios, numeração raspada ou suprimida, arma em situação irregular de atiradores, caçadores e colecionadores (CAC), prisão em flagrante, fiança, audiência de custódia, perícia de armas e recursos criminais.
+- Posse irregular de arma de fogo de uso permitido
+- Porte ilegal de arma de fogo de uso permitido
+- Posse e porte de arma de uso restrito ou proibido
+- Disparo de arma de fogo
+- Omissão de cautela
+- Comércio ilegal e tráfico de armas, munições e acessórios
+- Numeração raspada ou suprimida
+- Arma em situação irregular de atiradores, caçadores e colecionadores (CAC)
+- Prisão em flagrante, fiança e audiência de custódia
+- Perícia de armas
+- Recursos criminais
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

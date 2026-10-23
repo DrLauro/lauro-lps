@@ -61,7 +61,20 @@ Conferimos o cálculo de pena, a data de cada benefício e a remição por traba
 Atuamos em progressão de regime, livramento condicional, indulto, prisão domiciliar e transferência, e na defesa em sindicâncias por falta grave, que podem atrasar todos os benefícios.
 
 ### 5.4 H2: Serviços nesta área
-Execução penal, progressão de regime, livramento condicional, remição de pena, detração penal, indulto, comutação de pena, cálculo e retificação de cálculo de pena, soma e unificação de penas, faltas graves, sindicâncias disciplinares, regressão de regime, prisão domiciliar, aproximação familiar, transferência prisional, agravo em execução, prescrição e extinção da punibilidade.
+- Execução penal
+- Progressão de regime
+- Livramento condicional
+- Remição de pena
+- Detração penal
+- Indulto e comutação de pena
+- Cálculo e retificação de cálculo de pena
+- Soma e unificação de penas
+- Faltas graves e sindicâncias disciplinares
+- Regressão de regime
+- Prisão domiciliar
+- Aproximação familiar e transferência prisional
+- Agravo em execução
+- Prescrição e extinção da punibilidade
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

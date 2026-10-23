@@ -66,7 +66,16 @@ Na fase policial, registramos a ocorrência com as provas certas, apresentamos a
 No processo, o advogado pode atuar como assistente de acusação: propõe provas, participa das audiências e do júri, apresenta argumentos e recorre. Também pedimos que a sentença fixe valor mínimo de reparação dos danos e acompanhamos as medidas judiciais para a recuperação de valores, quando cabíveis.
 
 ### 5.4 H2: Serviços nesta área
-Representação criminal, queixa-crime, requerimento de abertura de inquérito e de diligências, medidas protetivas de urgência, acompanhamento em depoimentos e reconhecimentos, habilitação como assistente de acusação, atuação no Tribunal do Júri ao lado da acusação, pedido de reparação de danos na sentença, medidas para bloqueio e recuperação de valores em golpes e fraudes, representação de vítimas de violência doméstica, crimes sexuais, crimes contra a honra, golpes digitais, crimes de trânsito e crimes contra a vida e de seus familiares.
+- Representação criminal
+- Queixa-crime
+- Requerimento de abertura de inquérito e de diligências
+- Medidas protetivas de urgência
+- Acompanhamento em depoimentos e reconhecimentos
+- Habilitação como assistente de acusação
+- Atuação no Tribunal do Júri ao lado da acusação
+- Pedido de reparação de danos na sentença
+- Medidas para bloqueio e recuperação de valores em golpes e fraudes
+- Representação de vítimas de violência doméstica, crimes sexuais, crimes contra a honra, golpes digitais, crimes de trânsito e crimes contra a vida, e de seus familiares
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

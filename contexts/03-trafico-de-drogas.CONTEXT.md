@@ -61,7 +61,19 @@ No flagrante, examinamos a abordagem policial, a busca pessoal ou domiciliar, a 
 No processo, a defesa questiona a prova: quem era o dono da droga, se havia destinação ao comércio ou ao consumo pessoal, a origem das conversas e prints, e a perícia toxicológica. Quando a condenação é provável, buscamos o tráfico privilegiado, que reduz muito a pena.
 
 ### 5.4 H2: Serviços nesta área
-Tráfico de drogas, associação para o tráfico, compra, venda, oferta, fornecimento, transporte, armazenamento, depósito e guarda de drogas, tráfico interestadual e internacional, tráfico privilegiado, financiamento e custeio do tráfico, apreensão de drogas para consumo pessoal, prisão em flagrante e preventiva por tráfico, busca e apreensão, provas digitais, perícias toxicológicas, dosimetria da pena, causas de diminuição, recursos criminais e execução penal em condenações por tráfico.
+- Tráfico de drogas
+- Associação para o tráfico
+- Compra, venda, oferta, fornecimento, transporte, armazenamento, depósito e guarda de drogas
+- Tráfico interestadual e internacional
+- Tráfico privilegiado
+- Financiamento e custeio do tráfico
+- Apreensão de drogas para consumo pessoal
+- Prisão em flagrante e preventiva por tráfico
+- Busca e apreensão
+- Provas digitais
+- Perícias toxicológicas
+- Dosimetria da pena e causas de diminuição
+- Recursos criminais e execução penal em condenações por tráfico
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 

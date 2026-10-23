@@ -61,7 +61,18 @@ Para vítimas: pedido de medidas protetivas de urgência, acompanhamento na dele
 Para acusados: análise da medida protetiva e do inquérito, pedido de revisão ou revogação quando cabível, orientação para evitar o descumprimento, que é crime, e defesa no processo, inclusive contra prisão preventiva.
 
 ### 5.4 H2: Serviços nesta área
-Lei Maria da Penha, violência doméstica e familiar, violência física, psicológica, sexual, patrimonial, moral e vicária, lesão corporal no contexto doméstico, ameaça, perseguição, violência psicológica contra a mulher, calúnia, difamação e injúria, medidas protetivas de urgência (concessão, revisão, revogação e descumprimento), prisão preventiva em contexto de violência doméstica, defesa de investigados e acusados, representação de vítimas e assistência de acusação.
+- Lei Maria da Penha
+- Violência doméstica e familiar
+- Violência física, psicológica, sexual, patrimonial, moral e vicária
+- Lesão corporal no contexto doméstico
+- Ameaça
+- Perseguição
+- Violência psicológica contra a mulher
+- Calúnia, difamação e injúria no contexto doméstico
+- Medidas protetivas de urgência (concessão, revisão, revogação e descumprimento)
+- Prisão preventiva em contexto de violência doméstica
+- Defesa de investigados e acusados
+- Representação de vítimas e assistência de acusação
 
 Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa estar no HTML, não em imagem.
 
