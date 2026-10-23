@@ -8,6 +8,9 @@ import '../styles/global.css';
 import { Image } from 'astro:assets';
 import logo from '../assets/logo.png';
 import Icon from '../components/Icon.astro';
+// Fontes do H1 e do texto do topo pré-carregadas: sem isso a troca de fonte empurra a triagem (CLS).
+import fonteTitulo from '@fontsource/dm-serif-display/files/dm-serif-display-latin-400-normal.woff2?url';
+import fonteTexto from '@fontsource-variable/public-sans/files/public-sans-latin-wght-normal.woff2?url';
 import SiteNav from '../components/SiteNav.astro';
 import Consentimento from '../components/Consentimento.astro';
 import { office } from '../lib/office.mjs';
@@ -28,6 +31,8 @@ const gtm = import.meta.env.PUBLIC_GTM_ID;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
+    <link rel="preload" href={fonteTitulo} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={fonteTexto} as="font" type="font/woff2" crossorigin />
     <meta name="description" content={description} />
     {canonical && <link rel="canonical" href={canonical} />}
     {!indexar && <meta name="robots" content="noindex, nofollow" />}
