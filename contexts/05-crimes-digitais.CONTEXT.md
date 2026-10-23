@@ -37,7 +37,7 @@ Este arquivo é a especificação completa da página. O texto da seção 5 é f
 ## 4. SEO
 
 - `<title>`: Advogado de Crimes Digitais em Osasco e São Paulo (49 caracteres)
-- `<meta name="description">`: Defesa em crimes digitais: golpes, fraudes bancárias, Pix, invasão de dispositivo e provas eletrônicas. Advogado criminalista 24h, Dr. Lauro. (141 caracteres)
+- `<meta name="description">`: Advogado de crimes digitais: invasão de dispositivos e contas, uso indevido de dados, autoria e provas digitais. Criminalista 24h em Osasco e SP. (145 caracteres)
 - Canonical: `https://lauro.adv.br/crimes-digitais/`
 - H1 (único na página): Advogado de crimes digitais em Osasco e São Paulo, com atendimento 24 horas
 - Palavra-chave principal: advogado crimes digitais
@@ -49,7 +49,7 @@ Este arquivo é a especificação completa da página. O texto da seção 5 é f
 
 ### 5.1 Hero
 - H1: Advogado de crimes digitais em Osasco e São Paulo, com atendimento 24 horas
-- Texto: O Dr. Lauro de Almeida Neto, advogado criminalista com mais de 23 anos de atuação (OAB/SP 210.212), defende pessoas acusadas de crimes cometidos por meio digital: golpes e fraudes bancárias, transferências por Pix, falsificação de documentos eletrônicos e invasão de dispositivos. A defesa começa pela prova digital, que é onde esses processos costumam ter falhas.
+- Texto: O Dr. Lauro de Almeida Neto, advogado criminalista com mais de 23 anos de atuação (OAB/SP 210.212), atua em investigações e processos envolvendo invasão de dispositivos, acesso indevido a contas, uso ilícito de dados e outras infrações praticadas por meios digitais, em Osasco, São Paulo e em todo o Brasil. A defesa começa pela análise de autoria, registros eletrônicos, provas digitais e perícias, tanto para pessoas investigadas ou acusadas quanto para vítimas.
 - Logo abaixo: os botões de triagem da seção 6 e o botão Ligar.
 
 ### 5.2 Faixa de prova (ProofBar)
@@ -61,20 +61,15 @@ Analisamos de onde vieram prints, fotos, áudios e registros, e se a cadeia de c
 Para vítimas, preservamos as provas, identificamos o caminho do dinheiro e levamos o caso à polícia e ao Judiciário.
 
 ### 5.4 H2: Serviços nesta área
-- Estelionato eletrônico
-- Fraudes bancárias
-- Golpes por Pix
-- Golpe da falsa central de atendimento
-- Golpe do falso funcionário de banco
-- Golpe do falso advogado
-- Fraudes em empréstimos e financiamentos
-- Fraudes em compras e vendas pela internet
 - Invasão de dispositivo informático
 - Invasão de contas bancárias e digitais
+- Uso ilícito de dados
 - Extorsão digital
-- Golpes por aplicativos de mensagens
+- Estelionato eletrônico
 - Fraudes no WhatsApp e nas redes sociais (Facebook, Instagram, TikTok e outras)
 - Falsificação de documentos e crimes patrimoniais no ambiente digital
+- Análise de autoria e de registros eletrônicos
+- Provas digitais, perícia e reconhecimento por fotografia
 - Defesa de investigados e acusados
 - Representação de vítimas
 
@@ -209,7 +204,7 @@ Inserir no `<head>` pelo componente `JsonLd`. O texto do FAQ precisa ser idênti
       "@id": "https://lauro.adv.br/crimes-digitais/",
       "url": "https://lauro.adv.br/crimes-digitais/",
       "name": "Advogado de Crimes Digitais em Osasco e São Paulo",
-      "description": "Defesa em crimes digitais: golpes, fraudes bancárias, Pix, invasão de dispositivo e provas eletrônicas. Advogado criminalista 24h, Dr. Lauro.",
+      "description": "Advogado de crimes digitais: invasão de dispositivos e contas, uso indevido de dados, autoria e provas digitais. Criminalista 24h em Osasco e SP.",
       "about": "Crimes Digitais",
       "provider": {
         "@id": "https://lauro.adv.br/#escritorio"

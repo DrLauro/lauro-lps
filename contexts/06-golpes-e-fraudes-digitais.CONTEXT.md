@@ -37,7 +37,7 @@ Este arquivo é a especificação completa da página. O texto da seção 5 é f
 ## 4. SEO
 
 - `<title>`: Advogado para Golpe do Pix e Fraude Bancária | Dr. Lauro (56 caracteres)
-- `<meta name="description">`: Caiu em golpe do Pix, da falsa central ou do falso advogado? Ou foi acusado de participar? Advogado criminalista para vítimas e acusados. (137 caracteres)
+- `<meta name="description">`: Caiu em golpe do Pix, da falsa central ou do falso advogado, ou teve a conta usada por golpistas? Advogado criminalista para vítimas e investigados. (148 caracteres)
 - Canonical: `https://lauro.adv.br/golpes-e-fraudes-digitais/`
 - H1 (único na página): Golpe do Pix, falsa central e falso advogado: advogado para vítimas e acusados
 - Palavra-chave principal: advogado golpe pix
@@ -49,7 +49,7 @@ Este arquivo é a especificação completa da página. O texto da seção 5 é f
 
 ### 5.1 Hero
 - H1: Golpe do Pix, falsa central e falso advogado: advogado para vítimas e acusados
-- Texto: Golpes digitais têm dois lados: quem perdeu dinheiro e quem teve a conta usada, muitas vezes sem saber, e passou a ser investigado. O Dr. Lauro de Almeida Neto, advogado criminalista com mais de 23 anos de atuação, atende os dois, com rapidez, porque nesses casos prazo e preservação de provas fazem diferença.
+- Texto: Golpes digitais envolvem quem perdeu dinheiro e quem teve a conta usada, muitas vezes sem saber. O Dr. Lauro de Almeida Neto, advogado criminalista com mais de 23 anos de atuação, atua na representação de vítimas e na defesa de pessoas investigadas ou acusadas, conforme o caso, com análise das transações, dos documentos e das provas digitais.
 - Logo abaixo: os botões de triagem da seção 6 e o botão Ligar.
 
 ### 5.2 Faixa de prova (ProofBar)
@@ -65,12 +65,13 @@ Para quem teve a conta usada: demonstramos a ausência de participação e de in
 - Golpe da falsa central de atendimento
 - Golpe do falso funcionário de banco
 - Golpe do falso advogado
-- Estelionato e estelionato eletrônico
+- Falsos investimentos
 - Fraudes bancárias
 - Fraudes em empréstimos e financiamentos
 - Fraudes em compras e vendas pela internet
-- Invasão de contas bancárias e digitais
+- Estelionato e estelionato eletrônico
 - Golpes por aplicativos de mensagens e redes sociais
+- Conta usada por golpistas
 - Representação de vítimas
 - Defesa de investigados
 
@@ -84,7 +85,7 @@ Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa es
 
 ### 5.6 H2: Casos em que atuamos
 **Fraude bancária com documento falsificado**  
-Contratação feita em nome do cliente foi derrubada com perícia na assinatura e nos registros eletrônicos; a cobrança foi julgada improcedente.
+Contratação feita em nome do cliente foi derrubada com perícia na assinatura e análise dos registros eletrônicos da operação; a cobrança foi julgada improcedente.
 
 Sem nome de cliente, número de processo, vara de cidade pequena ou data que permita identificar alguém.
 
@@ -204,7 +205,7 @@ Inserir no `<head>` pelo componente `JsonLd`. O texto do FAQ precisa ser idênti
       "@id": "https://lauro.adv.br/golpes-e-fraudes-digitais/",
       "url": "https://lauro.adv.br/golpes-e-fraudes-digitais/",
       "name": "Advogado para Golpe do Pix e Fraude Bancária | Dr. Lauro",
-      "description": "Caiu em golpe do Pix, da falsa central ou do falso advogado? Ou foi acusado de participar? Advogado criminalista para vítimas e acusados.",
+      "description": "Caiu em golpe do Pix, da falsa central ou do falso advogado, ou teve a conta usada por golpistas? Advogado criminalista para vítimas e investigados.",
       "about": "Golpes e Fraudes Digitais",
       "provider": {
         "@id": "https://lauro.adv.br/#escritorio"

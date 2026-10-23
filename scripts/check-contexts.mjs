@@ -28,4 +28,9 @@ for (const p of pages) {
   assert.deepEqual(faq.map((f) => [f.q, f.a]), ld.map((q) => [q.name, q.acceptedAnswer.text]), at('FAQ ≠ JSON-LD'));
   for (const b of p.content) assert.ok(b.kind === 'cases' || b.items.length, at(`bloco vazio: ${b.h2}`));
 }
+// Crimes Digitais e Golpes disputavam as mesmas buscas: no máximo 2 serviços iguais entre as duas.
+const servicosDe = (slug) => pages.find((p) => p.slug === slug).content.find((b) => b.kind === 'chips').items;
+const comuns = servicosDe('crimes-digitais').filter((s) => servicosDe('golpes-e-fraudes-digitais').includes(s));
+assert.ok(comuns.length <= 2, `crimes-digitais e golpes com ${comuns.length} serviços iguais: ${comuns.join(' | ')}`);
+
 console.log(`ok: ${pages.length} contextos coerentes`);
