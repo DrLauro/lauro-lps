@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build --force",
     "preview": "astro preview",
     "check": "node scripts/check-contexts.mjs",
     "check:dist": "node scripts/check-dist.mjs",
-    "copys": "astro build && node scripts/gerar-copys.mjs"
+    "copys": "astro build --force && node scripts/gerar-copys.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

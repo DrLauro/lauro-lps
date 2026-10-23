@@ -48,4 +48,33 @@ collections:
       - { label: Data de publicação, name: date, widget: datetime }
       - { label: Imagem de capa, name: cover, widget: image, required: false, hint: "Horizontal, de preferência 1200 × 675." }
       - { label: Descrição da imagem, name: cover_alt, widget: string, required: false, hint: "Para leitores de tela. Ex.: Fachada do Tribunal de Justiça de São Paulo." }
+      - label: Área relacionada
+        name: area
+        widget: select
+        required: false
+        hint: A página de área que o artigo complementa. O artigo ganha um link para ela.
+        options:
+          - { label: "Prisão em Flagrante e Audiência de Custódia", value: prisao-em-flagrante }
+          - { label: "Habeas Corpus", value: habeas-corpus }
+          - { label: "Tráfico de Drogas", value: trafico-de-drogas }
+          - { label: "Lei Maria da Penha e Violência Doméstica", value: lei-maria-da-penha }
+          - { label: "Crimes Digitais", value: crimes-digitais }
+          - { label: "Golpes e Fraudes Digitais", value: golpes-e-fraudes-digitais }
+          - { label: "Crimes Contra a Honra e Ofensas Digitais", value: ofensas-digitais }
+          - { label: "Crimes Sexuais", value: crimes-sexuais }
+          - { label: "Crimes Complexos e de Grande Repercussão", value: crimes-complexos }
+          - { label: "Tribunal do Júri e Crimes Contra a Vida", value: tribunal-do-juri }
+          - { label: "Execução Penal", value: execucao-penal }
+          - { label: "Recursos Criminais e Revisão Criminal", value: recursos-e-revisao-criminal }
+          - { label: "Crimes Patrimoniais", value: crimes-patrimoniais }
+          - { label: "Crimes de Trânsito", value: crimes-de-transito }
+          - { label: "Crimes Econômicos e Financeiros", value: crimes-economicos-e-financeiros }
+          - { label: "Crimes Contra a Administração Pública", value: crimes-contra-a-administracao-publica }
+          - { label: "Crimes de Armas de Fogo", value: crimes-de-armas-de-fogo }
+          - { label: "Crimes Ambientais", value: crimes-ambientais }
+          - { label: "Crimes Tributários", value: crimes-tributarios }
+          - { label: "Sou Vítima de um Crime", value: sou-vitima }
+      - { label: ID no Jusbrasil, name: jusbrasilId, widget: string, required: false, hint: "Só se o artigo também estiver no Jusbrasil: o número que aparece no endereço (ex.: 7605115884)." }
+      - { label: Endereço no Jusbrasil, name: jusbrasilUrl, widget: string, required: false, hint: "Endereço completo do artigo no Jusbrasil. Aparece como Publicado também no Jusbrasil." }
+      - { label: Rascunho, name: draft, widget: boolean, default: false, required: false, hint: "Ligado, o artigo não aparece no site." }
       - { label: Texto, name: body, widget: markdown }

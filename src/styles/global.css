@@ -419,3 +419,6 @@ body:has(.sticky-cta) { padding-bottom: calc(var(--s-16) + var(--s-2)); }
   .consent__in { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: var(--s-8); }
   .consent__actions { display: flex; }
 }
+.article__refs { display: grid; gap: var(--s-2); justify-items: start; margin-top: var(--s-8); padding-top: var(--s-6); border-top: 1px solid var(--border); }
+.article__refs .posts__more { min-height: var(--tap); }
+.posts__group { margin-top: var(--s-12); margin-bottom: var(--s-4); font: var(--fs-lg)/var(--lh-tight) var(--font-display); }

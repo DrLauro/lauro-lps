@@ -1,5 +1,6 @@
 ---
 // Todos os artigos: os escritos no site e os antigos do Jusbrasil (src/lib/posts.mjs).
+// Os marcados com `fim` (fora da área criminal) ficam sob "Outros temas", no fim.
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Posts from '../../components/Posts.astro';
 import Icon from '../../components/Icon.astro';
@@ -8,6 +9,8 @@ import { loadPosts } from '../../lib/posts.mjs';
 import { waAttrs, msgGeral } from '../../lib/whatsapp.mjs';
 
 const posts = await loadPosts();
+const criminais = posts.filter((p) => !p.fim);
+const outros = posts.filter((p) => p.fim);
 ---
 <BaseLayout title="Artigos e Decisões | Dr. Lauro de Almeida Neto" description="Artigos do Dr. Lauro de Almeida Neto, advogado criminalista, sobre prisão, provas, habeas corpus, recursos e decisões dos tribunais." canonical="https://lauro.adv.br/blog/" area="blog">
   <section class="hero hero--index">
@@ -18,7 +21,15 @@ const posts = await loadPosts();
     </div>
   </section>
   <section class="block">
-    <div class="container"><Posts posts={posts} /></div>
+    <div class="container">
+      <Posts posts={criminais} />
+      {outros.length > 0 && (
+        <>
+          <h2 class="posts__group">Outros temas</h2>
+          <Posts posts={outros} />
+        </>
+      )}
+    </div>
   </section>
   <Contato area="blog" text="Precisa de orientação sobre uma situação semelhante? Fale com o Dr. Lauro." />
 </BaseLayout>
