@@ -174,9 +174,10 @@ Inserir no `<head>` pelo componente `JsonLd`. O texto do FAQ precisa ser idênti
       ]
     },
     {
-      "@type": "Attorney",
+      "@type": "Person",
       "@id": "https://lauro.adv.br/#advogado",
       "name": "Lauro de Almeida Neto",
+      "jobTitle": "Advogado criminalista",
       "description": "Advogado criminalista, OAB/SP 210.212, com mais de 23 anos de atuação em Direito Penal.",
       "url": "https://lauro.adv.br/",
       "telephone": "+5511970802600",

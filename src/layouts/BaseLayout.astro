@@ -13,10 +13,11 @@ import { office } from '../lib/office.mjs';
 import { waAttrs, msgGeral } from '../lib/whatsapp.mjs';
 
 // waText: mensagem do WhatsApp do cabeçalho (páginas de área passam msgArea).
-const { title, description, canonical, area = '', jsonLd, waText = msgGeral() } = Astro.props;
+const { title, description, canonical, area = '', jsonLd, waText = msgGeral(), noindex = false } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-// Fora do domínio final (preview no GitHub Pages) a página não pode ser indexada.
-const isProd = Astro.site?.hostname === 'lauro.adv.br';
+// PUBLIC_ENV=preview (GitHub Pages) não pode ser indexado. Produção é o padrão: esquecer a variável
+// no deploy de produção não pode tirar o site do Google. O workers.dev recebe noindex por public/_headers.
+const indexar = import.meta.env.PUBLIC_ENV !== 'preview' && !noindex;
 const ogImage = new URL(`${base}/og-lauro.jpg`, Astro.site).href;
 const gtm = import.meta.env.PUBLIC_GTM_ID;
 ---
@@ -28,7 +29,7 @@ const gtm = import.meta.env.PUBLIC_GTM_ID;
     <title>{title}</title>
     <meta name="description" content={description} />
     {canonical && <link rel="canonical" href={canonical} />}
-    {!isProd && <meta name="robots" content="noindex, nofollow" />}
+    {!indexar && <meta name="robots" content="noindex, nofollow" />}
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />

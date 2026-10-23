@@ -20,7 +20,13 @@ for (const file of files) {
   const page = '/' + relative(DIST, file).replace(/\\/g, '/').replace(/index\.html$/, '');
   const err = (msg) => erros.push(`${page}: ${msg}`);
 
-  if (html.includes('Caso publicado no Jusbrasil')) err('caso com "(Caso publicado no Jusbrasil do Dr. Lauro.)" em vez do link');
+  const noindex = /<meta name="robots" content="noindex/.test(html);
+  if (!page.startsWith('/admin/')) {
+    if (!noindex && !/<link rel="canonical" href="https:\/\/lauro\.adv\.br\//.test(html)) err('página indexável sem canonical');
+    if (noindex && process.env.PUBLIC_ENV !== 'preview') err('noindex no build de produção');
+  }
+  if (html.includes('"Attorney"')) err('JSON-LD com "Attorney" (o advogado é Person)');
+  if (html.includes('Caso publicado no Jusbrasil'))err('caso com "(Caso publicado no Jusbrasil do Dr. Lauro.)" em vez do link');
   for (const tag of html.match(/<[a-z]+\b[^>]*>/g) ?? []) {
     const href = decode(attr(tag, 'href') ?? '');
     if (/wa\.me/.test(href)) {
@@ -35,6 +41,11 @@ for (const file of files) {
     if (attr(tag, 'data-track') && !SECOES.includes(attr(tag, 'data-secao'))) err(`data-track sem data-secao válido: ${tag.slice(0, 120)}`);
   }
 }
+
+// 404: arquivo que o Worker serve com HTTP 404; noindex sempre e fora do sitemap.
+if (!existsSync(join(DIST, '404.html'))) erros.push('sem dist/404.html');
+else if (!/<meta name="robots" content="noindex/.test(readFileSync(join(DIST, '404.html'), 'utf8'))) erros.push('/404.html sem noindex');
+if (/\/404/.test(readFileSync(join(DIST, 'sitemap-0.xml'), 'utf8'))) erros.push('404 no sitemap');
 
 const pagina = (path) => readFileSync(join(DIST, path, 'index.html'), 'utf8');
 for (const slug of ['lei-maria-da-penha', 'sou-vitima']) {
