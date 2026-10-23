@@ -33,6 +33,15 @@ for (const file of files) {
   }
 }
 
+const pagina = (path) => readFileSync(join(DIST, path, 'index.html'), 'utf8');
+for (const slug of ['lei-maria-da-penha', 'sou-vitima']) {
+  const html = pagina(slug);
+  if (!/class="triage__aviso"/.test(html) || !html.includes('href="tel:190"') || !html.includes('href="tel:180"')) erros.push(`/${slug}/: sem aviso de emergência 190/180`);
+}
+for (const slug of ['lei-maria-da-penha', 'golpes-e-fraudes-digitais', 'ofensas-digitais', 'crimes-sexuais', 'tribunal-do-juri']) {
+  if (!/class="triage__vitima" href="[^"]*\/sou-vitima\/"/.test(pagina(slug))) erros.push(`/${slug}/: sem link para /sou-vitima/`);
+}
+
 if (erros.length) {
   console.error(erros.join('\n'));
   process.exit(1);

@@ -21,6 +21,10 @@ const sections = p.content.filter((b) => b.kind !== 'cases' || b.items.length);
 const wa = (w) => ({ href: w.href, target: '_blank', rel: 'noopener', 'data-track': 'whatsapp_click', 'data-area': p.area, 'data-situacao': w.situacao, 'data-secao': 'triagem' });
 // Final e barra fixa: mensagem neutra, sem presumir se quem clica é vítima ou acusado.
 const geral = (secao) => waAttrs(msgArea(p.name), { area: p.area, situacao: 'contato-geral', secao });
+// Páginas com público de vítimas que ganham, abaixo da triagem, o link para /sou-vitima/.
+const COM_LINK_VITIMA = ['lei-maria-da-penha', 'golpes-e-fraudes-digitais', 'ofensas-digitais', 'crimes-sexuais', 'tribunal-do-juri'];
+// Números do aviso de emergência viram links de discagem (sem data-track: não é conversão).
+const avisoPartes = p.aviso?.split(/\b(190|180)\b/) ?? [];
 const call = (secao) => ({ href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.area, 'data-secao': secao });
 ---
 <BaseLayout title={p.title} description={p.description} canonical={p.canonical} area={p.area} jsonLd={p.jsonLd}>
@@ -48,6 +52,14 @@ const call = (secao) => ({ href: p.phone.href, 'data-track': 'phone_click', 'dat
             ))}
             <li><a class="triage__row triage__row--call" {...call('triagem')}><Icon name="phone" size={18} /><span>Ligar <span class="mono">{office.phoneLabel}</span></span><Icon name="arrow" size={16} /></a></li>
           </ul>
+          {p.aviso && (
+            <p class="triage__aviso" role="note">
+              {avisoPartes.map((t, i) => (i % 2 ? <a href={`tel:${t}`} class="mono">{t}</a> : t))}
+            </p>
+          )}
+          {COM_LINK_VITIMA.includes(p.slug) && (
+            <a class="triage__vitima" href={`${base}/sou-vitima/`}>Saiba como atuamos para vítimas<Icon name="arrow" size={16} /></a>
+          )}
         </div>
       </div>
       <figure class="hero__photo">

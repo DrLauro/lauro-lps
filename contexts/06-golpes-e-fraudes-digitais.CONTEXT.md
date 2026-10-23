@@ -279,7 +279,7 @@ Inserir no `<head>` pelo componente `JsonLd`. O texto do FAQ precisa ser idênti
 
 - Crimes Digitais: `/crimes-digitais/`
 - Crimes Patrimoniais: `/crimes-patrimoniais/`
-- Ofensas Digitais e Crimes Contra a Honra: `/ofensas-digitais/`
+- Crimes Contra a Honra e Ofensas Digitais: `/ofensas-digitais/`
 - Página de casos: `/casos/` · Sobre o advogado: `/quem-somos/` · Contato: `/contato/`
 - Esta página também deve ser listada em `/especialidades/` e no `llms.txt`.
 

@@ -135,6 +135,19 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .triage__row:hover svg:last-child { transform: translateX(var(--s-1)); color: var(--navy-700); }
 .triage li:first-child .triage__row { border-radius: var(--radius-md) var(--radius-md) 0 0; }
 .triage li:last-child .triage__row { border-radius: 0 0 var(--radius-md) var(--radius-md); }
+/* aviso de emergência (190/180) e link para vítimas: abaixo da triagem, sem competir com ela */
+.triage__aviso {
+  margin-top: var(--s-3); padding: var(--s-2) var(--s-4);
+  background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius-md);
+  font-size: var(--fs-sm); color: var(--text-muted);
+}
+.triage__aviso a { display: inline-block; padding-block: var(--s-2); color: var(--navy-700); font-weight: var(--fw-medium); }
+.triage__vitima {
+  display: inline-flex; align-items: center; gap: var(--s-2); min-height: var(--tap); margin-top: var(--s-1);
+  font-size: var(--fs-sm); color: var(--link);
+}
+.triage__vitima svg { transition: transform var(--dur) var(--ease); }
+.triage__vitima:hover svg { transform: translateX(var(--s-1)); }
 
 /* ---------- faixa de prova ---------- */
 .proof { background: var(--navy-900); color: var(--paper); }

@@ -52,6 +52,9 @@ Este arquivo é a especificação completa da página. O texto da seção 5 é f
 - Texto: Casos de violência doméstica envolvem família, filhos, casa e liberdade, e quase sempre exigem providências urgentes. O Dr. Lauro de Almeida Neto, advogado criminalista com mais de 23 anos de atuação, atua tanto na defesa de quem é acusado quanto na representação de vítimas, com sigilo e atendimento 24 horas.
 - Logo abaixo: os botões de triagem da seção 6 e o botão Ligar.
 
+### 5.1.1 Aviso
+Em perigo agora? Ligue 190. Violência contra a mulher: 180.
+
 ### 5.2 Faixa de prova (ProofBar)
 Mais de 23 anos na área criminal · Sigilo absoluto · Casos de grande repercussão · Atendimento 24 horas · Avaliações no Google
 
@@ -281,7 +284,7 @@ Inserir no `<head>` pelo componente `JsonLd`. O texto do FAQ precisa ser idênti
 
 - Prisão em Flagrante e Audiência de Custódia: `/prisao-em-flagrante/`
 - Tribunal do Júri e Crimes Contra a Vida: `/tribunal-do-juri/`
-- Ofensas Digitais e Crimes Contra a Honra: `/ofensas-digitais/`
+- Crimes Contra a Honra e Ofensas Digitais: `/ofensas-digitais/`
 - Página de casos: `/casos/` · Sobre o advogado: `/quem-somos/` · Contato: `/contato/`
 - Esta página também deve ser listada em `/especialidades/` e no `llms.txt`.
 

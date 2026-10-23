@@ -57,6 +57,9 @@ Este arquivo é a especificação completa da página. O texto da seção 5 é f
 - Texto: A vítima também tem direito a advogado no processo criminal. Sem acompanhamento, prazos se perdem, provas desaparecem e a vítima fica sem voz no inquérito e no julgamento. O Dr. Lauro de Almeida Neto, advogado criminalista com mais de 23 anos de atuação, representa vítimas e seus familiares desde a delegacia até os tribunais, com sigilo e atendimento 24 horas.
 - Logo abaixo: os botões de triagem da seção 6 e o botão Ligar.
 
+### 5.1.1 Aviso
+Em perigo agora? Ligue 190. Violência contra a mulher: 180.
+
 ### 5.2 Faixa de prova (ProofBar)
 Cinco destaques independentes, no mesmo padrão das demais páginas: Mais de 23 anos na área criminal · Sigilo absoluto · Casos de grande repercussão · Atendimento 24 horas · Avaliações no Google (link atual)
 

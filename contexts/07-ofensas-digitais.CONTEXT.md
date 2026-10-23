@@ -1,4 +1,4 @@
-# CONTEXT.md – Página "Ofensas Digitais e Crimes Contra a Honra" (/ofensas-digitais/)
+# CONTEXT.md – Página "Crimes Contra a Honra e Ofensas Digitais" (/ofensas-digitais/)
 
 Projeto: novo site do escritório do Dr. Lauro de Almeida Neto, em Astro (astro.build). Página 7 de 13. Fase de publicação: 1.
 
@@ -49,7 +49,7 @@ Este arquivo é a especificação completa da página. O texto da seção 5 é f
 
 ### 5.1 Hero
 - H1: Ofendido ou acusado de ofensa nas redes sociais? Advogado para crimes contra a honra
-- Texto: O Dr. Lauro de Almeida Neto atua dos dois lados dos crimes contra a honra praticados na internet: para quem foi caluniado, difamado ou injuriado e quer responsabilizar o autor por queixa-crime, e para quem é acusado de uma publicação ofensiva. Mais de 23 anos de atuação criminal, atendimento 24 horas e sigilo absoluto.
+- Texto: O Dr. Lauro de Almeida Neto atua na representação de vítimas e na defesa de pessoas acusadas, conforme o caso, em crimes contra a honra praticados na internet: para quem foi caluniado, difamado ou injuriado e quer responsabilizar o autor por queixa-crime, e para quem é acusado de uma publicação ofensiva. Mais de 23 anos de atuação criminal, atendimento 24 horas e sigilo absoluto.
 - Logo abaixo: os botões de triagem da seção 6 e o botão Ligar.
 
 ### 5.2 Faixa de prova (ProofBar)
@@ -192,7 +192,7 @@ Inserir no `<head>` pelo componente `JsonLd`. O texto do FAQ precisa ser idênti
       "url": "https://lauro.adv.br/ofensas-digitais/",
       "name": "Advogado Calúnia, Difamação e Ofensas na Internet | SP",
       "description": "Foi ofendido ou acusado nas redes? Queixa-crime e defesa em calúnia, difamação e injúria na internet. Prazo de 6 meses. Fale com o Dr. Lauro.",
-      "about": "Ofensas Digitais e Crimes Contra a Honra",
+      "about": "Crimes Contra a Honra e Ofensas Digitais",
       "provider": {
         "@id": "https://lauro.adv.br/#escritorio"
       }
@@ -215,7 +215,7 @@ Inserir no `<head>` pelo componente `JsonLd`. O texto do FAQ precisa ser idênti
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Ofensas Digitais e Crimes Contra a Honra",
+          "name": "Crimes Contra a Honra e Ofensas Digitais",
           "item": "https://lauro.adv.br/ofensas-digitais/"
         }
       ]

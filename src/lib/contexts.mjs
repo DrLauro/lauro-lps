@@ -78,6 +78,8 @@ export function parseContext(file) {
   }
 
   const hero = { h1: field(blocks[1].body, 'H1'), text: field(blocks[1].body, 'Texto') };
+  // 5.1.1 opcional: aviso de emergência exibido logo abaixo da triagem (Maria da Penha, Sou Vítima).
+  const aviso = blocks['1.1']?.body.trim() || null;
   // Páginas 14–20 trazem instrução antes dos destaques ("Cinco destaques...: ") e "(link atual)" no fim.
   const proof = blocks[2].body.trim().replace(/^[^·]*?:\s+/, '').split(' · ').map((s) => s.replace(/\s*\(link atual\)$/, ''));
   // Blocos de conteúdo: 5.3 a 5.7, incluindo subnúmeros como 5.4.1, na ordem.
@@ -109,6 +111,7 @@ export function parseContext(file) {
     h1: field(seo, 'H1 \\(único na página\\)'),
     keyword: field(seo, 'Palavra-chave principal'),
     hero,
+    aviso,
     proof,
     content,
     finalCta,
