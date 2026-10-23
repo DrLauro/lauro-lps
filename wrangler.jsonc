@@ -1,9 +1,10 @@
 // Produção (lauro.adv.br): Worker só com arquivos estáticos do build do Astro.
 // Deploy: npm run build && npx wrangler deploy (CI em .github/workflows/deploy.yml).
 // Endereço inexistente: dist/404.html com HTTP 404.
-// "workers_dev": false entra depois que a rota de lauro.adv.br estiver ativa (T10 da rodada de 22/10).
+// Só o domínio: o endereço workers.dev fica desligado para não concorrer com lauro.adv.br no Google.
 {
   "name": "lauro-adv-br",
   "compatibility_date": "2026-10-01",
+  "workers_dev": false,
   "assets": { "directory": "./dist", "html_handling": "auto-trailing-slash", "not_found_handling": "404-page" }
 }

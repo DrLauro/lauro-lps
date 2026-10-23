@@ -4,7 +4,7 @@ _Atualizado em 22/10/2026, ao fim da rodada de ajustes do estrategista de market
 
 ## No ar
 
-- Produção, por enquanto no endereço de teste: https://lauro-adv-br.lauro-adv.workers.dev (Cloudflare Worker, deploy automático a cada push na `main`).
+- Produção: https://lauro.adv.br (Cloudflare Worker, deploy automático a cada push na `main`). Domínio na Cloudflare desde 23/10/2026.
 - Preview com noindex: https://lcoutinho7.github.io/lauro-lps/
 - 20 páginas de área, home, /especialidades/, /blog/, política de privacidade e página 404.
 
@@ -23,15 +23,14 @@ _Atualizado em 22/10/2026, ao fim da rodada de ajustes do estrategista de market
 | T9 Estrutura de artigos dentro do site | feito | `135118b` |
 | Extra: iniciais de parte em título de artigo antigo | corrigido + verificação automática | `ac89d6a` |
 | Extra: CLS da home (troca de fonte) | corrigido, Performance 99 | ver git log |
-| T10 Domínio definitivo | bloqueado: troca de nameservers no registro.br | — |
+| T10 Domínio definitivo | feito em 23/10: lauro.adv.br no ar pela Cloudflare, www com 301, HTTPS, 24 páginas do sitemap com 200, 404 personalizada, e-mail (MX/SPF) preservado, workers.dev desligado | ver git log |
 
 Lighthouse mobile (build de produção, 22/10): home e /lei-maria-da-penha/ com 99 em Performance e 100 em Acessibilidade, Boas práticas e SEO. Relatórios em `docs/06-qualidade/lighthouse/`.
 
 ## Impeditivos para o lançamento final
 
 1. **ID do GTM** (`GTM-XXXXXXX`). Sem ele não há medição de conversão nem banner de cookies. Configuração em `docs/07-operacoes/observabilidade.md`.
-2. **Painel administrativo do blog**: decidir em qual conta do GitHub fica o repositório e criar o OAuth App (callback `https://auth.lauro.adv.br/callback`).
-3. **Troca de nameservers** no registro.br para `marty.ns.cloudflare.com` e `ziggy.ns.cloudflare.com`, depois do ok do Dr. Lauro.
+2. **Painel administrativo do blog**: OAuth App criado na conta DrLauro e Worker de login no ar em `auth.lauro.adv.br`. Faltam: gravar o Client secret no Worker, aceitar a transferência do repositório na conta DrLauro e trocar `repo:` em `public/admin/config.yml`.
 
 ## Pendências com material necessário
 

@@ -40,7 +40,14 @@ No Cloudflare, os CNAME de e-mail ficam **sem proxy** (nuvem cinza). O e-mail co
 - Feito pela API: SSL Full (strict), Always Use HTTPS, subdomínio workers.dev `lauro-adv`, primeiro deploy do Worker.
 - Token da API em `.env.cloudflare` (fora do git) e no secret `CLOUDFLARE_API_TOKEN` do GitHub. Validade até 2027-10-22; permissões: Workers Scripts, Zone Read, DNS, Zone Settings, Workers Routes, Single Redirect.
 - DNS preparado (2026-10-21): registros de e-mail (MX, SPF, DMARC, DKIM hostingermail-a/b/c, autodiscover, autoconfig) em "DNS only"; A/AAAA antigos da Hostinger e o CNAME do www apagados; lauro.adv.br e www.lauro.adv.br ligados ao Worker como Custom Domains; regra de redirecionamento 301 de www para lauro.adv.br mantendo caminho e query string.
-- Falta: trocar os nameservers no registro.br; Worker de login do editor em auth.lauro.adv.br (depende do OAuth App no GitHub e da decisão sobre a conta dona do repositório).
+- Nameservers trocados no registro.br em 23/10/2026; zona ativa às 18:45 e certificado emitido minutos depois. T10 conferida no mesmo dia e `"workers_dev": false` publicado: o endereço workers.dev deixou de existir.
+
+## Painel administrativo (23/10/2026)
+
+- OAuth App "Lauro Neto — Painel do site" criado na conta GitHub **DrLauro** (app 3959127). Client ID `Ov23ctNRr69erUmJdfmZ` (público). Homepage `https://lauro.adv.br`, callback `https://auth.lauro.adv.br/callback`.
+- Worker de login `lauro-cms-auth` publicado em `auth.lauro.adv.br` (custom domain, sem workers.dev). Código: https://github.com/sveltia/sveltia-cms-auth sem alteração; `wrangler.toml` com `account_id` da conta, `routes = [{ pattern = "auth.lauro.adv.br", custom_domain = true }]`, `workers_dev = false` e as variáveis `GITHUB_CLIENT_ID` e `ALLOWED_DOMAINS = "lauro.adv.br"`.
+- Client secret: secret `GITHUB_CLIENT_SECRET` do Worker, gravado com `wrangler secret put` a partir da área de transferência (nunca em arquivo nem no chat).
+- Falta: transferir o repositório `LCoutinho7/lauro-lps` para DrLauro, atualizar `repo:` em `public/admin/config.yml` e a URL do preview (Pages), e conferir que os secrets e a variável do Actions continuam no repositório.
 
 ## Variáveis de build (22/10/2026)
 

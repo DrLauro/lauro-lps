@@ -3,7 +3,10 @@
 ## Abertos
 
 - **Vínculo de 2 casos com a publicação não confirmado** (Execução Penal e Recursos). Os dois artigos do STJ têm temas parecidos e o Jusbrasil bloqueia leitura automática; o vínculo foi feito pelo resumo. Conferir no Jusbrasil. Ver `docs/08-status/status-atual.md`.
-- **Endereço de teste indexável pelo HTML.** O workers.dev serve o mesmo build da produção (sem `<meta name="robots">`). Mitigado: `X-Robots-Tag: noindex` para o host do workers.dev em `public/_headers`, e canonical apontando para lauro.adv.br. Resolve de vez com `"workers_dev": false` na T10.
+
+## Corrigidos em 23/10/2026 (T10)
+
+- Endereço de teste (workers.dev) servia o mesmo build da produção. Desligado com `"workers_dev": false`; a regra de noindex dele saiu do `_headers`.
 
 ## Corrigidos na rodada de 22/10/2026
 
