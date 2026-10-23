@@ -33,7 +33,7 @@ const lerArtigo = (c) => {
 };
 const call = (secao) => ({ href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.area, 'data-secao': secao });
 ---
-<BaseLayout title={p.title} description={p.description} canonical={p.canonical} area={p.area} jsonLd={p.jsonLd}>
+<BaseLayout title={p.title} description={p.description} canonical={p.canonical} area={p.area} jsonLd={p.jsonLd} waText={msgArea(p.name)}>
   <section class="hero">
     <div class="container hero__grid">
       <div class="hero__copy">

@@ -1,0 +1,22 @@
+---
+// Chamada final + barra fixa do celular das páginas de índice (/blog/, /especialidades/, 404), com mensagem geral.
+import Icon from './Icon.astro';
+import { office } from '../lib/office.mjs';
+import { waAttrs, msgGeral } from '../lib/whatsapp.mjs';
+const { text, area } = Astro.props;
+const wa = (secao) => waAttrs(msgGeral(), { area, situacao: 'contato-geral', secao });
+const call = (secao) => ({ href: office.tel, 'data-track': 'phone_click', 'data-area': area, 'data-secao': secao });
+---
+<section class="final" aria-label="Fale com o Dr. Lauro">
+  <div class="container final__in">
+    <p class="final__text">{text}</p>
+    <div class="final__actions">
+      <a class="btn btn--primary" {...wa('final')}><Icon name="whatsapp" size={20} />Falar no WhatsApp</a>
+      <a class="btn btn--on-dark" {...call('final')}><Icon name="phone" size={20} />Ligar <span class="mono">{office.phoneLabel}</span></a>
+    </div>
+  </div>
+</section>
+<div class="sticky-cta">
+  <a class="btn btn--primary" {...wa('sticky')}><Icon name="whatsapp" size={20} />WhatsApp</a>
+  <a class="btn btn--ghost" {...call('sticky')}><Icon name="phone" size={20} />Ligar</a>
+</div>

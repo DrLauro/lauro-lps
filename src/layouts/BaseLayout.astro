@@ -8,9 +8,12 @@ import '../styles/global.css';
 import { Image } from 'astro:assets';
 import logo from '../assets/logo.png';
 import Icon from '../components/Icon.astro';
+import SiteNav from '../components/SiteNav.astro';
 import { office } from '../lib/office.mjs';
+import { waAttrs, msgGeral } from '../lib/whatsapp.mjs';
 
-const { title, description, canonical, area = '', jsonLd } = Astro.props;
+// waText: mensagem do WhatsApp do cabeçalho (páginas de área passam msgArea).
+const { title, description, canonical, area = '', jsonLd, waText = msgGeral() } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 // Fora do domínio final (preview no GitHub Pages) a página não pode ser indexada.
 const isProd = Astro.site?.hostname === 'lauro.adv.br';
@@ -59,9 +62,15 @@ const gtm = import.meta.env.PUBLIC_GTM_ID;
             <span class="brand__role">Advogado criminalista</span>
           </span>
         </a>
-        <a class="btn btn--ghost site-header__call" href={office.tel} data-track="phone_click" data-area={area} data-secao="header">
-          <Icon name="phone" size={18} /><span class="mono">{office.phoneLabel}</span>
-        </a>
+        <SiteNav />
+        <div class="site-header__actions">
+          <a class="btn btn--ghost site-header__call" href={office.tel} data-track="phone_click" data-area={area} data-secao="header">
+            <Icon name="phone" size={18} /><span class="mono">{office.phoneLabel}</span>
+          </a>
+          <a class="btn btn--ghost site-header__wa" {...waAttrs(waText, { area, situacao: 'contato-geral', secao: 'header' })}>
+            <Icon name="whatsapp" size={18} />WhatsApp
+          </a>
+        </div>
       </div>
     </header>
 
@@ -75,7 +84,7 @@ const gtm = import.meta.env.PUBLIC_GTM_ID;
           <p class="site-footer__meta"><a href={`${base}/politicas-de-privacidade/`}>Política de Privacidade</a></p>
         </div>
         <ul class="site-footer__contact">
-          <li><Icon name="pin" size={18} /><span>{office.address}</span></li>
+          <li><Icon name="pin" size={18} /><span>{office.address} <a href={office.googleProfile || office.googleReviews} target="_blank" rel="noopener" class="site-footer__map">Como chegar</a></span></li>
           <li><Icon name="phone" size={18} /><a href={office.tel} class="mono" data-track="phone_click" data-area={area} data-secao="footer">{office.phoneLabel}</a></li>
           <li><Icon name="mail" size={18} /><a href={`mailto:${office.email}`}>{office.email}</a></li>
         </ul>

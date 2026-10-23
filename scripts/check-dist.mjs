@@ -10,7 +10,9 @@ const htmlFiles = (dir) => readdirSync(dir, { withFileTypes: true }).flatMap((d)
 const erros = [];
 const attr = (tag, name) => tag.match(new RegExp(`\\s${name}="([^"]*)"`))?.[1];
 const decode = (s) => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
-const PALAVRAS = ['vítima', 'acusado', 'preso', 'intimad', 'condenad', 'golpe'];
+// Posição do botão na página (parâmetro "secao" no GA4). "topo" = botão abaixo do H1 em /blog/ e /especialidades/.
+const SECOES = ['triagem', 'header', 'final', 'sticky', 'footer', 'card-area', 'artigos-home', 'blog-lista', 'casos', 'topo', '404'];
+const PALAVRAS =['vítima', 'acusado', 'preso', 'intimad', 'condenad', 'golpe'];
 
 const files = htmlFiles(DIST);
 for (const file of files) {
@@ -30,7 +32,7 @@ for (const file of files) {
         if (achou) err(`mensagem de contato geral presume a situação ("${achou}"): ${msg}`);
       }
     }
-    if (attr(tag, 'data-track') && !attr(tag, 'data-secao')) err(`data-track sem data-secao: ${tag.slice(0, 120)}`);
+    if (attr(tag, 'data-track') && !SECOES.includes(attr(tag, 'data-secao'))) err(`data-track sem data-secao válido: ${tag.slice(0, 120)}`);
   }
 }
 

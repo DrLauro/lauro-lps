@@ -96,7 +96,7 @@ const jsonLd = {
 
   <Proof items={pages[0].proof} />
 
-  <section class="block block--prose" aria-labelledby="s1">
+  <section class="block block--prose" aria-labelledby="s1" id="sobre">
     <div class="container block__grid">
       <header class="block__head">
         <span class="block__mark mono" aria-hidden="true">§ 1</span>
@@ -172,7 +172,24 @@ const jsonLd = {
     </div>
   </section>
 
-  <section class="final" aria-label="Fale com o Dr. Lauro">
+  <section class="block" aria-labelledby="s5">
+    <div class="container block__grid">
+      <header class="block__head">
+        <span class="block__mark mono" aria-hidden="true">§ 5</span>
+        <h2 id="s5">Endereço</h2>
+      </header>
+      <div class="block__body local">
+        <p>{office.address}</p>
+        <a class="posts__more" href={office.googleProfile} target="_blank" rel="noopener">Como chegar <Icon name="arrow" size={16} /></a>
+        <div class="local__map" data-src={office.mapEmbed}>
+          <button type="button" class="btn btn--ghost"><Icon name="pin" size={18} />Mostrar mapa</button>
+          <p class="local__note">O mapa é do Google Maps e só carrega quando você clicar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" aria-label="Fale com o Dr. Lauro" id="contato">
     <div class="container final__in">
       <div class="final__copy">
         <p class="final__text">A liberdade não tem preço.</p>
@@ -190,4 +207,15 @@ const jsonLd = {
     <a class="btn btn--primary" {...geral('sticky')}><Icon name="whatsapp" size={20} />WhatsApp</a>
     <a class="btn btn--ghost" {...call('sticky')}><Icon name="phone" size={20} />Ligar</a>
   </div>
+  <script is:inline>
+    (function () {
+      var box = document.querySelector('.local__map');
+      box.querySelector('button').addEventListener('click', function () {
+        var f = document.createElement('iframe');
+        f.src = box.dataset.src; f.title = 'Mapa do escritório no Google Maps'; f.loading = 'lazy';
+        f.referrerPolicy = 'no-referrer-when-downgrade';
+        box.replaceChildren(f);
+      });
+    })();
+  </script>
 </BaseLayout>

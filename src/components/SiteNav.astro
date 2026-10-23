@@ -1,0 +1,38 @@
+---
+// Menu do site. Celular e tablet: botão "Menu" abre a lista em tela cheia. A partir de 1024px: links em linha no cabeçalho.
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const path = Astro.url.pathname.replace(/\/?$/, '/');
+const links = [
+  { label: 'Início', href: `${base}/` },
+  { label: 'Áreas de atuação', href: `${base}/especialidades/` },
+  { label: 'Sobre', href: `${base}/#sobre` },
+  { label: 'Artigos e Decisões', href: `${base}/blog/` },
+  { label: 'Contato', href: `${base}/#contato` },
+];
+---
+<button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+  <span class="site-nav__bars" aria-hidden="true"></span>Menu
+</button>
+<nav id="site-nav" class="site-nav" aria-label="Menu principal">
+  <ul>
+    {links.map((l) => <li><a href={l.href} aria-current={l.href === path ? 'page' : undefined}>{l.label}</a></li>)}
+  </ul>
+</nav>
+
+<script is:inline>
+  (function () {
+    var header = document.querySelector('.site-header');
+    var btn = header.querySelector('.site-nav__toggle');
+    function set(open) {
+      header.classList.toggle('is-open', open);
+      document.documentElement.classList.toggle('menu-aberto', open);
+      btn.setAttribute('aria-expanded', String(open));
+    }
+    btn.addEventListener('click', function () { set(btn.getAttribute('aria-expanded') !== 'true'); });
+    header.querySelector('.site-nav').addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && header.classList.contains('is-open')) { set(false); btn.focus(); }
+    });
+    matchMedia('(min-width: 1024px)').addEventListener('change', function () { set(false); });
+  })();
+</script>
