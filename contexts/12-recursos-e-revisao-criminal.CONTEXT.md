@@ -81,7 +81,8 @@ Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa es
 
 ### 5.6 H2: Casos em que atuamos
 **Condenação definitiva corrigida no STJ**  
-Em condenação já transitada em julgado por furto qualificado, a defesa levou ao Superior Tribunal de Justiça a tese de que a quebra do vidro do próprio veículo subtraído não qualifica o furto. A Sexta Turma concedeu a ordem de ofício: o crime foi desclassificado para furto simples, com regime aberto e substituição da prisão por penas restritivas de direitos. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Em condenação já transitada em julgado por furto qualificado, a defesa levou ao Superior Tribunal de Justiça a tese de que a quebra do vidro do próprio veículo subtraído não qualifica o furto. A Sexta Turma concedeu a ordem de ofício: o crime foi desclassificado para furto simples, com regime aberto e substituição da prisão por penas restritivas de direitos.  
+Publicação: jusbrasil:6607932795
 
 Sem nome de cliente, número de processo, vara de cidade pequena ou data que permita identificar alguém.
 

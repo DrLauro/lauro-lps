@@ -9,7 +9,7 @@ import portrait from '../assets/dr-lauro.png';
 import avatar from '../assets/dr-lauro-avatar.png';
 import { pages, cards as areas, cardLink } from '../lib/contexts.mjs';
 import { office } from '../lib/office.mjs';
-import jusbrasil from '../data/jusbrasil.json';
+import { publicacao } from '../lib/posts.mjs';
 import { waAttrs, msgGeral } from '../lib/whatsapp.mjs';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
@@ -40,26 +40,21 @@ const passos = [
 
 // "Artigos e Decisões": decisões favoráveis primeiro, depois artigos de análise (máx. 6).
 // Cada card = caso aprovado no CONTEXT.md da área (texto sem dado identificável)
-// + artigo correspondente no Jusbrasil (id em src/data/jusbrasil.json), quando existe.
+// + a publicação ligada ao caso ("Publicação: jusbrasil:<id>"): artigo do site, se houver, ou Jusbrasil.
 const destaques = [
-  ['prisao-em-flagrante', 0, '6996806843'],
-  ['habeas-corpus', 0, '7605115884'],
-  ['trafico-de-drogas', 0, null],
-  ['lei-maria-da-penha', 0, '7171114570'],
-  ['crimes-patrimoniais', 0, '7604915091'],
-  ['crimes-patrimoniais', 1, '7512770959'],
+  ['prisao-em-flagrante', 0],
+  ['habeas-corpus', 0],
+  ['trafico-de-drogas', 0],
+  ['lei-maria-da-penha', 0],
+  ['crimes-patrimoniais', 0],
+  ['crimes-patrimoniais', 1],
 ];
+const destino = await publicacao();
 const titulo = (t) => t.replace(/habeas corpus/gi, 'Habeas Corpus').replace(/tribunais superiores/gi, 'Tribunais Superiores');
-const cards = destaques.map(([slug, i, artigo]) => {
+const cards = destaques.map(([slug, i]) => {
   const p = pages.find((x) => x.slug === slug);
   const c = p.content.find((b) => b.kind === 'cases').items[i];
-  return {
-    area: p.card.title,
-    areaHref: `${base}/${slug}/`,
-    title: titulo(c.title),
-    text: c.text.replace(/\s*\(Caso publicado no Jusbrasil do Dr\. Lauro\.\)\s*$/, ''),
-    href: jusbrasil.find((a) => a.id === artigo)?.url,
-  };
+  return { area: p.card.title, areaHref: `${base}/${slug}/`, title: titulo(c.title), text: c.text, artigo: destino(c.jusbrasilId) };
 });
 
 const [escritorio, advogado] = pages[0].jsonLd['@graph'];
@@ -165,8 +160,8 @@ const jsonLd = {
               <a class="label case__area" href={c.areaHref}>{c.area}</a>
               <h3>{c.title}</h3>
               <p>{c.text}</p>
-              {c.href
-                ? <a class="posts__more" href={c.href} target="_blank" rel="noopener" data-track="blog_click" data-area="home" data-secao="artigos-home">Ler artigo <Icon name="arrow" size={16} /></a>
+              {c.artigo
+                ? <a class="posts__more" href={c.artigo.href} {...(c.artigo.external && { target: '_blank', rel: 'noopener' })} data-track="blog_click" data-area="home" data-secao="artigos-home">Ler artigo <Icon name="arrow" size={16} /></a>
                 : <a class="posts__more" href={c.areaHref}>Ver a área <Icon name="arrow" size={16} /></a>}
             </article>
           ))}

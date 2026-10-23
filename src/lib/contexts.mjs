@@ -34,7 +34,10 @@ function parseBlock(heading, body) {
     const items = [];
     for (const l of kept) {
       const t = l.match(/^\*\*(.+)\*\*\s*$/);
-      if (t) items.push({ title: t[1], text: '' });
+      // "Publicação: jusbrasil:<id>" liga o caso ao artigo (id de src/data/jusbrasil.json).
+      const pub = l.trim().match(/^Publicação: jusbrasil:(\d+)$/);
+      if (pub) items.at(-1).jusbrasilId = pub[1];
+      else if (t) items.push({ title: t[1], text: '', jusbrasilId: null });
       else if (items.length) items.at(-1).text += (items.at(-1).text ? ' ' : '') + l.trim();
     }
     return { kind: 'cases', h2, items };

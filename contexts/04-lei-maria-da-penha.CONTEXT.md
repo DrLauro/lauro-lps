@@ -87,10 +87,12 @@ Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa es
 
 ### 5.6 H2: Casos em que atuamos
 **Representação da vítima com medidas protetivas mantidas**  
-Atuando para a vítima, a defesa dos interesses dela levou a um pedido incomum: a revogação da prisão do investigado, para que ele voltasse a cuidar da própria mãe e a vítima pudesse reorganizar a vida. O juízo deferiu o pedido e manteve todas as medidas protetivas, inclusive afastamento, proibição de contato e sigilo do novo endereço da vítima. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Atuando para a vítima, a defesa dos interesses dela levou a um pedido incomum: a revogação da prisão do investigado, para que ele voltasse a cuidar da própria mãe e a vítima pudesse reorganizar a vida. O juízo deferiu o pedido e manteve todas as medidas protetivas, inclusive afastamento, proibição de contato e sigilo do novo endereço da vítima.  
+Publicação: jusbrasil:7171114570
 
 **Acusação de ameaça baseada em prints: absolvição**  
-Na defesa de acusado de ameaça contra ex-companheira, a defesa demonstrou que o print apresentado tinha data diferente da descrita na denúncia, sem cadeia de custódia, e que a suposta confissão na delegacia era genérica e feita sem advogado. O acusado foi absolvido por falta de provas. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Na defesa de acusado de ameaça contra ex-companheira, a defesa demonstrou que o print apresentado tinha data diferente da descrita na denúncia, sem cadeia de custódia, e que a suposta confissão na delegacia era genérica e feita sem advogado. O acusado foi absolvido por falta de provas.  
+Publicação: jusbrasil:6664400264
 
 Sem nome de cliente, número de processo, vara de cidade pequena ou data que permita identificar alguém.
 

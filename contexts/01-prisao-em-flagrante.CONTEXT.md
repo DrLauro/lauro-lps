@@ -84,7 +84,8 @@ Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa es
 
 ### 5.6 H2: Casos em que atuamos
 **Preso em flagrante por tráfico: liberdade concedida pelo TJSP**  
-Cliente primário, preso em flagrante por suposto tráfico de drogas, teve a prisão convertida em preventiva. Em habeas corpus, a defesa demonstrou a falta de fundamentos concretos para manter a prisão e o Tribunal de Justiça de São Paulo concedeu a liberdade por unanimidade, com medidas cautelares. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Cliente primário, preso em flagrante por suposto tráfico de drogas, teve a prisão convertida em preventiva. Em habeas corpus, a defesa demonstrou a falta de fundamentos concretos para manter a prisão e o Tribunal de Justiça de São Paulo concedeu a liberdade por unanimidade, com medidas cautelares.  
+Publicação: jusbrasil:6996806843
 
 Sem nome de cliente, número de processo, vara de cidade pequena ou data que permita identificar alguém.
 

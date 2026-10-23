@@ -18,6 +18,7 @@ for (const file of files) {
   const page = '/' + relative(DIST, file).replace(/\\/g, '/').replace(/index\.html$/, '');
   const err = (msg) => erros.push(`${page}: ${msg}`);
 
+  if (html.includes('Caso publicado no Jusbrasil')) err('caso com "(Caso publicado no Jusbrasil do Dr. Lauro.)" em vez do link');
   for (const tag of html.match(/<[a-z]+\b[^>]*>/g) ?? []) {
     const href = decode(attr(tag, 'href') ?? '');
     if (/wa\.me/.test(href)) {

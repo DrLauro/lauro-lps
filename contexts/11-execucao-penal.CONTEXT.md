@@ -86,7 +86,8 @@ Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa es
 
 ### 5.6 H2: Casos em que atuamos
 **Pena reduzida no STJ depois da condenação definitiva**  
-Em caso de condenação já definitiva por tráfico, o Superior Tribunal de Justiça reconheceu ilegalidade na dosimetria da pena, aplicou o tráfico privilegiado, reduziu a pena e readequou o regime. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Em caso de condenação já definitiva por tráfico, o Superior Tribunal de Justiça reconheceu ilegalidade na dosimetria da pena, aplicou o tráfico privilegiado, reduziu a pena e readequou o regime.  
+Publicação: jusbrasil:6996129713
 
 Sem nome de cliente, número de processo, vara de cidade pequena ou data que permita identificar alguém.
 

@@ -80,7 +80,8 @@ Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa es
 
 ### 5.6 H2: Casos em que atuamos
 **Habeas corpus contra prisão preventiva no TJSP**  
-Em caso em que a prisão preventiva foi decretada contra a manifestação do próprio Ministério Público, a defesa demonstrou a ilegalidade da decisão e obteve liminar em habeas corpus no Tribunal de Justiça de São Paulo. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Em caso em que a prisão preventiva foi decretada contra a manifestação do próprio Ministério Público, a defesa demonstrou a ilegalidade da decisão e obteve liminar em habeas corpus no Tribunal de Justiça de São Paulo.  
+Publicação: jusbrasil:7605115884
 
 Sem nome de cliente, número de processo, vara de cidade pequena ou data que permita identificar alguém.
 

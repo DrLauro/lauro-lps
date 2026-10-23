@@ -8,6 +8,19 @@ import { pages } from './contexts.mjs';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const areaName = Object.fromEntries(pages.map((p) => [p.slug, p.card.title]));
 
+// Destino de "Ler artigo" para um id do Jusbrasil: o artigo do site com o mesmo jusbrasilId, se existir;
+// senão, a publicação no Jusbrasil. null quando o id não está em jusbrasil.json.
+export async function publicacao() {
+  const internos = Object.fromEntries((await getCollection('blog'))
+    .filter(({ data }) => data.jusbrasilId).map(({ id, data }) => [data.jusbrasilId, `${base}/blog/${id}/`]));
+  return (id) => {
+    if (!id) return null;
+    if (internos[id]) return { href: internos[id], external: false };
+    const url = jusbrasil.find((a) => a.id === id)?.url;
+    return url ? { href: url, external: true } : null;
+  };
+}
+
 export async function loadPosts() {
   const site = (await getCollection('blog')).map(({ id, data }) => ({
     title: data.title,

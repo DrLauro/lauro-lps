@@ -9,6 +9,7 @@ import avatar from '../assets/dr-lauro-avatar.png';
 import { pages } from '../lib/contexts.mjs';
 import { office } from '../lib/office.mjs';
 import { waAttrs, msgArea } from '../lib/whatsapp.mjs';
+import { publicacao } from '../lib/posts.mjs';
 
 export const getStaticPaths = () => pages.map((p) => ({ params: { slug: p.slug }, props: { p } }));
 
@@ -25,6 +26,11 @@ const geral = (secao) => waAttrs(msgArea(p.name), { area: p.area, situacao: 'con
 const COM_LINK_VITIMA = ['lei-maria-da-penha', 'golpes-e-fraudes-digitais', 'ofensas-digitais', 'crimes-sexuais', 'tribunal-do-juri'];
 // Números do aviso de emergência viram links de discagem (sem data-track: não é conversão).
 const avisoPartes = p.aviso?.split(/\b(190|180)\b/) ?? [];
+const destino = await publicacao();
+const lerArtigo = (c) => {
+  const d = destino(c.jusbrasilId);
+  return d && { href: d.href, ...(d.external && { target: '_blank', rel: 'noopener' }), 'data-track': 'blog_click', 'data-area': p.area, 'data-secao': 'casos' };
+};
 const call = (secao) => ({ href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.area, 'data-secao': secao });
 ---
 <BaseLayout title={p.title} description={p.description} canonical={p.canonical} area={p.area} jsonLd={p.jsonLd}>
@@ -97,6 +103,7 @@ const call = (secao) => ({ href: p.phone.href, 'data-track': 'phone_click', 'dat
                   <p class="label">Caso {String(n + 1).padStart(2, '0')}</p>
                   <h3>{c.title}</h3>
                   <p>{c.text}</p>
+                  {lerArtigo(c) && <a class="posts__more" {...lerArtigo(c)}>Ler artigo <Icon name="arrow" size={16} /></a>}
                 </article>
               ))}
             </div>

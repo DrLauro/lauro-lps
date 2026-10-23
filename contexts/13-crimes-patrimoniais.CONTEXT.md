@@ -80,10 +80,12 @@ Exibir como lista de etiquetas (chips) ou lista simples; todo o texto precisa es
 
 ### 5.6 H2: Casos em que atuamos
 **Furto no ambiente de trabalho: investigação arquivada**  
-Em acusação de furto no ambiente de trabalho, a defesa demonstrou a falta de provas e a investigação foi arquivada. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Em acusação de furto no ambiente de trabalho, a defesa demonstrou a falta de provas e a investigação foi arquivada.  
+Publicação: jusbrasil:7604915091
 
 **Roubo: absolvição por falta de prova judicial**  
-Acusados de roubo depois de abordados em veículo com alerta de furto, os clientes foram reconhecidos apenas na delegacia. A defesa sustentou a insuficiência das provas do inquérito e as falhas do reconhecimento (art. 226 do Código de Processo Penal), e a ação penal foi julgada improcedente. (Caso publicado no Jusbrasil do Dr. Lauro.)
+Acusados de roubo depois de abordados em veículo com alerta de furto, os clientes foram reconhecidos apenas na delegacia. A defesa sustentou a insuficiência das provas do inquérito e as falhas do reconhecimento (art. 226 do Código de Processo Penal), e a ação penal foi julgada improcedente.  
+Publicação: jusbrasil:7512770959
 
 Sem nome de cliente, número de processo, vara de cidade pequena ou data que permita identificar alguém.
 

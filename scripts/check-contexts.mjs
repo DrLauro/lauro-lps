@@ -1,7 +1,10 @@
 // Confere que o parser leu cada CONTEXT.md por inteiro e que o contexto é coerente consigo mesmo
 // (o FAQ do JSON-LD precisa ser idêntico ao exibido — exigência da seção 8).
 import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
 import { pages } from '../src/lib/contexts.mjs';
+
+const jusbrasil = JSON.parse(readFileSync('src/data/jusbrasil.json', 'utf8'));
 
 assert.equal(pages.length, 20, '20 páginas');
 for (const p of pages) {
@@ -17,6 +20,10 @@ for (const p of pages) {
   for (const s of servicos) {
     assert.ok(/^[A-ZÀ-Ú]/.test(s), at(`serviço começa com minúscula: ${s}`));
     assert.ok(!/^(Inclusive|Contra|Por|No|Nos|Psicológica|Sexual|Patrimonial|Administradores)(?![\wÀ-ú])/.test(s), at(`serviço é pedaço de frase: ${s}`));
+  }
+
+  for (const c of p.content.find((b) => b.kind === 'cases').items) {
+    assert.ok(!c.jusbrasilId || jusbrasil.some((a) => a.id === c.jusbrasilId), at(`caso com publicação inexistente: jusbrasil:${c.jusbrasilId}`));
   }
 
   const graph = p.jsonLd['@graph'];
