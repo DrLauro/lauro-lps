@@ -9,6 +9,7 @@ import { Image } from 'astro:assets';
 import logo from '../assets/logo.png';
 import Icon from '../components/Icon.astro';
 import SiteNav from '../components/SiteNav.astro';
+import Consentimento from '../components/Consentimento.astro';
 import { office } from '../lib/office.mjs';
 import { waAttrs, msgGeral } from '../lib/whatsapp.mjs';
 
@@ -39,6 +40,21 @@ const gtm = import.meta.env.PUBLIC_GTM_ID;
     <meta name="theme-color" content="#02213F" />
     <link rel="icon" href={`${base}/favicon.svg`} type="image/svg+xml" />
     {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+    {gtm && (
+      <script is:inline>
+        // Modo de Consentimento do Google: tudo negado até a escolha da pessoa (components/Consentimento.astro).
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
+        window.lerConsentimento = function () { try { return JSON.parse(localStorage.getItem('cookies-v1')); } catch (e) { return null; } };
+        window.aplicarConsentimento = function (c) {
+          var v = function (b) { return b ? 'granted' : 'denied'; };
+          gtag('consent', 'update', { analytics_storage: v(c.medicao), ad_storage: v(c.publicidade), ad_user_data: v(c.publicidade), ad_personalization: v(c.publicidade) });
+        };
+        var salvo = window.lerConsentimento();
+        if (salvo) window.aplicarConsentimento(salvo);
+      </script>
+    )}
     {gtm && (
       <script is:inline define:vars={{ gtm }}>
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer',gtm);
@@ -82,7 +98,7 @@ const gtm = import.meta.env.PUBLIC_GTM_ID;
         <div>
           <p class="site-footer__name">Lauro Neto Sociedade Individual de Advocacia</p>
           <p class="mono site-footer__meta">CNPJ {office.cnpj} · OAB/SP 210.212</p>
-          <p class="site-footer__meta"><a href={`${base}/politicas-de-privacidade/`}>Política de Privacidade</a></p>
+          <p class="site-footer__meta"><a href={`${base}/politicas-de-privacidade/`}>Política de Privacidade</a>{gtm && <> · <a href={`${base}/politicas-de-privacidade/`} data-cookies>Preferências de cookies</a></>}</p>
         </div>
         <ul class="site-footer__contact">
           <li><Icon name="pin" size={18} /><span>{office.address} <a href={office.googleProfile || office.googleReviews} target="_blank" rel="noopener" class="site-footer__map">Como chegar</a></span></li>
@@ -95,7 +111,10 @@ const gtm = import.meta.env.PUBLIC_GTM_ID;
       </div>
     </footer>
 
+    {gtm && <Consentimento />}
+
     <script is:inline>
+      // Cliques de contato vão para o dataLayer com ou sem consentimento; o GTM decide o que enviar.
       window.dataLayer = window.dataLayer || [];
       document.addEventListener('click', function (e) {
         var el = e.target.closest('[data-track]');

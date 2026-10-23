@@ -14,6 +14,10 @@ h1, h2, h3 { margin: 0; color: var(--navy-700); }
 p { margin: 0; }
 ul, ol { margin: 0; padding: 0; list-style: none; }
 :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: var(--radius-sm); }
+[hidden] { display: none !important; } /* .btn e afins não podem vencer o atributo hidden */
+/* página curta (404): rodapé no fim da tela */
+body { display: flex; flex-direction: column; min-height: 100vh; }
+main { flex: 1; }
 
 .container { width: 100%; max-width: var(--container-max); margin-inline: auto; padding-inline: var(--s-4); }
 @media (min-width: 768px) { .container { padding-inline: var(--s-8); } }
@@ -392,3 +396,26 @@ body:has(.sticky-cta) { padding-bottom: calc(var(--s-16) + var(--s-2)); }
 @media (max-width: 767px) { .local__map { aspect-ratio: 4 / 3; } }
 .hero__cta { margin-top: var(--s-6); }
 #sobre, #contato { scroll-margin-top: var(--s-16); }
+
+/* banner de cookies: fixo embaixo, acima da barra de WhatsApp; Aceitar e Recusar com o mesmo peso de leitura */
+.consent {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 35;
+  padding-block: var(--s-3) calc(var(--s-3) + env(safe-area-inset-bottom));
+  background: var(--paper); border-top: 1px solid var(--border-strong); box-shadow: var(--elev-3);
+  font-size: var(--fs-sm); color: var(--text-muted);
+}
+.consent[hidden] { display: none; }
+.consent__in { display: grid; gap: var(--s-3); }
+.consent__title { font: var(--fw-medium) var(--fs-xs)/var(--lh-label) var(--font-mono); letter-spacing: var(--ls-label); text-transform: uppercase; color: var(--navy-700); margin-bottom: var(--s-1); }
+.consent__opts { display: grid; gap: var(--s-1); margin: var(--s-3) 0 0; padding: 0; border: 0; }
+.consent__opts[hidden] { display: none; }
+.consent__opts label { display: flex; align-items: center; gap: var(--s-2); min-height: var(--tap); color: var(--text); font-weight: var(--fw-medium); }
+.consent__opts input { width: var(--s-4); height: var(--s-4); accent-color: var(--navy-700); }
+.consent__opts span { font-weight: var(--fw-regular); color: var(--text-subtle); }
+.consent__actions { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-2); }
+.consent__actions .btn { padding-inline: var(--s-3); }
+.consent__actions [data-consent="configurar"], .consent__actions [data-consent="salvar"] { grid-column: 1 / -1; order: 1; }
+@media (min-width: 768px) {
+  .consent__in { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: var(--s-8); }
+  .consent__actions { display: flex; }
+}

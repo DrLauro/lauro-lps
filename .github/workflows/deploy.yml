@@ -23,6 +23,8 @@ jobs:
       - run: npm run build
         env:
           PUBLIC_ENV: production
+          # ID do contêiner do GTM (variável do repositório). Vazio = site sem GTM e sem banner de cookies.
+          PUBLIC_GTM_ID: ${{ vars.PUBLIC_GTM_ID }}
       - run: npm run check:dist
       - run: npx -y wrangler@4 deploy
         env:

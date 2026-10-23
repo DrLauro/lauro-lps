@@ -1,0 +1,58 @@
+---
+// Banner de cookies (Política de Privacidade, seção 7). Só existe quando o GTM está ligado (PUBLIC_GTM_ID):
+// sem GTM o site não grava cookie de medição nem de publicidade.
+// A escolha fica em localStorage ("cookies-v1"); o padrão "negado" e a atualização ficam no <head> do BaseLayout.
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<section class="consent" id="consent" aria-labelledby="consent-title" hidden>
+  <div class="container consent__in">
+    <div class="consent__copy">
+      <p id="consent-title" class="consent__title">Cookies</p>
+      <p>Usamos cookies para medir o uso do site e o resultado dos nossos anúncios. Você escolhe quais aceitar. <a href={`${base}/politicas-de-privacidade/`}>Política de Privacidade</a></p>
+      <fieldset class="consent__opts" hidden>
+        <legend class="sr-only">Escolha os cookies</legend>
+        <label><input type="checkbox" checked disabled /> Necessários <span>funcionamento do site, sempre ativos</span></label>
+        <label><input type="checkbox" name="medicao" /> Medição <span>Google Analytics</span></label>
+        <label><input type="checkbox" name="publicidade" /> Publicidade <span>conversões do Google Ads</span></label>
+      </fieldset>
+    </div>
+    <div class="consent__actions">
+      <button type="button" class="btn btn--ghost" data-consent="recusar">Recusar</button>
+      <button type="button" class="btn btn--ghost" data-consent="configurar" aria-expanded="false">Configurar</button>
+      <button type="button" class="btn btn--ghost" data-consent="salvar" hidden>Salvar escolhas</button>
+      <button type="button" class="btn btn--primary" data-consent="aceitar">Aceitar</button>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  (function () {
+    var box = document.getElementById('consent');
+    var opts = box.querySelector('.consent__opts');
+    var btn = function (n) { return box.querySelector('[data-consent="' + n + '"]'); };
+    function abrir() {
+      var c = window.lerConsentimento() || {};
+      opts.querySelector('[name=medicao]').checked = !!c.medicao;
+      opts.querySelector('[name=publicidade]').checked = !!c.publicidade;
+      box.hidden = false;
+    }
+    function salvar(c) {
+      window.aplicarConsentimento(c);
+      try { localStorage.setItem('cookies-v1', JSON.stringify(c)); } catch (e) {}
+      box.hidden = true;
+    }
+    btn('aceitar').addEventListener('click', function () { salvar({ medicao: true, publicidade: true }); });
+    btn('recusar').addEventListener('click', function () { salvar({ medicao: false, publicidade: false }); });
+    btn('configurar').addEventListener('click', function () {
+      opts.hidden = false; btn('salvar').hidden = false; btn('configurar').hidden = true;
+      opts.querySelector('[name=medicao]').focus();
+    });
+    btn('salvar').addEventListener('click', function () {
+      salvar({ medicao: opts.querySelector('[name=medicao]').checked, publicidade: opts.querySelector('[name=publicidade]').checked });
+    });
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('[data-cookies]')) { e.preventDefault(); abrir(); box.querySelector('button').focus(); }
+    });
+    if (!window.lerConsentimento()) abrir();
+  })();
+</script>
