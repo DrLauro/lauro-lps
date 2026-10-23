@@ -25,6 +25,10 @@ for (const file of files) {
     if (!noindex && !/<link rel="canonical" href="https:\/\/lauro\.adv\.br\//.test(html)) err('página indexável sem canonical');
     if (noindex && process.env.PUBLIC_ENV !== 'preview') err('noindex no build de produção');
   }
+  // Nenhum texto visível com iniciais de partes (F.B.B.) ou número de processo (CNJ ou "n.º 1.088.120").
+  const texto = html.replace(/<(script|style)\b[\s\S]*?<\/\1>/g, '').replace(/<[^>]*>/g, ' ');
+  const sensivel = texto.match(/\b[A-Z]\.[A-Z]\.(?:[A-Z]\.)?|\d{7}-\d{2}\.\d{4}|n\.º ?\d[\d.]+/);
+  if (sensivel) err(`texto com dado identificável: "${sensivel[0]}"`);
   if (html.includes('"Attorney"')) err('JSON-LD com "Attorney" (o advogado é Person)');
   if (html.includes('Caso publicado no Jusbrasil'))err('caso com "(Caso publicado no Jusbrasil do Dr. Lauro.)" em vez do link');
   for (const tag of html.match(/<[a-z]+\b[^>]*>/g) ?? []) {
