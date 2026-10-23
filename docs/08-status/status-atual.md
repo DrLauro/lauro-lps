@@ -29,7 +29,7 @@ Lighthouse mobile (build de produção, 22/10): home e /lei-maria-da-penha/ com 
 
 ## Impeditivos para o lançamento final
 
-1. **ID do GTM** (`GTM-XXXXXXX`). Sem ele não há medição de conversão nem banner de cookies. Configuração em `docs/07-operacoes/observabilidade.md`.
+1. **GTM** `GTM-5V9CSW5J` no ar desde 23/10/2026 com GA4 (`G-WL6VECX5F6`). Google Ads cancelado: conversões do Ads entram ao reativar. Ver `docs/07-operacoes/observabilidade.md`.
 
 Painel administrativo resolvido em 23/10/2026: login pelo GitHub em https://lauro.adv.br/admin/ funcionando (OAuth App na conta DrLauro, Worker `lauro-cms-auth` em `auth.lauro.adv.br`, repositório `DrLauro/lauro-lps`). Para editar, a conta precisa ser dona ou colaboradora com push no repositório. Recomendado: gerar um Client secret novo (o atual foi colado no chat) e gravar com `wrangler secret put GITHUB_CLIENT_SECRET`.
 

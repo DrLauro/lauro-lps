@@ -20,6 +20,15 @@ Conversão do site = contato: `whatsapp_click` e `phone_click`. Todo o resto é 
 - A escolha fica em `localStorage` (`cookies-v1`). "Preferências de cookies", no rodapé, reabre o banner.
 - O mapa da home (Google Maps) só carrega quando a pessoa clica em "Mostrar mapa".
 
+## Contas (23/10/2026)
+
+Tudo na conta Google dr.lauroneto@gmail.com.
+
+- **GTM:** conta "Lauro Neto Advocacia", contêiner `lauro.adv.br`, **`GTM-5V9CSW5J`**. Versão 2 publicada a partir de `docs/07-operacoes/gtm-container.json` (Administrador → Importar contêiner). Mudou o contêiner pela interface? Exporte e atualize o JSON.
+- **GA4:** propriedade já existente, fluxo web 13126515431, ID de medição **`G-WL6VECX5F6`**.
+- **Google Ads:** conta "Dr. Lauro Almeida Neto", ID de conversão `AW-11034973115`. **Conta cancelada em 23/10/2026** (anúncios parados). Ações de conversão existentes são só de chamadas a partir de anúncios e do Perfil da Empresa; não há conversão de WhatsApp ou ligação pelo site. Ao reativar: criar as ações "WhatsApp (site)" e "Ligação (site)" com origem Site e configuração manual, e acrescentar no GTM uma tag "Acompanhamento de conversões do Google Ads" para cada uma (acionadores `CE - whatsapp_click` e `CE - phone_click`).
+- A tag do Google antiga "Lauro ADV - Criminal" (`AW-11034973115`, `GT-WVXDJTBM`) não está no site e não deve ser instalada à parte: contaria em dobro com o GTM.
+
 ## Ligar o GTM
 
 1. Criar o contêiner no Google Tag Manager (tipo Web) e copiar o ID `GTM-XXXXXXX`.
