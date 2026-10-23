@@ -59,7 +59,7 @@ const gtm = import.meta.env.PUBLIC_GTM_ID;
             <span class="brand__role">Advogado criminalista</span>
           </span>
         </a>
-        <a class="btn btn--ghost site-header__call" href={office.tel} data-track="phone_click" data-area={area}>
+        <a class="btn btn--ghost site-header__call" href={office.tel} data-track="phone_click" data-area={area} data-secao="header">
           <Icon name="phone" size={18} /><span class="mono">{office.phoneLabel}</span>
         </a>
       </div>
@@ -76,7 +76,7 @@ const gtm = import.meta.env.PUBLIC_GTM_ID;
         </div>
         <ul class="site-footer__contact">
           <li><Icon name="pin" size={18} /><span>{office.address}</span></li>
-          <li><Icon name="phone" size={18} /><a href={office.tel} class="mono" data-track="phone_click" data-area={area}>{office.phoneLabel}</a></li>
+          <li><Icon name="phone" size={18} /><a href={office.tel} class="mono" data-track="phone_click" data-area={area} data-secao="footer">{office.phoneLabel}</a></li>
           <li><Icon name="mail" size={18} /><a href={`mailto:${office.email}`}>{office.email}</a></li>
         </ul>
         <ul class="site-footer__social" aria-label="Perfis do Dr. Lauro">
@@ -94,6 +94,7 @@ const gtm = import.meta.env.PUBLIC_GTM_ID;
           event: el.dataset.track,
           area: el.dataset.area || '',
           situacao: el.dataset.situacao || '',
+          secao: el.dataset.secao || '',
           pagina: location.pathname
         });
       });

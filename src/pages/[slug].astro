@@ -8,6 +8,7 @@ import portrait from '../assets/dr-lauro.png';
 import avatar from '../assets/dr-lauro-avatar.png';
 import { pages } from '../lib/contexts.mjs';
 import { office } from '../lib/office.mjs';
+import { waAttrs, msgArea } from '../lib/whatsapp.mjs';
 
 export const getStaticPaths = () => pages.map((p) => ({ params: { slug: p.slug }, props: { p } }));
 
@@ -17,8 +18,10 @@ const bySlug = Object.fromEntries(pages.map((x) => [`/${x.slug}/`, x]));
 const related = p.links.filter((l) => bySlug[l.path]).map((l) => bySlug[l.path]);
 const [primary, ...others] = p.whatsapp;
 const sections = p.content.filter((b) => b.kind !== 'cases' || b.items.length);
-const wa = (w) => ({ href: w.href, target: '_blank', rel: 'noopener', 'data-track': 'whatsapp_click', 'data-area': p.area, 'data-situacao': w.situacao });
-const call = { href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.area };
+const wa = (w) => ({ href: w.href, target: '_blank', rel: 'noopener', 'data-track': 'whatsapp_click', 'data-area': p.area, 'data-situacao': w.situacao, 'data-secao': 'triagem' });
+// Final e barra fixa: mensagem neutra, sem presumir se quem clica é vítima ou acusado.
+const geral = (secao) => waAttrs(msgArea(p.name), { area: p.area, situacao: 'contato-geral', secao });
+const call = (secao) => ({ href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.area, 'data-secao': secao });
 ---
 <BaseLayout title={p.title} description={p.description} canonical={p.canonical} area={p.area} jsonLd={p.jsonLd}>
   <section class="hero">
@@ -43,7 +46,7 @@ const call = { href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.a
             {others.map((w) => (
               <li><a class="triage__row" {...wa(w)}><Icon name="whatsapp" size={18} /><span>{w.label}</span><Icon name="arrow" size={16} /></a></li>
             ))}
-            <li><a class="triage__row triage__row--call" {...call}><Icon name="phone" size={18} /><span>Ligar <span class="mono">{office.phoneLabel}</span></span><Icon name="arrow" size={16} /></a></li>
+            <li><a class="triage__row triage__row--call" {...call('triagem')}><Icon name="phone" size={18} /><span>Ligar <span class="mono">{office.phoneLabel}</span></span><Icon name="arrow" size={16} /></a></li>
           </ul>
         </div>
       </div>
@@ -105,8 +108,8 @@ const call = { href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.a
     <div class="container final__in">
       <p class="final__text">{p.finalCta}</p>
       <div class="final__actions">
-        <a class="btn btn--primary" {...wa(primary)}><Icon name="whatsapp" size={20} />Falar no WhatsApp</a>
-        <a class="btn btn--on-dark" {...call}><Icon name="phone" size={20} />Ligar <span class="mono">{office.phoneLabel}</span></a>
+        <a class="btn btn--primary" {...geral('final')}><Icon name="whatsapp" size={20} />Falar no WhatsApp</a>
+        <a class="btn btn--on-dark" {...call('final')}><Icon name="phone" size={20} />Ligar <span class="mono">{office.phoneLabel}</span></a>
       </div>
     </div>
   </section>
@@ -122,7 +125,7 @@ const call = { href: p.phone.href, 'data-track': 'phone_click', 'data-area': p.a
   </div>
 
   <div class="sticky-cta">
-    <a class="btn btn--primary" {...wa(primary)}><Icon name="whatsapp" size={20} />WhatsApp</a>
-    <a class="btn btn--ghost" {...call}><Icon name="phone" size={20} />Ligar</a>
+    <a class="btn btn--primary" {...geral('sticky')}><Icon name="whatsapp" size={20} />WhatsApp</a>
+    <a class="btn btn--ghost" {...call('sticky')}><Icon name="phone" size={20} />Ligar</a>
   </div>
 </BaseLayout>

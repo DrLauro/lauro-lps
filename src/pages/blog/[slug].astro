@@ -5,6 +5,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Icon from '../../components/Icon.astro';
 import { office } from '../../lib/office.mjs';
 import { pages } from '../../lib/contexts.mjs';
+import { waAttrs, msgArtigo } from '../../lib/whatsapp.mjs';
 
 export const getStaticPaths = async () =>
   (await getCollection('blog')).map((post) => ({ params: { slug: post.id }, props: { post } }));
@@ -16,11 +17,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const canonical = `https://lauro.adv.br/blog/${post.id}/`;
 const dia = date.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo', day: 'numeric', month: 'long', year: 'numeric' });
 
-const wa = {
-  href: `https://wa.me/5511970802600?text=${encodeURIComponent(`Olá, Dr. Lauro, li o artigo "${title}" e quero falar sobre o meu caso.`)}`,
-  target: '_blank', rel: 'noopener', 'data-track': 'whatsapp_click', 'data-area': 'blog', 'data-situacao': title,
-};
-const call = { href: office.tel, 'data-track': 'phone_click', 'data-area': 'blog' };
+const wa = (secao) => waAttrs(msgArtigo(title), { area: 'blog', situacao: 'artigo', secao });
+const call = (secao) => ({ href: office.tel, 'data-track': 'phone_click', 'data-area': 'blog', 'data-secao': secao });
 
 const [escritorio, advogado] = pages[0].jsonLd['@graph'];
 const jsonLd = {
@@ -58,14 +56,14 @@ const jsonLd = {
     <div class="container final__in">
       <p class="final__text">Tem uma situação parecida? Fale com o Dr. Lauro.</p>
       <div class="final__actions">
-        <a class="btn btn--primary" {...wa}><Icon name="whatsapp" size={20} />Falar no WhatsApp</a>
-        <a class="btn btn--on-dark" {...call}><Icon name="phone" size={20} />Ligar <span class="mono">{office.phoneLabel}</span></a>
+        <a class="btn btn--primary" {...wa('final')}><Icon name="whatsapp" size={20} />Falar no WhatsApp</a>
+        <a class="btn btn--on-dark" {...call('final')}><Icon name="phone" size={20} />Ligar <span class="mono">{office.phoneLabel}</span></a>
       </div>
     </div>
   </section>
 
   <div class="sticky-cta">
-    <a class="btn btn--primary" {...wa}><Icon name="whatsapp" size={20} />WhatsApp</a>
-    <a class="btn btn--ghost" {...call}><Icon name="phone" size={20} />Ligar</a>
+    <a class="btn btn--primary" {...wa('sticky')}><Icon name="whatsapp" size={20} />WhatsApp</a>
+    <a class="btn btn--ghost" {...call('sticky')}><Icon name="phone" size={20} />Ligar</a>
   </div>
 </BaseLayout>

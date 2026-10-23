@@ -7,7 +7,7 @@ const fmt = (iso) => new Date(iso).toLocaleDateString('pt-BR', { timeZone: 'Amer
 <ul class="posts">
   {posts.map((p) => (
     <li>
-      <a href={p.url} {...(p.external && { target: '_blank', rel: 'noopener' })} data-track="blog_click" data-area="blog">
+      <a href={p.url} {...(p.external && { target: '_blank', rel: 'noopener' })} data-track="blog_click" data-area="blog" data-secao="blog-lista">
         <span class="mono label"><time datetime={p.date}>{fmt(p.date)}</time>{p.areaName && <> · {p.areaName}</>}</span>
         <h3>{p.title}</h3>
         {p.excerpt && <p>{p.excerpt}</p>}

@@ -10,6 +10,7 @@ import avatar from '../assets/dr-lauro-avatar.png';
 import { pages, cards as areas, cardLink } from '../lib/contexts.mjs';
 import { office } from '../lib/office.mjs';
 import jusbrasil from '../data/jusbrasil.json';
+import { waAttrs, msgGeral } from '../lib/whatsapp.mjs';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const title = 'Advogado Criminalista em Osasco e SP 24h | Dr. Lauro Neto';
@@ -23,13 +24,13 @@ const situacoes = [
   'Fui condenado e quero recorrer',
   'Outra situação criminal',
 ];
-const wa = (situacao) => ({
-  href: `https://wa.me/5511970802600?text=${encodeURIComponent(`Olá, Dr. Lauro, vim pelo site: ${situacao[0].toLowerCase() + situacao.slice(1)}.`)}`,
-  target: '_blank', rel: 'noopener', 'data-track': 'whatsapp_click', 'data-area': 'home', 'data-situacao': situacao,
-});
-const call = { href: office.tel, 'data-track': 'phone_click', 'data-area': 'home' };
+// data-situacao em slug sem acento (alguem-foi-preso-agora); texto visível e mensagem não mudam.
+const slugify = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const wa = (situacao) =>
+  waAttrs(`Olá, Dr. Lauro, vim pelo site: ${situacao[0].toLowerCase() + situacao.slice(1)}.`, { area: 'home', situacao: slugify(situacao), secao: 'triagem' });
+const call = (secao) => ({ href: office.tel, 'data-track': 'phone_click', 'data-area': 'home', 'data-secao': secao });
 const [primary, ...others] = situacoes;
-const geral = wa('Quero falar com o Dr. Lauro');
+const geral = (secao) => waAttrs(msgGeral(), { area: 'home', situacao: 'contato-geral', secao });
 
 const passos = [
   ['Primeiro contato', 'Identificamos o assunto, a urgência, a cidade em que o caso tramita e a fase do procedimento.'],
@@ -87,7 +88,7 @@ const jsonLd = {
             {others.map((s) => (
               <li><a class="triage__row" {...wa(s)}><Icon name="whatsapp" size={18} /><span>{s}</span><Icon name="arrow" size={16} /></a></li>
             ))}
-            <li><a class="triage__row triage__row--call" {...call}><Icon name="phone" size={18} /><span>Ligar <span class="mono">{office.phoneLabel}</span></span><Icon name="arrow" size={16} /></a></li>
+            <li><a class="triage__row triage__row--call" {...call('triagem')}><Icon name="phone" size={18} /><span>Ligar <span class="mono">{office.phoneLabel}</span></span><Icon name="arrow" size={16} /></a></li>
           </ul>
         </div>
       </div>
@@ -165,7 +166,7 @@ const jsonLd = {
               <h3>{c.title}</h3>
               <p>{c.text}</p>
               {c.href
-                ? <a class="posts__more" href={c.href} target="_blank" rel="noopener" data-track="blog_click" data-area="home">Ler artigo <Icon name="arrow" size={16} /></a>
+                ? <a class="posts__more" href={c.href} target="_blank" rel="noopener" data-track="blog_click" data-area="home" data-secao="artigos-home">Ler artigo <Icon name="arrow" size={16} /></a>
                 : <a class="posts__more" href={c.areaHref}>Ver a área <Icon name="arrow" size={16} /></a>}
             </article>
           ))}
@@ -184,14 +185,14 @@ const jsonLd = {
         <p class="final__close">Se é importante para você, é importante para nós.</p>
       </div>
       <div class="final__actions">
-        <a class="btn btn--primary" {...geral}><Icon name="whatsapp" size={20} />Falar no WhatsApp</a>
-        <a class="btn btn--on-dark" {...call}><Icon name="phone" size={20} />Ligar <span class="mono">{office.phoneLabel}</span></a>
+        <a class="btn btn--primary" {...geral('final')}><Icon name="whatsapp" size={20} />Falar no WhatsApp</a>
+        <a class="btn btn--on-dark" {...call('final')}><Icon name="phone" size={20} />Ligar <span class="mono">{office.phoneLabel}</span></a>
       </div>
     </div>
   </section>
 
   <div class="sticky-cta">
-    <a class="btn btn--primary" {...geral}><Icon name="whatsapp" size={20} />WhatsApp</a>
-    <a class="btn btn--ghost" {...call}><Icon name="phone" size={20} />Ligar</a>
+    <a class="btn btn--primary" {...geral('sticky')}><Icon name="whatsapp" size={20} />WhatsApp</a>
+    <a class="btn btn--ghost" {...call('sticky')}><Icon name="phone" size={20} />Ligar</a>
   </div>
 </BaseLayout>

@@ -7,6 +7,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "node scripts/check-contexts.mjs",
+    "check:dist": "node scripts/check-dist.mjs",
     "copys": "astro build && node scripts/gerar-copys.mjs"
   },
   "dependencies": {
