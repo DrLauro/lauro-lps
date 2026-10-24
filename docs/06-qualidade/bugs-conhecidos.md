@@ -2,6 +2,7 @@
 
 ## Abertos
 
+Nenhum.
 
 ## Corrigidos em 23/10/2026 (T10)
 
