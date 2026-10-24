@@ -2,7 +2,6 @@
 
 ## Abertos
 
-- **Vínculo de 2 casos com a publicação não confirmado** (Execução Penal e Recursos). Os dois artigos do STJ têm temas parecidos e o Jusbrasil bloqueia leitura automática; o vínculo foi feito pelo resumo. Conferir no Jusbrasil. Ver `docs/08-status/status-atual.md`.
 
 ## Corrigidos em 23/10/2026 (T10)
 

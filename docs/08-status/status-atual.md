@@ -37,12 +37,9 @@ Painel administrativo resolvido em 23/10/2026: login pelo GitHub em https://laur
 
 ## Pendências com material necessário
 
-- Confirmar os vínculos de dois casos com as publicações do Jusbrasil (o Jusbrasil bloqueia leitura automática):
-  - Execução Penal, "Pena reduzida no STJ depois da condenação definitiva": ligado a 6996129713 ("Habeas Corpus substitutivo de revisão criminal? E quando há ilegalidade manifesta?").
-  - Recursos, "Condenação definitiva corrigida no STJ": ligado a 6607932795 ("HC substitutivo de revisão criminal: STJ concede ordem de ofício").
-  - Se estiverem trocados, inverter as linhas `Publicação:` nos dois CONTEXT.md.
-- Textos integrais dos artigos para hospedar no site (T9 pronta para recebê-los).
-- Casos das páginas 14 a 19.
+- Vínculos dos casos de Execução Penal e Recursos com as publicações do Jusbrasil: **confirmados** pelo Dr. Lauro (23/10).
+- Textos integrais dos artigos: **não serão hospedados por enquanto**; o /blog/ segue com os links do Jusbrasil (T9 pronta se mudar).
+- Casos das páginas 14 a 19: **concluído**, ficam como estão.
 - ID do widget do Trustindex.
 - Marcar `whatsapp_click` e `phone_click` como eventos principais no GA4 (a partir de 24/10, quando o GA4 listar os eventos).
-- Decisão do Dr. Lauro sobre reativar o Google Ads.
+- Google Ads: as 5 campanhas antigas já estavam removidas (estado final; o painel agora filtra ativadas e pausadas). Campanha nova do zero com o estrategista: briefing em `docs/05-marketing/briefing-campanha-google-ads.md`. Reativar a conta é decisão do Dr. Lauro.
