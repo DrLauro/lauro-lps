@@ -1,14 +1,22 @@
 ---
-// Faixa de credenciais (seção 5.2 dos CONTEXT.md). O item do Google leva às avaliações.
+// Faixa de credenciais (seção 5.2 dos CONTEXT.md). O item do Google leva às avaliações e mostra a nota lida no build.
 import Icon from './Icon.astro';
 import { office } from '../lib/office.mjs';
+import { avaliacoesGoogle } from '../lib/avaliacoes.mjs';
 const { items } = Astro.props;
+const google = await avaliacoesGoogle();
+const nota = google?.nota.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const total = google?.total.toLocaleString('pt-BR');
 ---
 <section class="proof" aria-label="Diferenciais">
   <ul class="container proof__list">
     {items.map((item) =>
       /Google/.test(item) ? (
-        <li><a href={office.googleReviews} target="_blank" rel="noopener"><Icon name="check" size={16} /><span>{item}</span></a></li>
+        <li><a href={office.googleReviews} target="_blank" rel="noopener"><Icon name="check" size={16} />
+          {google
+            ? <span>Nota <span class="mono">{nota}</span> no Google, <span class="mono">{total}</span> avaliações</span>
+            : <span>{item}</span>}
+        </a></li>
       ) : (
         <li><Icon name="check" size={16} /><span>{item}</span></li>
       )

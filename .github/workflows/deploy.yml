@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # Rebuild diário para atualizar a nota e o total de avaliações do Google (src/lib/avaliacoes.mjs).
+  schedule:
+    - cron: '0 9 * * *'
 
 concurrency:
   group: cloudflare
@@ -25,6 +28,8 @@ jobs:
           PUBLIC_ENV: production
           # ID do contêiner do GTM (variável do repositório). Vazio = site sem GTM e sem banner de cookies.
           PUBLIC_GTM_ID: ${{ vars.PUBLIC_GTM_ID }}
+          # Chave da Places API (New), restrita a essa API. Sem ela a faixa mostra só "Avaliações no Google".
+          GOOGLE_PLACES_KEY: ${{ secrets.GOOGLE_PLACES_KEY }}
       - run: npm run check:dist
       - run: npx -y wrangler@4 deploy
         env:
