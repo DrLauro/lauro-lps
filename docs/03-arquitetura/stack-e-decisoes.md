@@ -8,5 +8,5 @@ _Dono: `tech-lead`._
 - **Checagem:** `npm run check` (`scripts/check-contexts.mjs`) garante 13 páginas, H1/title/description/canonical coerentes, links de WhatsApp válidos e FAQ idêntico ao JSON-LD. Roda no CI antes do build.
 - **SEO/IA:** JSON-LD do contexto injetado como está; `@astrojs/sitemap`; `/robots.txt` liberando Googlebot, Bingbot, OAI-SearchBot e PerplexityBot; `/llms.txt` com as 13 páginas.
 - **GTM:** `PUBLIC_GTM_ID` (variável de ambiente). Sem ela o `dataLayer` funciona, só não há container.
-- **Trustindex:** pendente (ID do widget).
+- **Trustindex:** widget `22e5e6684c16295dc426ea16e8b` (só nota e total de avaliações, sem textos de depoimento); plano em decisão, ver `docs/08-status/status-atual.md`.
 - **Índice `/`:** lista as 13 áreas para revisão. Em produção vira `/especialidades/` (referenciada no breadcrumb do JSON-LD).
