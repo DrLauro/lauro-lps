@@ -190,7 +190,19 @@
         "firingTriggerId": [
           "2147479573"
         ],
-        "tagFiringOption": "ONCE_PER_EVENT"
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "analytics_storage"
+              }
+            ]
+          }
+        }
       },
       {
         "accountId": "6399608379",
@@ -286,7 +298,19 @@
           "11",
           "12"
         ],
-        "tagFiringOption": "ONCE_PER_EVENT"
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "analytics_storage"
+              }
+            ]
+          }
+        }
       },
       {
         "accountId": "6399608379",
@@ -314,7 +338,19 @@
         "firingTriggerId": [
           "2147479553"
         ],
-        "tagFiringOption": "ONCE_PER_EVENT"
+        "tagFiringOption": "ONCE_PER_EVENT",
+        "consentSettings": {
+          "consentStatus": "NEEDED",
+          "consentType": {
+            "type": "LIST",
+            "list": [
+              {
+                "type": "TEMPLATE",
+                "value": "ad_storage"
+              }
+            ]
+          }
+        }
       }
     ],
     "builtInVariable": [

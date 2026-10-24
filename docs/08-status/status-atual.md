@@ -18,8 +18,8 @@ _Atualizado em 22/10/2026, ao fim da rodada de ajustes do estrategista de market
 | T4 Aviso 190/180, link para vítimas, texto de Ofensas Digitais, nome "Crimes Contra a Honra e Ofensas Digitais" | feito | `009282e` |
 | T5 Casos com "Ler artigo" | feito (2 vínculos a confirmar, ver pendências) | `dc58eaa` |
 | T6 Menu, cabeçalho fixo, contato em /blog/ e /especialidades/, mapa e "Como chegar" | feito | `6cde3f2` |
-| T7 Person no JSON-LD, 404, `_headers`, noindex por `PUBLIC_ENV`, robots | feito (exceto `workers_dev: false`, que vai com a T10) | `981f56f` |
-| T8 Banner de cookies + Modo de Consentimento | feito; validação no Tag Assistant aguarda o ID do GTM | `a6a15c8` |
+| T7 Person no JSON-LD, 404, `_headers`, noindex por `PUBLIC_ENV`, robots | feito (`workers_dev: false` entrou com a T10) | `981f56f` |
+| T8 Banner de cookies + Modo de Consentimento | feito; validado em produção em 23/10 (`docs/06-qualidade/screenshots/2026-10-23-validacao-gtm.md`) | `a6a15c8` |
 | T9 Estrutura de artigos dentro do site | feito | `135118b` |
 | Extra: iniciais de parte em título de artigo antigo | corrigido + verificação automática | `ac89d6a` |
 | Extra: CLS da home (troca de fonte) | corrigido, Performance 99 | ver git log |
@@ -27,9 +27,11 @@ _Atualizado em 22/10/2026, ao fim da rodada de ajustes do estrategista de market
 
 Lighthouse mobile (build de produção, 22/10): home e /lei-maria-da-penha/ com 99 em Performance e 100 em Acessibilidade, Boas práticas e SEO. Relatórios em `docs/06-qualidade/lighthouse/`.
 
-## Impeditivos para o lançamento final
+## Lançamento (23/10/2026)
 
-1. **GTM** `GTM-5V9CSW5J` no ar desde 23/10/2026 com GA4 (`G-WL6VECX5F6`). Google Ads cancelado: conversões do Ads entram ao reativar. Ver `docs/07-operacoes/observabilidade.md`.
+Sem impeditivos técnicos. Site em lauro.adv.br, painel com login, GTM `GTM-5V9CSW5J` com GA4 (`G-WL6VECX5F6`) e banner de cookies validados em produção.
+
+**Atenção comercial:** a conta do Google Ads (`AW-11034973115`) está **cancelada**; nenhum anúncio roda. As conversões do Ads (WhatsApp e ligação pelo site) entram no GTM quando a conta for reativada. Ver `docs/07-operacoes/observabilidade.md`.
 
 Painel administrativo resolvido em 23/10/2026: login pelo GitHub em https://lauro.adv.br/admin/ funcionando (OAuth App na conta DrLauro, Worker `lauro-cms-auth` em `auth.lauro.adv.br`, repositório `DrLauro/lauro-lps`). Para editar, a conta precisa ser dona ou colaboradora com push no repositório. Recomendado: gerar um Client secret novo (o atual foi colado no chat) e gravar com `wrangler secret put GITHUB_CLIENT_SECRET`.
 
@@ -42,4 +44,5 @@ Painel administrativo resolvido em 23/10/2026: login pelo GitHub em https://laur
 - Textos integrais dos artigos para hospedar no site (T9 pronta para recebê-los).
 - Casos das páginas 14 a 19.
 - ID do widget do Trustindex.
-- Validação do GTM no Tag Assistant e prints em `docs/06-qualidade/screenshots/` (depende do ID).
+- Marcar `whatsapp_click` e `phone_click` como eventos principais no GA4 (a partir de 24/10, quando o GA4 listar os eventos).
+- Decisão do Dr. Lauro sobre reativar o Google Ads.

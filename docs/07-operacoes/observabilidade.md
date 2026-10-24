@@ -27,6 +27,8 @@ Tudo na conta Google dr.lauroneto@gmail.com.
 - **GTM:** conta "Lauro Neto Advocacia", contêiner `lauro.adv.br`, **`GTM-5V9CSW5J`**. Versão 2 publicada a partir de `docs/07-operacoes/gtm-container.json` (Administrador → Importar contêiner). Mudou o contêiner pela interface? Exporte e atualize o JSON.
 - **GA4:** propriedade já existente, fluxo web 13126515431, ID de medição **`G-WL6VECX5F6`**.
 - **Google Ads:** conta "Dr. Lauro Almeida Neto", ID de conversão `AW-11034973115`. **Conta cancelada em 23/10/2026** (anúncios parados). Ações de conversão existentes são só de chamadas a partir de anúncios e do Perfil da Empresa; não há conversão de WhatsApp ou ligação pelo site. Ao reativar: criar as ações "WhatsApp (site)" e "Ligação (site)" com origem Site e configuração manual, e acrescentar no GTM uma tag "Acompanhamento de conversões do Google Ads" para cada uma (acionadores `CE - whatsapp_click` e `CE - phone_click`).
+- **GA4 feito em 23/10:** dimensões personalizadas `area`, `situacao` e `secao` (escopo do evento). **Falta:** marcar `whatsapp_click` e `phone_click` como eventos principais (Administrador → Eventos → estrela), o que só é possível depois que o GA4 lista os eventos (até 24 h após o primeiro envio).
+- **Consentimento no contêiner:** as tags do GA4 exigem `analytics_storage` e o vinculador exige `ad_storage` (modo básico). Sem aceite, nenhuma requisição ao Google. Validação em `docs/06-qualidade/screenshots/2026-10-23-validacao-gtm.md`.
 - A tag do Google antiga "Lauro ADV - Criminal" (`AW-11034973115`, `GT-WVXDJTBM`) não está no site e não deve ser instalada à parte: contaria em dobro com o GTM.
 
 ## Ligar o GTM
