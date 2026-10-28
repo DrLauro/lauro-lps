@@ -38,6 +38,8 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     }
     function salvar(c) {
       window.aplicarConsentimento(c);
+      // Tags bloqueadas na inicialização disparam neste evento (GTM: acionador "CE - consent_update").
+      window.dataLayer.push({ event: 'consent_update' });
       try { localStorage.setItem('cookies-v1', JSON.stringify(c)); } catch (e) {}
       box.hidden = true;
     }
