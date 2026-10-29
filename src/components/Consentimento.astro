@@ -37,9 +37,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
       box.hidden = false;
     }
     function salvar(c) {
+      var antes = window.lerConsentimento();
       window.aplicarConsentimento(c);
       // Tags bloqueadas na inicialização disparam neste evento (GTM: acionador "CE - consent_update").
-      window.dataLayer.push({ event: 'consent_update' });
+      // Se a medição já estava aceita, a tag do Google já disparou nesta página: sem evento, sem page_view duplicado.
+      if (!(antes && antes.medicao)) window.dataLayer.push({ event: 'consent_update' });
       try { localStorage.setItem('cookies-v1', JSON.stringify(c)); } catch (e) {}
       box.hidden = true;
     }
