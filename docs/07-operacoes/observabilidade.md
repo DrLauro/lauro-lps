@@ -18,17 +18,20 @@ Conversão do site = contato: `whatsapp_click` e `phone_click`. Todo o resto é 
 - Antes do GTM: `gtag('consent', 'default', { ad_storage, ad_user_data, ad_personalization, analytics_storage: 'denied', wait_for_update: 500 })`.
 - Na escolha: `gtag('consent', 'update', ...)`. Medição liga `analytics_storage`; Publicidade liga `ad_storage`, `ad_user_data` e `ad_personalization`.
 - A escolha fica em `localStorage` (`cookies-v1`). "Preferências de cookies", no rodapé, reabre o banner.
+- Depois da escolha, o banner envia `{ event: 'consent_update' }` ao `dataLayer`, mas só se a medição ainda não estava aceita. Tags bloqueadas na inicialização (primeira visita) disparam nesse evento; quem já tinha aceitado não recebe o evento, e assim não há `page_view` duplicado.
 - O mapa da home (Google Maps) só carrega quando a pessoa clica em "Mostrar mapa".
 
-## Contas (23/10/2026)
+## Contas (atualizado em 28/10/2026)
 
 Tudo na conta Google dr.lauroneto@gmail.com.
 
-- **GTM:** conta "Lauro Neto Advocacia", contêiner `lauro.adv.br`, **`GTM-5V9CSW5J`**. Versão 2 publicada a partir de `docs/07-operacoes/gtm-container.json` (Administrador → Importar contêiner). Mudou o contêiner pela interface? Exporte e atualize o JSON.
-- **GA4:** propriedade já existente, fluxo web 13126515431, ID de medição **`G-WL6VECX5F6`**.
-- **Google Ads:** conta "Dr. Lauro Almeida Neto", ID de conversão `AW-11034973115`. **Conta cancelada em 23/10/2026** (anúncios parados). Ações de conversão existentes são só de chamadas a partir de anúncios e do Perfil da Empresa; não há conversão de WhatsApp ou ligação pelo site. Ao reativar: criar as ações "WhatsApp (site)" e "Ligação (site)" com origem Site e configuração manual, e acrescentar no GTM uma tag "Acompanhamento de conversões do Google Ads" para cada uma (acionadores `CE - whatsapp_click` e `CE - phone_click`).
-- **GA4 feito em 23/10:** dimensões personalizadas `area`, `situacao` e `secao` (escopo do evento). **Falta:** marcar `whatsapp_click` e `phone_click` como eventos principais (Administrador → Eventos → estrela), o que só é possível depois que o GA4 lista os eventos (até 24 h após o primeiro envio).
-- **Consentimento no contêiner:** as tags do GA4 exigem `analytics_storage` e o vinculador exige `ad_storage` (modo básico). Sem aceite, nenhuma requisição ao Google. Validação em `docs/06-qualidade/screenshots/2026-10-23-validacao-gtm.md`.
+- **GTM:** conta "Lauro Neto Advocacia", contêiner `lauro.adv.br`, **`GTM-5V9CSW5J`**. Versão publicada: 5, "v4.1 - page_view após consentimento (disparo por evento)", em 28/10/2026. Cópia em `docs/07-operacoes/gtm-container.json` (exportada da versão publicada). Mudou o contêiner pela interface? Exporte e atualize o JSON.
+- **GA4:** propriedade "Dr. Lauro". Fluxo web em uso: "lauro.adv.br", 16225171758, ID de medição **`G-MMG8ZNG0P6`** (criado em 28/10/2026).
+  - O fluxo antigo "Meu Negócio" (13126515431, `G-WL6VECX5F6`, URL corrigida para `https://lauro.adv.br`) foi combinado com a tag antiga do Google Ads `GT-WVXDJTBM`. Por isso `gtag/js?id=G-WL6VECX5F6` responde 404 e a tag do Google no GTM nunca carregava: zero `page_view` até 28/10. Esse fluxo fica parado; não usar o ID dele no GTM.
+  - Ao criar uma tag do GA4 no GTM, a interface pode acrescentar sozinha uma tag "Google Analytics G-…" e as configurações "Gerenciar detecção automática de eventos" e "Permitir recursos de dados fornecidos pelo usuário". Elas não têm a exigência de consentimento e ficaram fora da versão publicada. Confira a lista de alterações antes de publicar.
+- **Google Ads:** conta "Dr. Lauro Almeida Neto", ID de conversão `AW-11034973115`. **Conta cancelada em 23/10/2026** (anúncios parados). A conta tem 15 ações de conversão antigas, entre elas "Clique Botão WhatsApp Criminal" e "Ligação Botão Criminal #1", ligadas à tag antiga e sem disparo no site atual (levantamento de 26/10). Na reativação, todas passam a secundárias, sem remover nenhuma. Ao reativar: criar as ações "WhatsApp (site)" e "Ligação (site)" com origem Site e configuração manual, e acrescentar no GTM uma tag "Acompanhamento de conversões do Google Ads" para cada uma (acionadores `CE - whatsapp_click` e `CE - phone_click`).
+- **GA4:** dimensões personalizadas `area`, `situacao` e `secao` (escopo do evento, 23/10). Eventos principais: `whatsapp_click` e `phone_click` (28/10), além dos três padrão da propriedade (`close_convert_lead`, `purchase`, `qualify_lead`), que ficam como estão. `blog_click` não é evento principal.
+- **Consentimento no contêiner:** as tags do GA4 exigem `analytics_storage` e o vinculador exige `ad_storage` (modo básico). Sem aceite, nenhuma requisição ao Google. Validação em `docs/06-qualidade/screenshots/2026-10-23-validacao-gtm.md` e `docs/06-qualidade/lancamento-2026-10-28/`.
 - A tag do Google antiga "Lauro ADV - Criminal" (`AW-11034973115`, `GT-WVXDJTBM`) não está no site e não deve ser instalada à parte: contaria em dobro com o GTM.
 
 ## Ligar o GTM
@@ -46,9 +49,10 @@ Tudo na conta Google dr.lauroneto@gmail.com.
 - `CE - whatsapp_click`: Evento personalizado `whatsapp_click`.
 - `CE - phone_click`: Evento personalizado `phone_click`.
 - `CE - blog_click`: Evento personalizado `blog_click`.
+- `CE - consent_update`: Evento personalizado `consent_update` (enviado pelo banner).
 
 ### Tags
-- **Google tag (GA4)**: ID de medição do GA4, em todas as páginas. Consentimento: exige `analytics_storage`. O GTM já respeita o padrão negado.
+- **Google tag - GA4**: `G-MMG8ZNG0P6`, acionadores `Initialization - All Pages` e `CE - consent_update`, uma vez por evento. Consentimento: exige `analytics_storage`.
 - **GA4 Event** para cada um dos três acionadores, com o nome do evento igual ao do acionador e os parâmetros `area`, `situacao`, `secao` e `pagina`.
 - **Google Ads – Conversão** disparada por `CE - whatsapp_click` e por `CE - phone_click`. Uma ação de conversão para cada evento, se quiser separar WhatsApp de ligação. Consentimento: `ad_storage`.
 - **Vinculador de conversões** (Conversion Linker) em todas as páginas, para o `gclid`.

@@ -16,7 +16,7 @@ Tudo na conta Google **dr.lauroneto@gmail.com**.
 |---|---|---|
 | Google Ads | conta "Dr. Lauro Almeida Neto", ID de conversão `AW-11034973115` | **Cancelada** (aviso "sua conta foi cancelada", botão Reativar). Precisa reativar e conferir o faturamento antes de qualquer campanha. |
 | Google Tag Manager | conta "Lauro Neto Advocacia", contêiner `lauro.adv.br`, **`GTM-5V9CSW5J`** | Versão 3 publicada e instalada em todas as páginas |
-| Google Analytics 4 | propriedade "Dr. Lauro", fluxo web 13126515431, **`G-WL6VECX5F6`** | Recebendo eventos desde 23/10/2026 |
+| Google Analytics 4 | propriedade "Dr. Lauro", fluxo web "lauro.adv.br" 16225171758, **`G-MMG8ZNG0P6`** | `page_view` e cliques desde 28/10/2026. O fluxo antigo `G-WL6VECX5F6` não recebia `page_view` (ver `docs/07-operacoes/observabilidade.md`) |
 | Perfil da Empresa no Google | https://share.google/4rXgq8QJ5Aov5yxQ2 | Ativo; é o destino do "Como chegar" no site |
 
 ### Limpeza feita no Google Ads (pedido do Dr. Lauro)
@@ -141,7 +141,7 @@ O contêiner inteiro está versionado em `docs/07-operacoes/gtm-container.json` 
 
 | Tag | Tipo | Dispara em | Consentimento exigido |
 |---|---|---|---|
-| Google tag - GA4 | Tag do Google, `G-WL6VECX5F6` | Initialization - All Pages | `analytics_storage` |
+| Google tag - GA4 | Tag do Google, `G-MMG8ZNG0P6` | Initialization - All Pages e CE - consent_update | `analytics_storage` |
 | GA4 - evento de contato e blog | Evento do GA4, nome do evento = `{{Event}}`, parâmetros `area`, `situacao`, `secao`, `pagina` | CE - whatsapp_click, CE - phone_click, CE - blog_click | `analytics_storage` |
 | Vinculador de conversões | Conversion Linker | All Pages | `ad_storage` |
 
@@ -172,7 +172,7 @@ Em produção, em 23/10/2026: recusar = zero requisições ao Google; aceitar = 
 ## 6. GA4
 
 - Dimensões personalizadas criadas (escopo do evento): `area`, `situacao`, `secao`.
-- **Pendente:** marcar `whatsapp_click` e `phone_click` como **eventos principais** (Administrador → Eventos → estrela). O GA4 só lista o evento até 24 h depois do primeiro registro; fazer a partir de 24/10/2026.
+- `whatsapp_click` e `phone_click` são **eventos principais** desde 28/10/2026.
 - **Não importar** essas conversões do GA4 para o Google Ads se as conversões do Ads vierem da tag do GTM (seção 7): contaria em dobro. É uma coisa ou outra.
 - Vincular o GA4 ao Google Ads (Administrador → Vínculos de produtos) depois de reativar a conta, para públicos e relatórios.
 
