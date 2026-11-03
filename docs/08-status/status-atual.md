@@ -1,6 +1,6 @@
 # Status atual
 
-_Atualizado em 02/11/2026, no ciclo 1 da campanha de Pesquisa (Etapas B e C feitas)._
+_Atualizado em 03/11/2026, no ciclo 1 da campanha de Pesquisa (Etapas B, C e D feitas; campanha pausada à espera do "pode ativar")._
 
 ## No ar
 
@@ -43,11 +43,11 @@ Especificação aprovada pelo estrategista, baseada em `docs/06-qualidade/levant
 |---|---|
 | 1. Medição (GTM e GA4) | **feita.** O GA4 recebia zero `page_view`. Causa: o fluxo antigo (`G-WL6VECX5F6`) foi combinado com a tag antiga do Ads e o script dele responde 404. Solução: fluxo novo `G-MMG8ZNG0P6` na mesma propriedade, banner com `consent_update` e GTM versão 5 ("v4.1"). Três cenários de consentimento testados em produção. `whatsapp_click` e `phone_click` são eventos principais. Detalhes em `etapa-1-medicao.md` |
 | 2. Conta do Google Ads | ordem final de 29/10 (campanha de 30 dias, `GOOG_Search_Criminal_Osasco-SP_30d`, três recargas de até R$ 600,00). Pagamento de R$ 1.438,31 reconhecido. **Parada na Etapa A (29/10):** conta ainda cancelada, configuração "Pós-pagamento", sem opção de mudar para manual na tela; a única saída visível é "Alterar quem paga". Decisão do Dr. Lauro. Ver `etapa-a-faturamento.md` |
-| Ciclo 1 (ordem de 02/11) | 3 ciclos de 10 dias, R$ 60,00/dia; pós-pagamento com crédito de R$ 600,00 (Pix de 02/11); travas: orçamento, término no 10º dia e regra de pausa a R$ 570,00. **Etapa B (isolamento) feita em 02/11** (`c1-etapa-b-isolamento.md`); falta o Dr. Lauro decidir sobre o logotipo de nível de conta. **Etapa C feita em 02/11** (`c1-etapa-c-conversoes-gtm.md`): 3 ações novas, GTM versão 6 "v5 - conversões Google Ads" publicada e testada em produção, GA4 vinculado ao Ads. **Etapa D bloqueada:** o CSV `campanha_v5_60dia_10dias_google_ads_editor.csv` não foi recebido |
+| Ciclo 1 (ordem de 02/11) | 3 ciclos de 10 dias, R$ 60,00/dia; pós-pagamento com crédito de R$ 600,00 (Pix de 02/11); travas: orçamento, término no 10º dia e regra de pausa a R$ 540,00. **Etapa B (isolamento) feita em 02/11** (`c1-etapa-b-isolamento.md`); logotipo de nível de conta removido em 03/11, por decisão do Dr. Lauro. **Etapa C feita em 02/11** (`c1-etapa-c-conversoes-gtm.md`): 3 ações novas, GTM versão 6 "v5 - conversões Google Ads" publicada e testada em produção, GA4 vinculado ao Ads; meta personalizada "Leads Criminal C1" (só as 3 ações novas) criada em 03/11. **Etapa D feita em 03/11** (`c1-etapa-d-campanha.md`): `GOOG_Search_Criminal_Osasco-SP_C1` (ID 24431831911) **pausada**, 11 grupos, 73 palavras-chave, 14 anúncios, 47 negativas, 13 recursos, meta só "Leads Criminal C1", regra de pausa a R$ 540,00 por hora (ajustada de R$ 570,00 em 03/11). Datas provisórias de 05/11 a 14/11, a reajustar na ativação |
 | 3. Conversões e tags do Ads | feita no ciclo 1 (Etapa C, 02/11) |
-| 4. Campanha pausada | depende da etapa 3 e do CSV `campanha_v5_60dia_10dias_google_ads_editor.csv` |
-| 5. Revisão final | depende da etapa 4 |
-| 6. Ativação | só com o "pode ativar" escrito do Dr. Lauro |
+| 4. Campanha pausada | **feita em 03/11** (Etapa D) |
+| 5. Revisão final | Etapa E entregue em 03/11 (prints `c1-e*`) |
+| 6. Ativação | só com o "pode ativar" escrito do Dr. Lauro; nesse dia: início = dia da ativação, término = 9º dia seguinte às 23:59, registrar data e hora, refazer o diagnóstico para "advogado criminalista osasco" e "advogado habeas corpus"; depois, Etapa F (inclui a revisão das 4 palavras-chave barradas). A partir de 05/11, tentar de novo "Mudar para pré-pagamento" |
 
 ## Pendências com material necessário
 

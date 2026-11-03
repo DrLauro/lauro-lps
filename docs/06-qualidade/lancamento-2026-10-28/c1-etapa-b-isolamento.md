@@ -20,7 +20,7 @@ As 15 continuam na conta; nenhuma foi removida.
 | Clicks to call | Principal | "Otimização de ações: Não editável" |
 | Local actions - Directions / Other engagements / Website visits | Principal | hospedadas pelo Google, mesmo tipo de "Clicks to call" (não editáveis) |
 
-As 11 que ficaram principais são do sistema: vêm de campanhas inteligentes ou do Perfil da Empresa e não registram cliques nem chamadas de uma campanha de Pesquisa com as tags do site. A campanha nova usa metas específicas (só Contato e Lead telefônico); a conferência em Metas → Resumo, filtrada pela campanha nova, fica para a Etapa E.
+As 11 que ficaram principais são do sistema: vêm de campanhas inteligentes ou do Perfil da Empresa e não registram cliques nem chamadas de uma campanha de Pesquisa com as tags do site. Ajuste de 03/11: a campanha nova usa só a meta personalizada **"Leads Criminal C1"**, com as 3 ações novas (Site - WhatsApp (clique), Site - Telefone (clique), Anúncio - Chamada 60s). Contato e Lead telefônico não entram, então as 11 ações do sistema ficam fora da otimização e da coluna Conversões. Prints: `c1-d0-meta-leads-criminal-c1.png` (criação), `c1-e2-metas-campanha-leads-criminal-c1.png` e `c1-e4-metas-personalizadas.png` (meta com 3 ações e 1 campanha).
 
 Print: `c1-b1-conversoes-antigas.png`.
 
@@ -47,7 +47,7 @@ Nenhuma vai para a campanha nova. Print: `c1-b2-metas-personalizadas.png`.
 
 ## 4. Recursos de nível de conta
 
-Só um recurso no nível de conta: **logotipo da empresa** (emblema dourado em fundo preto, de 10/07/2024, "Qualificada"). Nenhum nome da empresa, sitelink, frase de destaque, snippet, imagem, ligação, preço, promoção ou formulário no nível de conta, então não houve remoção. **O Dr. Lauro decide se o logotipo fica.** Os demais recursos da lista estão ligados às campanhas removidas e não passam para a campanha nova. Print: `c1-b4-recursos-nivel-conta.png`.
+Só um recurso no nível de conta: **logotipo da empresa** (emblema dourado em fundo preto, de 10/07/2024, "Qualificada"). Nenhum nome da empresa, sitelink, frase de destaque, snippet, imagem, ligação, preço, promoção ou formulário no nível de conta, então não houve remoção. Decisão do Dr. Lauro (03/11): o logotipo sai. **Removido do nível de conta em 03/11** (print `c1-b4-logotipo-removido.png`). Na publicação da campanha nova, o Google vinculou o mesmo logotipo à campanha, e essa associação também foi removida (ver `c1-etapa-d-campanha.md`). Os demais recursos da lista estão ligados às campanhas removidas e não passam para a campanha nova. Print: `c1-b4-recursos-nivel-conta.png`.
 
 ## 5. Configurações da conta
 
