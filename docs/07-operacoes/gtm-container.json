@@ -1,13 +1,13 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2026-10-29 00:05:32",
+    "exportTime": "2026-11-03 00:33:54",
     "containerVersion": {
-        "path": "accounts/6399608379/containers/283394835/versions/5",
+        "path": "accounts/6399608379/containers/283394835/versions/6",
         "accountId": "6399608379",
         "containerId": "283394835",
-        "containerVersionId": "5",
-        "name": "v4.1 - page_view após consentimento (disparo por evento)",
-        "description": "Correção da v4: com \"Uma vez por página\", a tentativa bloqueada por consentimento na inicialização contava como disparo e a tag do Google não disparava no consent_update da primeira visita. \"Google tag - GA4\" volta para \"Uma vez por evento\"; o banner só envia consent_update quando a medição ainda não estava aceita (commit d32359d), então não há page_view duplicado.",
+        "containerVersionId": "6",
+        "name": "v5 - conversões Google Ads",
+        "description": "Tags awct AW-11034973115 com os rótulos novos: Site - WhatsApp (clique) cVszCJKN_rAdELun8Y0p em CE - whatsapp_click e Site - Telefone (clique) nup5CJiN_rAdELun8Y0p em CE - phone_click. Consentimento básico: exigem ad_storage. Sem a tag antiga GT-WVXDJTBM.",
         "container": {
             "path": "accounts/6399608379/containers/283394835",
             "accountId": "6399608379",
@@ -215,6 +215,154 @@
                     "2147479553"
                 ],
                 "tagFiringOption": "ONCE_PER_EVENT",
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_storage"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "6399608379",
+                "containerId": "283394835",
+                "tagId": "20",
+                "name": "Google Ads - Conversão WhatsApp (clique)",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableNewCustomerReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableProductReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEnhancedConversion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableShippingData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "11034973115"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "cVszCJKN_rAdELun8Y0p"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1793665454532",
+                "firingTriggerId": [
+                    "7"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NEEDED",
+                    "consentType": {
+                        "type": "LIST",
+                        "list": [
+                            {
+                                "type": "TEMPLATE",
+                                "value": "ad_storage"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "accountId": "6399608379",
+                "containerId": "283394835",
+                "tagId": "21",
+                "name": "Google Ads - Conversão Telefone (clique)",
+                "type": "awct",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableNewCustomerReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableConversionLinker",
+                        "value": "true"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableProductReporting",
+                        "value": "false"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableEnhancedConversion",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionCookiePrefix",
+                        "value": "_gcl"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "enableShippingData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionId",
+                        "value": "11034973115"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "conversionLabel",
+                        "value": "nup5CJiN_rAdELun8Y0p"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "rdp",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1793665454532",
+                "firingTriggerId": [
+                    "6"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
                 "consentSettings": {
                     "consentStatus": "NEEDED",
                     "consentType": {
@@ -453,7 +601,7 @@
                 "name": "Event"
             }
         ],
-        "fingerprint": "1793232121624",
-        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6399608379/containers/283394835/versions/5?apiLink=version"
+        "fingerprint": "1793665646611",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6399608379/containers/283394835/versions/6?apiLink=version"
     }
 }

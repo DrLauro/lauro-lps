@@ -1,6 +1,6 @@
 # Status atual
 
-_Atualizado em 28/10/2026, na etapa 1 do lançamento da campanha de Pesquisa._
+_Atualizado em 02/11/2026, no ciclo 1 da campanha de Pesquisa (Etapas B e C feitas)._
 
 ## No ar
 
@@ -31,7 +31,7 @@ Lighthouse mobile (build de produção, 22/10): home e /lei-maria-da-penha/ com 
 
 Sem impeditivos técnicos. Site em lauro.adv.br, painel com login, GTM `GTM-5V9CSW5J` com GA4 e banner de cookies validados em produção. Desde 28/10 o ID de medição é `G-MMG8ZNG0P6` (ver Lançamento da campanha).
 
-**Atenção comercial:** a conta do Google Ads (`AW-11034973115`) está **cancelada**; nenhum anúncio roda. As conversões do Ads (WhatsApp e ligação pelo site) entram no GTM quando a conta for reativada. Ver `docs/07-operacoes/observabilidade.md`.
+**Google Ads:** conta (`AW-11034973115`) reativada em 29/10; nenhuma campanha ativa. Conversões do Ads (WhatsApp e telefone pelo site) no GTM desde 02/11. Ver `docs/07-operacoes/observabilidade.md`.
 
 Painel administrativo resolvido em 23/10/2026: login pelo GitHub em https://lauro.adv.br/admin/ funcionando (OAuth App na conta DrLauro, Worker `lauro-cms-auth` em `auth.lauro.adv.br`, repositório `DrLauro/lauro-lps`). Para editar, a conta precisa ser dona ou colaboradora com push no repositório. Recomendado: gerar um Client secret novo (o atual foi colado no chat) e gravar com `wrangler secret put GITHUB_CLIENT_SECRET`.
 
@@ -42,8 +42,9 @@ Especificação aprovada pelo estrategista, baseada em `docs/06-qualidade/levant
 | Etapa | Situação |
 |---|---|
 | 1. Medição (GTM e GA4) | **feita.** O GA4 recebia zero `page_view`. Causa: o fluxo antigo (`G-WL6VECX5F6`) foi combinado com a tag antiga do Ads e o script dele responde 404. Solução: fluxo novo `G-MMG8ZNG0P6` na mesma propriedade, banner com `consent_update` e GTM versão 5 ("v4.1"). Três cenários de consentimento testados em produção. `whatsapp_click` e `phone_click` são eventos principais. Detalhes em `etapa-1-medicao.md` |
-| 2. Conta do Google Ads | aguarda o Dr. Lauro na aba: conferir o pagamento de R$ 1.438,31 de outubro, reativar e ver se a conta aceita pré-pago por Pix (até R$ 600,00) |
-| 3. Conversões e tags do Ads | depende da etapa 2 (o ID AW- muda se a conta for nova) |
+| 2. Conta do Google Ads | ordem final de 29/10 (campanha de 30 dias, `GOOG_Search_Criminal_Osasco-SP_30d`, três recargas de até R$ 600,00). Pagamento de R$ 1.438,31 reconhecido. **Parada na Etapa A (29/10):** conta ainda cancelada, configuração "Pós-pagamento", sem opção de mudar para manual na tela; a única saída visível é "Alterar quem paga". Decisão do Dr. Lauro. Ver `etapa-a-faturamento.md` |
+| Ciclo 1 (ordem de 02/11) | 3 ciclos de 10 dias, R$ 60,00/dia; pós-pagamento com crédito de R$ 600,00 (Pix de 02/11); travas: orçamento, término no 10º dia e regra de pausa a R$ 570,00. **Etapa B (isolamento) feita em 02/11** (`c1-etapa-b-isolamento.md`); falta o Dr. Lauro decidir sobre o logotipo de nível de conta. **Etapa C feita em 02/11** (`c1-etapa-c-conversoes-gtm.md`): 3 ações novas, GTM versão 6 "v5 - conversões Google Ads" publicada e testada em produção, GA4 vinculado ao Ads. **Etapa D bloqueada:** o CSV `campanha_v5_60dia_10dias_google_ads_editor.csv` não foi recebido |
+| 3. Conversões e tags do Ads | feita no ciclo 1 (Etapa C, 02/11) |
 | 4. Campanha pausada | depende da etapa 3 e do CSV `campanha_v5_60dia_10dias_google_ads_editor.csv` |
 | 5. Revisão final | depende da etapa 4 |
 | 6. Ativação | só com o "pode ativar" escrito do Dr. Lauro |
