@@ -97,3 +97,35 @@ Prints da versão de R$ 570: `c1-d10-regra-visualizar.png`, `c1-d11-regra-config
 2. Ativar a campanha e registrar a data e a hora.
 3. Refazer o Diagnóstico de anúncios para "advogado criminalista osasco" e "advogado habeas corpus".
 4. Na Etapa F, acompanhar a campanha e o andamento da revisão das 4 palavras-chave barradas, além dos recursos.
+
+## 9. Ativação (03/11/2026)
+
+Autorização escrita do Dr. Lauro, repassada pelo Lucas: "pode ativar a campanha GOOG_Search_Criminal_Osasco-SP_C1".
+
+| Item | Valor |
+|---|---|
+| Datas na campanha | início **03/11/2026**, término **12/11/2026**. No Google Ads, a data de término vale até as 23:59 desse dia, no fuso da conta (GMT-03:00). São 10 dias contando o da ativação |
+| Ativação | **03/11/2026 às 11:36:34** (horário de Brasília) |
+| Status logo depois | "Qualificada (limitada)": o recurso de ligação ainda estava em revisão |
+
+Prints: `c1-f1-datas-ativacao.png`, `c1-f2-campanha-ativada.png`.
+
+### Diagnóstico de anúncios (11:40, Osasco, português, celular)
+
+| Consulta | Resultado |
+|---|---|
+| advogado criminalista osasco | "Seu anúncio não está sendo exibido. Nenhum resultado de diagnóstico foi encontrado porque não há palavras-chave na sua conta que correspondem à consulta" |
+| advogado habeas corpus | mesmo resultado |
+
+As duas palavras-chave existem e estão **Qualificada**: [advogado criminalista osasco] no grupo Criminalista Osasco e "advogado habeas corpus" no grupo Habeas Corpus. A leitura mais provável é que o diagnóstico ainda não enxerga a campanha recém-ativada. Ele é refeito na Etapa F. Prints: `c1-f3-diagnostico-criminalista-osasco.png`, `c1-f4-diagnostico-habeas-corpus.png`.
+
+### Status na ativação
+
+- **Anúncios:** os 14 estão **Qualificada**, com eficácia de 6 "Bom", 6 "Médio" e 2 "Ruim" (Habeas Corpus e um dos anúncios de Grande Repercussão). Print: `c1-f5-anuncios-status.png`.
+- **Palavras-chave:**
+  - 53 Qualificada;
+  - 16 "Não qualificada: Baixo volume de pesquisas". Esse status é do Google e pode mudar sozinho;
+  - **4 "Reprovado (Eventos sensíveis)"**: "advogado para preso", "advogado para soltar preso", "advogado para tirar preso" e "advogado preso por tráfico".
+- **Revisão das 4 reprovadas:** o Histórico de contestação está vazio ("Você ainda não contestou nenhuma decisão"). A caixa "Solicitar uma exceção" marcada na criação não abriu contestação, e o detalhe da palavra-chave não oferece o botão "Contestar". Print: `c1-f7-historico-contestacao.png`.
+- **Gerenciador de políticas:** 10 recursos "Aprovado (limitado)" pela política "Ato criminoso na publicidade personalizada". Essa política só restringe a segmentação por públicos personalizados, e a campanha não usa públicos. Print: `c1-f6-gerenciador-politicas.png`.
+- **Pré-pagamento:** a nova tentativa de "Mudar para pré-pagamento" fica para 05/11. Em 03/11 o botão continuava desativado.

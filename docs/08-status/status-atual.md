@@ -1,6 +1,6 @@
 # Status atual
 
-_Atualizado em 03/11/2026, no ciclo 1 da campanha de Pesquisa (Etapas B, C e D feitas; campanha pausada à espera do "pode ativar")._
+_Atualizado em 03/11/2026: ciclo 1 da campanha de Pesquisa **ativo desde 03/11 às 11:36**, com término em 12/11._
 
 ## No ar
 
@@ -47,7 +47,7 @@ Especificação aprovada pelo estrategista, baseada em `docs/06-qualidade/levant
 | 3. Conversões e tags do Ads | feita no ciclo 1 (Etapa C, 02/11) |
 | 4. Campanha pausada | **feita em 03/11** (Etapa D) |
 | 5. Revisão final | Etapa E entregue em 03/11 (prints `c1-e*`) |
-| 6. Ativação | só com o "pode ativar" escrito do Dr. Lauro; nesse dia: início = dia da ativação, término = 9º dia seguinte às 23:59, registrar data e hora, refazer o diagnóstico para "advogado criminalista osasco" e "advogado habeas corpus"; depois, Etapa F (inclui a revisão das 4 palavras-chave barradas). A partir de 05/11, tentar de novo "Mudar para pré-pagamento" |
+| 6. Ativação | **feita em 03/11/2026 às 11:36:34** com autorização escrita do Dr. Lauro. Campanha de 03/11 a 12/11 (23:59). Diagnóstico de anúncios ainda sem resultado; 4 palavras-chave reprovadas ("Eventos sensíveis") e sem contestação aberta. Etapa F em andamento. Tentar "Mudar para pré-pagamento" a partir de 05/11 |
 
 ## Pendências com material necessário
 
