@@ -1,6 +1,6 @@
 # Status atual
 
-_Atualizado em 03/11/2026: ciclo 1 da campanha de Pesquisa **ativo desde 03/11 às 11:36**, com término em 12/11._
+_Atualizado em 03/11/2026 às 18h: ciclo 1 da campanha de Pesquisa **ativo desde 03/11 às 11:36**, com término em 12/11; 24 impressões no primeiro dia._
 
 ## No ar
 
@@ -47,7 +47,7 @@ Especificação aprovada pelo estrategista, baseada em `docs/06-qualidade/levant
 | 3. Conversões e tags do Ads | feita no ciclo 1 (Etapa C, 02/11) |
 | 4. Campanha pausada | **feita em 03/11** (Etapa D) |
 | 5. Revisão final | Etapa E entregue em 03/11 (prints `c1-e*`) |
-| 6. Ativação | **feita em 03/11/2026 às 11:36:34** com autorização escrita do Dr. Lauro. Campanha de 03/11 a 12/11 (23:59). Diagnóstico de anúncios ainda sem resultado; 4 palavras-chave reprovadas ("Eventos sensíveis") e sem contestação aberta. Etapa F em andamento. Tentar "Mudar para pré-pagamento" a partir de 05/11 |
+| 6. Ativação | **feita em 03/11/2026 às 11:36:34** com autorização escrita do Dr. Lauro. Campanha de 03/11 a 12/11 (23:59). As 4 palavras-chave reprovadas ("Eventos sensíveis") foram trocadas por 4 novas, de correspondência de frase: 3 estão Qualificada e 1 tem baixo volume. "advogado preso em flagrante" foi barrada e ficou fora. Às 18h de 03/11 a campanha tinha 24 impressões, 0 cliques e R$ 0,00 de custo. O Diagnóstico de anúncios já encontra as palavras-chave; para "advogado habeas corpus" ele aponta classificação baixa. A meta padrão "Clique de saída" mostra "Configuração incorreta", efeito esperado da Etapa B que não afeta a C1. Etapa F em andamento. Tentar "Mudar para pré-pagamento" a partir de 05/11 |
 
 ## Pendências com material necessário
 

@@ -129,3 +129,77 @@ As duas palavras-chave existem e estão **Qualificada**: [advogado criminalista 
 - **Revisão das 4 reprovadas:** o Histórico de contestação está vazio ("Você ainda não contestou nenhuma decisão"). A caixa "Solicitar uma exceção" marcada na criação não abriu contestação, e o detalhe da palavra-chave não oferece o botão "Contestar". Print: `c1-f7-historico-contestacao.png`.
 - **Gerenciador de políticas:** 10 recursos "Aprovado (limitado)" pela política "Ato criminoso na publicidade personalizada". Essa política só restringe a segmentação por públicos personalizados, e a campanha não usa públicos. Print: `c1-f6-gerenciador-politicas.png`.
 - **Pré-pagamento:** a nova tentativa de "Mudar para pré-pagamento" fica para 05/11. Em 03/11 o botão continuava desativado.
+
+### Ajustes de 03/11, depois da ativação (ordem do Lucas)
+
+**Avisos da conta (12:20).** Nada foi cadastrado.
+- **Visão geral, cartão Faturamento:** "Adicionar uma forma de pagamento — Adicione uma forma de pagamento para manter seus anúncios em exibição". É um alerta, não um bloqueio.
+- O aviso anterior, "Não há anúncios sendo veiculados… verifique sua forma de pagamento", **não aparece mais**.
+- **Diagnóstico da conta:** "Sua nova campanha só está qualificada para veicular anúncios para um público-alvo limitado", com "Impressões: problemas detectados". Itens listados: "O recurso de ligação está em revisão" e "A nova estratégia de lances está na fase de aprendizado".
+- **Faturamento → Resumo:** "Você tem crédito R$ 600,00" e nenhum pagamento futuro.
+- **Avisos flutuantes:** "1 campanha será finalizada em breve", efeito da data de término 12/11, e "Proteja sua conta contra atividades não autorizadas".
+
+Prints: `c1-f8-visao-geral-avisos.png`, `c1-f9-faturamento-resumo-avisos.png`.
+
+**Substituição das palavras-chave reprovadas.**
+- As 4 reprovadas por "Eventos sensíveis" foram **removidas**, sem contestação.
+- A tela mostrou o erro "Não foi possível aplicar sua alteração a nenhuma palavra-chave selecionada", mas só na segunda tentativa: a primeira já tinha sido aplicada, com atraso. Conferido em seguida: 69 palavras-chave e nenhuma das 4 na lista.
+
+Novas palavras-chave (correspondência de frase):
+
+| Palavra-chave | Grupo | Resultado |
+|---|---|---|
+| "advogado relaxamento de prisão" | Emergência Prisão | incluída; Pendente, Em análise |
+| "advogado liberdade provisória" | Emergência Prisão | incluída; Pendente, Em análise |
+| "advogado preso em flagrante" | Emergência Prisão | **barrada na inclusão por "Sensitive events"; não incluída**, conforme a ordem (sem variações). Print: `c1-f10-novas-palavras-sinalizadas.png` |
+| "advogado prisão preventiva" | Habeas Corpus | incluída; Pendente, Em análise |
+| "advogado flagrante tráfico" | Tráfico de Drogas | incluída; Não qualificada: Baixo volume de pesquisas, Em análise |
+
+Total na campanha: **73 palavras-chave**.
+
+### Checagem das 18h (03/11/2026, por volta de 18:00)
+
+A checagem das 15h não rodou: o agendamento só dispara com a sessão ociosa, e ela estava ocupada. Ficou valendo a das 18h.
+
+**Métricas de hoje (03/11), campanha `GOOG_Search_Criminal_Osasco-SP_C1`:**
+
+| Impressões | Cliques | CTR | Custo | Conversões |
+|---|---|---|---|---|
+| 24 | 0 | 0,00% | R$ 0,00 | 0,00 |
+
+- Status da campanha: "Qualificada (limitada)", com o motivo "O recurso de ligação está em revisão". Estratégia: Maximizar conversões; orçamento de R$ 60,00/dia.
+- Como houve impressões, a investigação de "zero impressões" não se aplicou. Nada foi alterado.
+- Prints: `c1-f13-metricas-hoje-18h.png`, `c1-f14-linha-campanha-hoje-18h.png`.
+
+**Diagnóstico de anúncios** (Osasco, português, celular). Não pesquisamos no Google nem clicamos em anúncios.
+
+| Busca | Resultado |
+|---|---|
+| advogado criminalista osasco | "Seu anúncio não está sendo exibido". A busca correspondeu a [advogado criminalista osasco] no grupo Criminalista Osasco. Motivo informado: "Não sabemos por que seus anúncios não estão aparecendo nessa pesquisa" |
+| advogado habeas corpus | "Seu anúncio não está sendo exibido". A busca correspondeu a "advogado habeas corpus" no grupo Habeas Corpus. Motivo: **"Seu anúncio tem uma classificação baixa nessa pesquisa"** |
+
+- O diagnóstico agora encontra as palavras-chave, o que não acontecia às 11:40.
+- O resultado vale para uma simulação, não para todas as buscas. As 24 impressões do dia mostram que a campanha veicula.
+- A classificação baixa em Habeas Corpus tende a melhorar quando a estratégia de lances sair da fase de aprendizado. O anúncio desse grupo também tem eficácia "Ruim".
+- Prints: `c1-f15-diagnostico-criminalista-osasco-18h.png`, `c1-f16-diagnostico-habeas-corpus-18h.png`.
+
+**Palavras-chave novas:**
+
+| Palavra-chave | Status às 18h |
+|---|---|
+| "advogado relaxamento de prisão" | Qualificada |
+| "advogado liberdade provisória" | Qualificada |
+| "advogado prisão preventiva" | Qualificada |
+| "advogado flagrante tráfico" | Não qualificada: Baixo volume de pesquisas (não é reprovação; não foi removida) |
+
+Nenhuma foi reprovada. Prints: `c1-f17-palavras-habeas-18h.png`, `c1-f18-palavras-trafico-18h.png`.
+
+**Conversões (verificado às 17:46, a pedido do Lucas)**
+
+A meta padrão "Clique de saída" aparece com **"Configuração incorreta"**. O Google explica: "As metas precisam incluir pelo menos uma ação de conversão principal para serem usadas na otimização de campanhas e nos relatórios de resultados".
+
+- **Causa:** a única ação dessa meta é a antiga "Clique Botão WhatsApp Criminal". Ela passou a Secundária na Etapa B, de propósito, e mostra "Requer atenção" porque está sem dados.
+- **Efeito na campanha:** nenhum. A campanha usa só a meta personalizada "Leads Criminal C1", com 3 ações e 1 campanha.
+- **Ações novas:** as 3 estão como Principal, com status "Não há conversões recentes". É o esperado, porque nenhuma conversão veio de clique em anúncio até agora.
+- **Decisão:** nada foi alterado. Voltar a ação antiga para Principal desfaria o isolamento da Etapa B.
+- Prints: `c1-f11-meta-clique-de-saida.png`, `c1-f12-metas-personalizadas.png`.
