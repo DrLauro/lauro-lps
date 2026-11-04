@@ -38,3 +38,31 @@ O `llms.txt` não é confirmado por nenhuma IA grande.
 6. Repetir o teste no ChatGPT e no Perplexity depois de 2 a 4 semanas.
 
 Perfil da Empresa do Dr. Lauro: kgmid `/g/11gkccsxjx`.
+
+## Execução (04/11/2026, noite)
+
+**Perfil da Empresa** (Google Maps):
+
+| Perfil | Nota | Avaliações | Categoria | Horário |
+|---|---|---|---|---|
+| Dr. Lauro | 5,0 | 188 | Advogado criminal | 24h |
+| Felipe Brandão | 5,0 | 135 | Advogado criminal | 24h |
+| Marcos Roberto | 5,0 | 17 | Advogado | 24h |
+
+O perfil do Dr. Lauro tem o atributo "Se identifica como uma empresa de empreendedoras" (empresa liderada por mulheres). Confirmar se é intencional. Print: `gbp-lauro-2026-11-04.png`.
+
+**Dados estruturados** (commits `a1ac30b` e `e6c17a7`):
+- `Person.image`: `dr-lauro-almeida-neto.jpg`;
+- `LegalService.image`: fachada, sala e retrato;
+- `logo`: `logo-lauro-neto.png`;
+- `geo` e `hasMap` (CID 17415820592027588143), tirados do Perfil da Empresa;
+- o Perfil da Empresa entrou em `sameAs`.
+
+**Bing Webmaster Tools.** Login com a conta Google do Dr. Lauro.
+- **Search Console:** a importação não encontrou nenhum site. O lauro.adv.br **não está no Search Console** dessa conta.
+- **Verificação:** feita pelo arquivo `BingSiteAuth.xml` (commit `dd6836e`).
+- **Sitemap:** `sitemap-index.xml` enviado. Prints: `bing-webmaster-verificado.png`, `bing-sitemap-enviado.png`.
+
+**IndexNow.** Chave publicada em `/<chave>.txt` (commit `7fc9fc4`); as 24 URLs do sitemap foram enviadas para api.indexnow.org, que respondeu HTTP 202 (aceito; a chave ainda seria validada).
+
+**Bing Places.** O login aceita só conta Microsoft, conta corporativa ou Facebook; não há opção Google. Depende do Dr. Lauro.
