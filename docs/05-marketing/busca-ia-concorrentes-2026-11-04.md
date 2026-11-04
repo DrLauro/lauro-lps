@@ -66,3 +66,17 @@ O perfil do Dr. Lauro tem o atributo "Se identifica como uma empresa de empreend
 **IndexNow.** Chave publicada em `/<chave>.txt` (commit `7fc9fc4`); as 24 URLs do sitemap foram enviadas para api.indexnow.org, que respondeu HTTP 202 (aceito; a chave ainda seria validada).
 
 **Bing Places.** O login aceita só conta Microsoft, conta corporativa ou Facebook; não há opção Google. Depende do Dr. Lauro.
+
+**Search Console.**
+- Propriedade de domínio `lauro.adv.br` **verificada** com um registro TXT `google-site-verification` novo, criado na Cloudflare pela API.
+- Os registros de e-mail (MX, SPF, DKIM e DMARC da Hostinger) **não foram tocados**.
+- Sitemap `https://lauro.adv.br/sitemap-index.xml` enviado.
+- Prints: `search-console-verificado.png`, `search-console-sitemap.png`.
+- Para manter a verificação, **não apagar esse registro TXT**.
+
+**Preview do GitHub Pages (04/11).**
+- A implantação do commit `f12f8fe` estourou o tempo limite de 10 minutos, preso em "updating_pages" no lado do GitHub.
+- A produção (Cloudflare) não foi afetada.
+- A 3ª tentativa passou.
+
+**Bing Places.** "Importar do Perfil da Empresa do Google", com sincronização semanal. Aguarda o consentimento do Dr. Lauro (escopo `business.manage`).
