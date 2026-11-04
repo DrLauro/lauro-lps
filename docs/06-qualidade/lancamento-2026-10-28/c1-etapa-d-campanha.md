@@ -203,3 +203,30 @@ A meta padrão "Clique de saída" aparece com **"Configuração incorreta"**. O 
 - **Ações novas:** as 3 estão como Principal, com status "Não há conversões recentes". É o esperado, porque nenhuma conversão veio de clique em anúncio até agora.
 - **Decisão:** nada foi alterado. Voltar a ação antiga para Principal desfaria o isolamento da Etapa B.
 - Prints: `c1-f11-meta-clique-de-saida.png`, `c1-f12-metas-personalizadas.png`.
+
+### Acompanhamento de 04/11/2026 (por volta de 17:20)
+
+| Dia | Impressões | Cliques | CTR | Custo | CPC médio | Conversões |
+|---|---|---|---|---|---|---|
+| 03/11 (dia fechado) | 44 | 3 | 6,82% | R$ 60,14 | R$ 20,05 | 0 |
+| 04/11 (até ~17:20) | 51 | 5 | 9,80% | R$ 44,51 | R$ 8,90 | 0 |
+| **Acumulado** | **95** | **8** | 8,42% | **R$ 104,65** | R$ 13,08 | **0** |
+
+- **Status:** "Qualificada (aprendizado)", com "Estratégia de lances com aprendizado em andamento". A ligação saiu de revisão: o status de 03/11 às 18h era "Qualificada (limitada)".
+- **Custo:** dentro do ritmo de R$ 60,00 por dia. A regra de pausa a R$ 540,00 continua valendo.
+- **Termos de pesquisa com clique** (o Google mostra só parte dos termos):
+  - "advogado estelionato": R$ 29,22, em 03/11;
+  - "advogado agora": R$ 11,33, em 04/11;
+  - "advogado de golpes na internet": R$ 14,89, em 04/11.
+- **Termos que só tiveram impressão:**
+  - "advogados 24 horas";
+  - "advocacia criminal sp";
+  - "advogados crimes virtuais";
+  - "advogado especialista em golpes pela internet";
+  - "advogado criminalista barueri";
+  - "defesa em crimes sexuais";
+  - "advogado criminalista 24 horas";
+  - "advogado calunia e difamação";
+  - "melhor advogado criminalista do brasil".
+- Nenhum termo fora do tema criminal. Nenhuma alteração feita.
+- Prints: `c1-f19-metricas-04-11-hoje.png`, `c1-f20-metricas-03-11-ontem.png`, `c1-f21-termos-03-11.png`, `c1-f22-termos-04-11.png`.

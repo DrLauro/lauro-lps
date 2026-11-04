@@ -6,6 +6,28 @@ import { join } from 'node:path';
 import { waLink } from './whatsapp.mjs';
 
 const DIR = join(process.cwd(), 'contexts');
+
+// Sinais de entidade para buscadores e IAs, iguais em todas as páginas: ficam aqui, não nos 20 CONTEXT.md.
+// Sem `image`, o ChatGPT associou ao Dr. Lauro a foto de outra pessoa (04/11/2026).
+// Fotos tiradas do Perfil da Empresa do Dr. Lauro (originais em docs/02-design/fotos-dr-lauro/).
+const SITE = 'https://lauro.adv.br/';
+const FOTO = SITE + 'dr-lauro-almeida-neto.jpg';
+const PERFIL_GOOGLE = 'https://www.google.com/search?kgmid=/g/11gkccsxjx';
+function enriquecerJsonLd(ld) {
+  ld['@graph'] = ld['@graph'].map((n) => {
+    if (n['@type'] === 'LegalService') {
+      return {
+        ...n,
+        image: [SITE + 'escritorio-fachada.jpg', SITE + 'escritorio-sala.jpg', FOTO],
+        logo: SITE + 'logo-lauro-neto.png',
+        sameAs: [...new Set([...(n.sameAs ?? []), PERFIL_GOOGLE])],
+      };
+    }
+    if (n['@type'] === 'Person') return { ...n, image: FOTO };
+    return n;
+  });
+  return ld;
+}
 const CARDS = JSON.parse(readFileSync(join(process.cwd(), 'src/data/cards-areas.json'), 'utf8'));
 
 // Linhas do contexto que são instrução para o dev, não texto da página.
@@ -97,7 +119,7 @@ export function parseContext(file) {
     triage.push({ label: m[1], situacao: m[2], href: m[3] });
   }
   const area = section(md, 7).match(/data-area="([^"]+)"/)[1];
-  const jsonLd = JSON.parse(section(md, 8).match(/```json\n([\s\S]*?)```/)[1]);
+  const jsonLd = enriquecerJsonLd(JSON.parse(section(md, 8).match(/```json\n([\s\S]*?)```/)[1]));
   const links = [...section(md, 9).matchAll(/([^\n:·-][^:·\n]*?): `(\/[^`]+\/)`/g)].map((m) => ({
     label: m[1].trim(),
     path: m[2],
