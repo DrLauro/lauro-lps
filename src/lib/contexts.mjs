@@ -20,6 +20,9 @@ function enriquecerJsonLd(ld) {
         ...n,
         image: [SITE + 'escritorio-fachada.jpg', SITE + 'escritorio-sala.jpg', FOTO],
         logo: SITE + 'logo-lauro-neto.png',
+        // Coordenadas e CID do Perfil da Empresa no Google Maps (04/11/2026).
+        geo: { '@type': 'GeoCoordinates', latitude: -23.5344257, longitude: -46.7916751 },
+        hasMap: 'https://maps.google.com/?cid=17415820592027588143',
         sameAs: [...new Set([...(n.sameAs ?? []), PERFIL_GOOGLE])],
       };
     }
