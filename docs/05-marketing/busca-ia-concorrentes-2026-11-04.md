@@ -79,4 +79,12 @@ O perfil do Dr. Lauro tem o atributo "Se identifica como uma empresa de empreend
 - A produção (Cloudflare) não foi afetada.
 - A 3ª tentativa passou.
 
-**Bing Places.** "Importar do Perfil da Empresa do Google", com sincronização semanal. Aguarda o consentimento do Dr. Lauro (escopo `business.manage`).
+**Bing Places.** Importado do Perfil da Empresa do Google em 04/11/2026, com sincronização semanal. Nada foi alterado no Google nem no e-mail.
+- Situação: "Publicação pendente". O Bing leva de 7 a 12 dias para publicar e avisa por e-mail.
+- Vieram:
+  - nome, endereço (Av. das Flores, 660), telefone (11) 97080-2600 e site;
+  - categoria, horário 24/7 e horários especiais;
+  - 14 fotos, a descrição, Instagram, Facebook e WhatsApp.
+- O atributo "Pertencente a mulheres" veio junto, espelho do "empreendedoras" do Google. Corrigir no Google: com a sincronização semanal, a correção chega ao Bing sozinha.
+- Site importado como `https://www.lauro.adv.br/`. Funciona porque o www responde com 301 para a raiz.
+- Print: `bing-places-importado.png`.
