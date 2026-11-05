@@ -230,3 +230,39 @@ A meta padrão "Clique de saída" aparece com **"Configuração incorreta"**. O 
   - "melhor advogado criminalista do brasil".
 - Nenhum termo fora do tema criminal. Nenhuma alteração feita.
 - Prints: `c1-f19-metricas-04-11-hoje.png`, `c1-f20-metricas-03-11-ontem.png`, `c1-f21-termos-03-11.png`, `c1-f22-termos-04-11.png`.
+
+### Recomendações e correção de 05/11/2026 (por volta de 15:00)
+
+**Acumulado de 03/11 a 05/11 (às ~14h):** 138 impressões, 15 cliques (CTR de 10,87%), R$ 158,77 de custo, CPC médio de R$ 10,58 e **1 conversão**. A conversão veio da palavra-chave "advogado estelionato" (frase), que custou R$ 39,10 no período. Status: "Qualificada (aprendizado)". Pontuação de otimização: 94,5%.
+
+**Recomendação aplicada por engano em 04/11 às 17:26:18.** Pela conta dr.lauroneto, a recomendação "Nova palavra-chave" foi aplicada no painel. O Lucas confirmou que o clique foi dele. Ela incluiu 23 palavras-chave de **correspondência ampla** no grupo Emergência Prisão, contra a ordem do ciclo, que veda correspondência ampla.
+- Entre as 23 havia termos fora do alvo:
+  - "advogado trabalhista 24 horas", que gerou a recomendação "negativa em conflito";
+  - "audiencia de custodia sem advogado";
+  - "prisão em flagrante do advogado".
+- Custo das amplas até a correção: 3 cliques e R$ 13,59, sem conversão. Duas delas tiveram tráfego. Termo com clique: "fórum barra funda audiência de custódia telefone", com 2 cliques.
+- Print: `c1-f23-historico-ampla.png`.
+
+**Correções feitas em 05/11, com autorização do Lucas:**
+1. "Desfazer" no Histórico de alterações da entrada de 04/11 às 17:26:18. Status: "Pedido de cancelamento recebido". Conferido em seguida: a campanha voltou a **73 palavras-chave e nenhuma ampla**.
+2. Negativa de frase **"sem advogado"** no nível da campanha.
+3. Dois sitelinks novos, que somam 6 e completam o mínimo para o formato de maior destaque:
+
+   | Texto | Linha 1 | Linha 2 | URL |
+   |---|---|---|---|
+   | Golpes e Estelionato | Pix, conta usada em golpe | Defesa desde o inquérito | https://lauro.adv.br/golpes-e-fraudes-digitais/ |
+   | Lei Maria da Penha | Medida protetiva e defesa | Atendimento com discrição | https://lauro.adv.br/lei-maria-da-penha/ |
+
+   Ambos estão "Pendente, Em análise". Print: `c1-f24-sitelinks-novos.png`.
+4. Lance, orçamento e anúncios **não foram alterados**. Ficam assim até o fim do ciclo (12/11), para não reiniciar o aprendizado.
+
+**Decisão sobre as demais recomendações (nenhuma aplicada):**
+- Rede de parceiros de pesquisa: vetada pela ordem do ciclo.
+- Negativa em conflito ("trabalhista"): a negativa está certa. O conflito sumiu com a remoção das amplas.
+- Palavras-chave redundantes ("advogado criminal são paulo" × "advogado criminalista são paulo"): sem ganho real.
+- Segmentação por lista de clientes: exige enviar dados de clientes da área criminal, com risco de LGPD e de sigilo profissional.
+- App para celular: não afeta a campanha.
+- Logo da empresa e qualidade do anúncio de Emergência Prisão: ficam para o ciclo 2 (ver `docs/04-gestao/backlog.md`).
+- Sitelinks Prisão em Flagrante e Áreas de Atuação: estão "Qualificada (limitada)", com o motivo "Política (Ato criminoso na publicidade personalizada)". É a restrição normal do tema e não exige ação.
+
+**Regra para o painel:** não clicar em "Aplicar" nem em "Aplicar todas" na página Recomendações. Toda recomendação passa antes pela análise do ciclo.
