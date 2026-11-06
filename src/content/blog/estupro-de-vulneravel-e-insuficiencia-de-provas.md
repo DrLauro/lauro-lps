@@ -6,11 +6,10 @@ cover: ''
 cover_alt: ''
 area: crimes-sexuais
 jusbrasilId: '7738863864'
-jusbrasilUrl: https://www.jusbrasil.com.br/artigos/estupro-de-vulneravel-e-insuficiencia-de-provas-a-importancia-do-contraditorio-para-a-sentenca-absolutoria/7738863864?_gl=1*1g6yd3n*_gcl_aw*R0NMLjE3OTMyMzc5NzIuQ2p3S0NBand1b2JYQmhCWEVpd0FZVWFJbFVkOVgySFBfcGJ1WHRuV2JKaE9lX2JiUm1sUGM0M21KaEJLQzZmRFFsNEJpSU9lSHBnMFZSb0NINXNRQXZEX0J3RQ..*_gcl_au*MzYzOTgzMTMyLjE3ODcxNDQ2MzUuNTcxOTE0NTQxLjE3OTM5OTgxOTAuMTc5Mzk5ODE4OS4xNTc2NTkzNjM2LjE3OTM5OTgxOTAuMTc5Mzk5ODE4OQ..*_ga*MTc3NDQ1MTgyNS4xNzg3MTQ0NjM1*_ga_QCSXBQ8XPZ*czE3OTM5OTgxNzkkbzczJGcxJHQxNzkzOTk4MTg5JGo1MCRsMCRoMA..
+jusbrasilUrl: https://www.jusbrasil.com.br/artigos/estupro-de-vulneravel-e-insuficiencia-de-provas-a-importancia-do-contraditorio-para-a-sentenca-absolutoria/7738863864
 draft: false
 ---
 
-## Processo nº [1511171-60.2019.8.26.0050](https://www.jusbrasil.com.br/consulta-processual/goto/1511171-60.2019.8.26.0050)
 
 Uma acusação por crime contra a dignidade sexual exige apuração rigorosa, proteção da pessoa envolvida e exame responsável das provas. A gravidade da imputação, entretanto, não afasta a presunção de inocência nem substitui a exigência de demonstração suficiente dos fatos para uma condenação.
 

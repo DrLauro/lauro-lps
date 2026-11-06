@@ -15,6 +15,11 @@ backend:
     deleteMedia: "blog: remove {{path}}"
 
 site_url: https://lauro.adv.br
+
+# Endereço do artigo sem acento nem cedilha ("vulnerável" vira "vulneravel").
+slug:
+  encoding: ascii
+  clean_accents: true
 media_folder: public/blog/img
 public_folder: /blog/img
 
